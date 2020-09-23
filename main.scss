@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Shrikhand-Regular"; src: url('..style/Shrikhand-Regular.otf');
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Shrikhand-Regular;
+}
+
+.name {
+    width: 200px;
+    height: 200px;
+}
+
+.localisation {
+    height:50px;
+    background-color: #ededed;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.reservation {
+    text-align: center;
+    font-size: 25px;
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.description {
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn_explorez {
+   
+    text-align: center;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    border-radius: 30px;
+    color: white;
+    padding: 10px 40px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+   text-align: left;
+    margin-bottom: 25px;
+}
+
+.btn_cliquable {
+    text-decoration: none;
+    box-shadow: 0px 2px 0px #f7f7f7;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    margin-left:20px;
+}
+
+.icones_fonctionnement{
+    color: grey;
+    margin-left: 50px;
+}
+
+.rond {
+    color: #9356dc;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img_resto {
+    width: 375px;
+    height: 175px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.frame {
+    width: 375px;
+    height: 375px;
+    height: 275px;
+    border-radius: 20px 20px 20px 20px;
+    background: white;
+    margin: 0 0 15px 0;
+    margin-bottom: 15px;
+}
+
+.icone_like:hover {
+    text-align: left;
+    color: #9356DC;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: left;
+    font-weight: normal;
+}
+.container {
+    background-color: #E8EDF2;
+    width: 375px;
+}
+
+footer {
+    background-color: #3B444C;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.numero {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: solid;
+    border-radius: 100%;
+    background-color: #9356DC;
+    color: white;
+    text-align: center;  
+ }
+
+.contenu {
+    text-align: right;
+    padding: 10px;
+}
+
+h5 {
+    font-family:"Shrikhand-Regular";
+    text-align: left;
+    font-size: 20px;
+    font-family: Shrikhand-Regular;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.icones_footer {
+    color: white;
+    padding: 10px;
+}
