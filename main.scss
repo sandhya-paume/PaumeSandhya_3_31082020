@@ -1,3 +1,5 @@
+/*/Page principale*/
+
 @font-face {
     font-family: "Shrikhand-Regular"; src: url('..style/Shrikhand-Regular.otf');
 }
@@ -76,10 +78,10 @@ h2 {
     margin-top: 10px;
 }
 
-.h3 {
+.resto {
     font-size: 20px;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
 }
 
 main {
@@ -88,7 +90,7 @@ main {
 }
 
 .img_resto {
-    width: 375px;
+    width: 365px;
     height: 175px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -104,12 +106,15 @@ main {
 }
 
 .icone_like:hover {
-    text-align: left;
-    color: #9356DC;
-    font-size: 30px;
+    text-align: right;
+    font-size: 18px;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+}
+.icone_like{
+    text-align: right;
 }
 
-h4 {
+.lieu {
     text-align: left;
     font-weight: normal;
 }
@@ -123,8 +128,10 @@ footer {
     color: white;
     font-size: 20px;
     text-align: left;
-    padding: 5px;
+    
     margin: 5px;
+    width: 100%;
+    height: 220px;
 }
 
 .numero {
@@ -143,7 +150,7 @@ footer {
     padding: 10px;
 }
 
-h5 {
+h3 {
     font-family:"Shrikhand-Regular";
     text-align: left;
     font-size: 20px;
@@ -157,3 +164,80 @@ h5 {
     color: white;
     padding: 10px;
 }
+
+/*/Menu 1-2-3-4*/
+
+.img_menu1 {
+    width: 365px;
+    height: 175px;
+}
+
+.menu_frame {
+    background-color: #EEE8E3;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contenant {
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    
+    padding-bottom: 20px;
+}
+
+.nom_entree{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.ingredient{
+    font-size: 15px;
+    font-weight: normal;
+    text-align:left;
+}
+
+.entree{
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+}
+
+.nom_plat {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plat {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+}
+
+.dessert {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+}
+
+.nom_dessert {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn_commander {
+    border-radius: 25px 25px 25px 25px;
+    text-align: center;
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    width: 180px;
+    height: 55px;
+}
+
