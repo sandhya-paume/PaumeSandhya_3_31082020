@@ -25,7 +25,7 @@
     .localisation {
         height: 40px;
         background-color: #ededed;
-        width: 113%;
+        width: 100%;
         text-align: center;
         padding-top: 25px;
         font-size: 18px;
@@ -36,7 +36,7 @@
         padding-bottom: 50px;
         background-color: #E5EFE7;
         text-align: center;
-        width:113%;
+        width:100%;
     }
 
     .reservation {
@@ -88,7 +88,6 @@
         text-align: center;
         width: 100%;
         background-color: #f7f7f7;
-        margin-left: 20px;
         position: relative;
         height: 70px;
         line-height: 80px;
@@ -163,29 +162,26 @@
     }
 
     .frame {
-        width: 382px;
+        width: 329px;
         height: 230px;
         border-radius: 20px 20px 20px 20px;
         background: white;
-        margin: 0 0 15px 0;
         margin-bottom: 15px;
         position: relative;
     }
 
     .icone_like:hover {
-        text-align: right;
         font-size: 25px;
-        top: 13px;
-        left: 317px;
+        top: 10px;
+        left: 280px;
         background-image: linear-gradient(#FF79DA, #9356DC);
     }
 
     .icone_like {
         text-align: right;
-        left: 340px;
+        left: 280px;
         position: relative;
-        top: 13px;
-        left: 317px;
+        top: 10px;
         font-size: 25px;
     }
 
@@ -227,7 +223,7 @@
 
     .bloc_resto {
         background-color: #F2EBEA;
-        width: 113%;
+        width: 103%;
     }
 
     footer {
