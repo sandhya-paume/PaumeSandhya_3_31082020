@@ -198,15 +198,15 @@
     color: #008766;
     justify-content: center;
     display: flex;
-    width: 65px;
-    height: 29px;
+    width: 77px;
+    height: 27px;
     border-radius: 2px 2px 2px 2px;
     font-weight: bold;
     position: absolute;
-    top: 12px;
+    top: 19px;
     right: 23px;
     line-height: 30px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .btn_new2 {
@@ -360,7 +360,7 @@
   }
 
   .img_conteneur1 {
-    width: 101%;
+    width: 100%;
     height: 165px;
     overflow: hidden;
     position: relative;
@@ -368,7 +368,7 @@
   }
 
   .img_conteneur2 {
-    width: 101%;
+    width: 100%;
     height: 154px;
     overflow: hidden;
     position: relative;
@@ -376,7 +376,7 @@
   }
 
   .img_conteneur3 {
-    width: 101%;
+    width: 100%;
     height: 154px;
     overflow: hidden;
     position: relative;
@@ -384,7 +384,7 @@
   }
 
   .img_conteneur4 {
-    width: 101%;
+    width: 100%;
     height: 154px;
     overflow: hidden;
     position: relative;
@@ -406,42 +406,43 @@
 
   .icone_like_menus {
     position: relative;
-    top: 17px;
     left: 65px;
     font-size: 22px;
   }
 
   .entete_resto {
     font-family: "Shrikhand-Regular";
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 23px;
     margin-bottom: 2px;
     padding-top: 22px;
     padding-bottom: 17px;
     position: relative;
-    left: 20px;
+    left: 32px;
     top: 6px;
   }
 
   .menu_frame {
     background-color: #EEE8E3;
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -36px;
+    border-radius: 40px 40px 0px 0px;
     z-index: 2;
     width: 100%;
-    bottom: 43px;
     position: relative;
-    padding-top: 25px;
+    padding-top: 40px;
+    bottom: 40px;
+    padding-bottom: 40px;
+    margin-bottom: -60px;
   }
 
   .contenant {
     background-color: white;
-    width: 350px;
-    height: 50px;
+    width: 325px;
+    height: 40px;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    padding-left: 10px;
-    padding-top: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
   }
 
   .nom_entree {
@@ -460,7 +461,11 @@
     color: black;
     font-size: 15px;
     text-align: left;
-    padding: 10px;
+    position: relative;
+    top: 7px;
+    left: 32px;
+    padding-top: 25px;
+    padding-bottom: 5px;
   }
 
   .soulignement {
@@ -480,14 +485,20 @@
     color: black;
     font-size: 15px;
     text-align: left;
-    padding: 10px;
+    position: relative;
+    top: 7px;
+    left: 32px;
+    padding-bottom: 5px;
   }
 
   .dessert {
     color: black;
     font-size: 15px;
     text-align: left;
-    padding: 10px;
+    position: relative;
+    top: 7px;
+    left: 32px;
+    padding-bottom: 5px;
   }
 
   .nom_dessert {
@@ -506,6 +517,11 @@
     width: 180px;
     height: 55px;
     border: none;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   header {
@@ -515,6 +531,9 @@
 
   .price {
     font-weight: bold;
+    position: relative;
+    left: 290px;
+    bottom: 19px;
   }
 }
 /*/-------------------------------------------------------------------------------------------- Media Tablettes -----------------------------------------------------------------------------------------------------------------------/*/
@@ -809,6 +828,21 @@
 
   /*/-------------------Menu 1-2-3-4------------------/*/
   .img_menu1 {
+    width: 100%;
+    height: 225px;
+  }
+
+  .img_menu2 {
+    width: 365px;
+    height: 175px;
+  }
+
+  .img_menu3 {
+    width: 365px;
+    height: 175px;
+  }
+
+  .img_menu4 {
     width: 365px;
     height: 175px;
   }
