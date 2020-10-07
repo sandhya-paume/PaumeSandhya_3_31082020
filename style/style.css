@@ -236,7 +236,7 @@
     left: 15px;
   }
 
-  .icone_like:hover {
+  .icone_like_homepage:hover {
     position: relative;
     top: 8px;
     left: 215px;
@@ -244,7 +244,7 @@
     background-image: linear-gradient(#FF79DA, #9356DC);
   }
 
-  .icone_like {
+  .icone_like_homepage {
     position: relative;
     top: 3px;
     left: 285px;
@@ -394,9 +394,9 @@
   /*/------------Menu 1-2-3-4------------/*/
   .fleche {
     position: relative;
-    top: -5px;
-    left: -40px;
-    font-size: 25px;
+    bottom: 0px;
+    right: 75px;
+    font-size: 20px;
   }
 
   .img_menu1 {
@@ -404,10 +404,10 @@
     height: 225px;
   }
 
-  .icone_like {
+  .icone_like_menus {
     position: relative;
     top: 17px;
-    left: 192px;
+    left: 65px;
     font-size: 22px;
   }
 
@@ -415,14 +415,12 @@
     font-family: "Shrikhand-Regular";
     font-size: 25px;
     font-weight: bold;
-    text-align: left;
     margin-bottom: 2px;
-    padding-bottom: -16px;
     padding-top: 22px;
     padding-bottom: 17px;
     position: relative;
-    left: 17px;
-    top: 6PX;
+    left: 20px;
+    top: 6px;
   }
 
   .menu_frame {
@@ -430,8 +428,10 @@
     border-radius: 20px 20px 0px 0px;
     margin-top: -36px;
     z-index: 2;
-    width: 102%;
+    width: 100%;
+    bottom: 43px;
     position: relative;
+    padding-top: 25px;
   }
 
   .contenant {
