@@ -9,9 +9,13 @@
 /*/---------------------------------------------------------------------------------------------------- Media Smartphone -----------------------------------------------------------------------------------------------------------------/*/
 @media only screen and (max-width: 480px) {
   /*/--------- Page Principale----------/*/
+  body {
+    margin: 0px;
+  }
+
   h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: "Shrikhand-Regular";
   }
 
@@ -21,24 +25,30 @@
     width: 100%;
     text-align: center;
     padding-top: 25px;
-    font-size: 17px;
+    font-size: 15px;
     box-shadow: 0px -1px 0px grey;
     position: relative;
-    right: 28px;
   }
 
   .bloc_resa {
-    padding-bottom: 50px;
-    background-color: #E5EFE7;
+    background-color: #E9E8E2;
     text-align: center;
     width: 100%;
     position: relative;
-    right: 28px;
   }
 
   .reservation {
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 25px;
+  }
+
+  .reservation2 {
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    font-size: 25px;
     font-weight: bold;
     padding-top: 25px;
   }
@@ -49,6 +59,16 @@
     font-family: "Roboto-Regular";
     margin-top: 15px;
     margin-bottom: 20px;
+    position: relative;
+    bottom: 26px;
+  }
+
+  .description2 {
+    position: relative;
+    bottom: 44px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto-Regular";
   }
 
   .btn_explorer {
@@ -61,16 +81,16 @@
     text-decoration: none;
     display: inline-block;
     box-shadow: 0px 2px 2px grey;
+    bottom: 35px;
+    position: relative;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 25px;
+    position: relative;
+    left: 18px;
     font-weight: bold;
     text-align: left;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    padding-bottom: 7px;
-    padding-top: 10px;
     font-family: "Roboto-Regular";
   }
 
@@ -87,11 +107,13 @@
     color: black;
     font-weight: bold;
     margin-bottom: 25px;
+    margin-top: 30px;
     padding-bottom: 10px;
     border-radius: 22px 22px 22px 22px;
     font-size: 17px;
     text-align: center;
-    width: 83%;
+    width: 85%;
+    left: 25px;
     background-color: #f7f7f7;
     position: relative;
     height: 60px;
@@ -108,7 +130,8 @@
     border-radius: 22px 22px 22px 22px;
     font-size: 17px;
     text-align: center;
-    width: 83%;
+    width: 85%;
+    left: 25px;
     background-color: #9356DC26;
     position: relative;
     height: 60px;
@@ -133,51 +156,57 @@
   }
 
   .resto {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
+    font-family: "Roboto-Regular";
     text-align: left;
     position: relative;
-    right: 27px;
-    top: -10px;
-  }
-
-  main {
-    margin-left: 20px;
-    margin-right: 20px;
+    right: 18px;
+    bottom: 5px;
   }
 
   .img_resto_1 {
     width: 100%;
+    bottom: -9px;
     position: absolute;
     border-radius: 20px 20px 0px 0px;
-    top: -45px;
-    height: 210px;
-    right: 5px;
   }
 
   .img_resto_2 {
-    width: 96%;
+    width: 100%;
     position: absolute;
     border-radius: 20px 20px 0px 0px;
-    top: -142px;
-    height: 382px;
   }
 
   .img_resto_3 {
-    width: 96%;
+    width: 100%;
     position: absolute;
     border-radius: 20px 20px 0px 0px;
-    top: -46px;
   }
 
   .img_resto_4 {
-    width: 96%;
+    width: 100%;
     position: absolute;
     border-radius: 20px 20px 0px 0px;
-    top: -46px;
   }
 
-  .btn_new {
+  .btn_new1 {
+    background-color: #99E2D0;
+    color: #008766;
+    justify-content: center;
+    display: flex;
+    width: 65px;
+    height: 29px;
+    border-radius: 2px 2px 2px 2px;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+
+  .btn_new2 {
     background-color: #99E2D0;
     color: #008766;
     justify-content: center;
@@ -194,26 +223,27 @@
   }
 
   .frame {
-    width: 290px;
-    height: 214px;
+    width: 345px;
+    height: 228px;
     border-radius: 15px 15px 15px 15px;
     background: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
     left: 15px;
   }
 
   .icone_like:hover {
-    font-size: 25px;
-    top: 10px;
-    left: 280px;
+    position: relative;
+    top: 8px;
+    left: 215px;
+    font-size: 20px;
     background-image: linear-gradient(#FF79DA, #9356DC);
   }
 
   .icone_like {
     position: relative;
-    top: 7px;
-    left: 262px;
+    top: 3px;
+    left: 285px;
     font-size: 20px;
   }
 
@@ -222,8 +252,9 @@
     font-weight: normal;
     position: relative;
     line-height: 35px;
-    top: 0px;
-    right: 174px;
+    top: 15px;
+    right: 156px;
+    font-size: 15px;
   }
 
   .lieu_2 {
@@ -254,11 +285,10 @@
   }
 
   .bloc_resto {
-    background-color: #F2EBEA;
+    background-color: #E9E8E2;
     width: 100%;
     padding-top: 10px;
     position: relative;
-    right: 28px;
   }
 
   footer {
@@ -324,12 +354,39 @@
     margin-left: -10px;
   }
 
-  .img_conteneur {
+  .img_conteneur1 {
     width: 100%;
+    height: 165px;
+    overflow: hidden;
+    position: relative;
+    left: -2px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .img_conteneur2 {
+    width: 102%;
     height: 154px;
     overflow: hidden;
     position: relative;
-    left: 15px;
+    left: -2px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .img_conteneur3 {
+    width: 102%;
+    height: 154px;
+    overflow: hidden;
+    position: relative;
+    left: -2px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .img_conteneur4 {
+    width: 102%;
+    height: 154px;
+    overflow: hidden;
+    position: relative;
+    left: -2px;
     border-radius: 20px 20px 0px 0px;
   }
 
