@@ -296,7 +296,7 @@
     width: 100%;
     padding-top: 25px;
     position: relative;
-    top: 20px;
+    top: 25px;
   }
 
   footer {
@@ -357,6 +357,14 @@
   footer li i {
     margin-right: 10px;
     margin-left: -10px;
+  }
+
+  .mail {
+    font-size: 20px;
+    font-family: "Roboto-Regular";
+    position: relative;
+    left: 15px;
+    bottom: 15px;
   }
 
   .img_conteneur1 {
