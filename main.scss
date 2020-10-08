@@ -14,11 +14,17 @@
     body {
         margin:0px;
     }
-  
+
     h1 {
         text-align: center;
         font-size: 30px;
         font-family: "Shrikhand-Regular";
+        z-index: 3;
+        position: relative;
+        background: white;
+        margin: 0px;
+        height: 50px;
+        line-height: 50px
     }
 
     .localisation {
@@ -30,6 +36,7 @@
         font-size: 15px;
         box-shadow: 0px -1px 0px grey;
         position: relative;
+        font-family: "Roboto-Regular";
     }
 
 
@@ -38,6 +45,7 @@
         text-align: center;
         width: 100%;
         position: relative;
+        font-family: "Roboto-Regular";
     }
 
     .reservation {
@@ -45,6 +53,7 @@
         font-size: 25px;
         font-weight: bold;
         padding-top: 25px;
+        font-family: "Roboto-Regular";
     }
 
     .reservation2 {
@@ -54,6 +63,7 @@
         font-size: 25px;
         font-weight: bold;
         padding-top: 25px;
+        font-family: "Roboto-Regular";
     }
 
     .description {
@@ -86,6 +96,7 @@
         box-shadow: 0px 2px 2px grey;
         bottom: 35px;
         position: relative;
+        font-family: "Roboto-Regular";
     }
 
     h2 {
@@ -95,6 +106,7 @@
         font-weight: bold;
         text-align: left;
         font-family: "Roboto-Regular";
+        bottom: 27px;
     }
 
     .bloc_fonctionnement {
@@ -107,49 +119,50 @@
     }
 
     .slide {
+        font-family: "Roboto-Regular";
         text-decoration: none;
         color: black;
         font-weight: bold;
         margin-bottom: 25px;
-        margin-top: 30px;
         padding-bottom: 10px;
-        border-radius: 22px 22px 22px 22px;
-        font-size:17px;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
         text-align: center;
-        width: 85%;
-        left: 25px;
+        width: 94%;
         background-color: #f7f7f7;
+        margin-left: 20px;
         position: relative;
-        height: 60px;
-        line-height: 80px;
-        box-shadow: 0px 1px 6px grey;
+        height: 70px;
+        line-height: 74px;
+        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
     }
     .slide3 {
+        font-family: "Roboto-Regular";
         text-decoration: none;
         color: black;
         font-weight: bold;
         margin-bottom: 25px;
         padding-bottom: 10px;
-        border-radius: 22px 22px 22px 22px;
-        font-size: 17px;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
         text-align: center;
-        width: 85%;
-        left: 25px;
+        width: 94%;
         background-color: #9356DC26;
+        margin-left: 20px;
         position: relative;
-        height: 60px;
-        line-height: 80px;
-        box-shadow: 0px 1px 6px grey;
+        height: 70px;
+        line-height: 74px;
+        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
     }
 
     .icones_fonctionnement {
         color: grey;
-        margin-right: 9px;
+        margin-right: 22px;
     }
 
     .icones_fonctionnement3 {
         color: #9356DC;
-        margin-right: 9px;
+        margin-right: 22px;
     }
 
     .rond {
@@ -170,7 +183,7 @@
 
     .img_resto_1 {
         width: 100%;
-       bottom: -9px;
+        bottom: -14px;
         position: absolute;
         border-radius: 20px 20px 0px 0px;
        
@@ -179,7 +192,7 @@
     .img_resto_2 {
         width: 100%;
         position: relative;
-        bottom: 160px;
+        bottom: 163px;
         border-radius: 20px 20px 0px 0px;
     }
 
@@ -199,6 +212,7 @@
     }
 
     .btn_new1 {
+        font-family:"Roboto-Regular";
         background-color: #99E2D0;
         color: #008766;
         justify-content: center;
@@ -215,6 +229,7 @@
     }
 
     .btn_new2 {
+        font-family: "Roboto-Regular";
         background-color: #99E2D0;
         color: #008766;
         justify-content: center;
@@ -258,6 +273,7 @@
     }
 
     .lieu_1 {
+        font-family: "Roboto-Regular";
         text-align: left;
         font-weight: normal;
         position: relative;
@@ -268,6 +284,7 @@
     }
 
     .lieu_2 {
+        font-family: "Roboto-Regular";
         text-align: left;
         font-weight: normal;
         position: relative;
@@ -278,6 +295,7 @@
     }
 
     .lieu_3 {
+        font-family: "Roboto-Regular";
         text-align: left;
         font-weight: normal;
         position: relative;
@@ -300,18 +318,20 @@
     .bloc_resto {
         background-color: #E9E8E2;
         width: 100%;
-        padding-top: 25px;
+        padding-top: 57px;
         position: relative;
         top:25px;
     }
 
     footer {
+        font-family: "Roboto-Regular";
         background-color: #3B444C;
         color: white;
         font-size: 20px;
         text-align: left;
-         width: 100%;
-        height: 220px;
+        width: 100%;
+        height: 225px;
+
     }
 
     .numero {
@@ -327,6 +347,7 @@
         position: absolute;
         top: calc((70px - 30px)/2);
         left: -15px;
+        font-size:17px;
     }
 
     .contenu {
@@ -345,13 +366,23 @@
         right: -20px;
     }
 
-    .icones_footer {
+    .icones_footer1 {
         color: white;
         padding: 10px;
         position: relative;
         top: 5px;
         right: 1px;
     }
+
+    .icones_footer2 {
+        color: white;
+        padding: 9px;
+        position: relative;
+        top: 5px;
+        right: 1px;
+        margin-right:2px;
+    }
+
 
     footer li {
         list-style: none;
@@ -360,6 +391,7 @@
         right: 7px;
         line-height: 29px;
         text-decoration:none;
+        margin-bottom:5px;
 
         i {
             margin-right: 10px;
@@ -419,8 +451,27 @@
 
     .img_menu1 {
         width: 100%;
-        height: 225px;
+        margin-top: 6px;
+        z-index: 2;
+        position: relative;
     }
+
+    .img_menu2 {
+        width: 100%;
+        margin-top: 6px;
+        z-index: 2;
+        position: relative;
+        margin-top: -100px;
+    }
+
+    .img_menu4 {
+        width: 100%;
+        margin-top: 6px;
+        z-index: 2;
+        position: relative;
+        margin-top: 5px;
+    }
+
 
     .icone_like_menus {
         position: relative;
@@ -439,7 +490,7 @@
         top: 6px;
     }
 
-    .menu_frame {
+    .menu_frame1 {
         background-color: #EEE8E3;
         border-radius: 40px 40px 0px 0px;
         z-index: 2;
@@ -449,8 +500,32 @@
         padding-top: 40px;
         bottom:40px;
         padding-bottom:40px;
-        margin-bottom:-60px;
+    }
 
+    .menu_frame2 {
+        background-color: #EEE8E3;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 2;
+        width: 100%;
+        //bottom: 43px;
+        position: relative;
+        padding-top: 40px;
+        bottom: 40px;
+        padding-bottom: 40px;
+        margin-top:-117px;
+    }
+
+    .menu_frame4 {
+        background-color: #EEE8E3;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 2;
+        width: 100%;
+        //bottom: 43px;
+        position: relative;
+        padding-top: 40px;
+        bottom: 40px;
+        padding-bottom: 40px;
+        margin-top: -15px;
     }
 
     .contenant {
@@ -466,19 +541,22 @@
     }
 
     .nom_entree {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         text-align: left;
+        font-family: "Roboto-Regular";
     }
 
     .ingredient {
         font-size: 15px;
         font-weight: normal;
         text-align: left;
+        font-family: "Roboto-Regular";
     }
 
 
     .entree {
+        font-family:"Roboto-Regular";
         color: black;
         font-size: 15px;
         text-align: left;
@@ -495,14 +573,17 @@
         visibility: visible;
         position: relative;
         background-color: #99E2D0;
+        top:5px;
     }
 
     .nom_plat {
-        font-size: 20px;
+        font-family: "Roboto-Regular";
+        font-size: 15px;
         font-weight: bold;
     }
 
     .plat {
+        font-family: "Roboto-Regular";
         color: black;
         font-size: 15px;
         text-align: left;
@@ -513,6 +594,7 @@
     }
 
     .dessert {
+        font-family: "Roboto-Regular";
         color: black;
         font-size: 15px;
         text-align: left;
@@ -523,11 +605,13 @@
     }
 
     .nom_dessert {
-        font-size: 20px;
+        font-family: "Roboto-Regular";
+        font-size: 15px;
         font-weight: bold;
     }
 
     .btn_commander {
+        font-family: "Roboto-Regular";
         border-radius: 25px 25px 25px 25px;
         text-align: center;
         color: white;
@@ -551,9 +635,10 @@
     }
 
     .price {
+        font-family: "Roboto-Regular";
         font-weight: bold;
         position: relative;
-        left: 290px;
+        left: 260px;
         bottom: 19px;
     }
 }
@@ -642,7 +727,7 @@
         position: relative;
         height: 70px;
         line-height: 74px;
-        box-shadow: 0px 1px grey;
+        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
     }
 
     .icones_fonctionnement {
