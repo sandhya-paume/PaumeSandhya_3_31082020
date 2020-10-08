@@ -359,6 +359,7 @@
         top: 1px;
         right: 7px;
         line-height: 29px;
+        text-decoration:none;
 
         i {
             margin-right: 10px;
@@ -366,15 +367,13 @@
         }
     }
 
-    .mail{
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-        position: relative;
-        left: 15px;
-        bottom: 15px;
+    .contact {
+        text-decoration: none;
+        color: white;
+        color: white;
     }
-
-    .img_conteneur1 {
+        
+        .img_conteneur1 {
         width: 100%;
         height: 165px;
         overflow: hidden;
@@ -414,6 +413,8 @@
     bottom:0px;
     right:75px;
     font-size: 20px;
+    text-decoration: none;
+    color: black;
     }
 
     .img_menu1 {
