@@ -1,18 +1,29 @@
 @font-face {
     font-family: "Shrikhand-Regular";
-    src: url('../style/Shrikhand-Regular.ttf');
+    src: url("../style/Shrikhand-Regular.ttf");
 }
+
 @font-face {
     font-family: "Roboto-Regular";
-    src: url('../style/Roboto-Regular.ttf');
+    src: url("../style/Roboto-Regular.ttf");
 }
 /*/---------------------------------------------------------------------------------------------------- Media Smartphone -----------------------------------------------------------------------------------------------------------------/*/
-@media only screen and (max-width:480px) {
-
+@media only screen and (max-width: 480px) {
     /*/--------- Page Principale----------/*/
 
     body {
-        margin:0px;
+        margin: 0px;
+    }
+
+    .loader {
+        position: fixed;
+        z-index: 9999;
+        background: url('loader_spinner.gif') 50% 50% no-repeat;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        cursor: wait;
     }
 
     h1 {
@@ -24,7 +35,7 @@
         background: white;
         margin: 0px;
         height: 50px;
-        line-height: 50px
+        line-height: 50px;
     }
 
     .localisation {
@@ -39,9 +50,8 @@
         font-family: "Roboto-Regular";
     }
 
-
     .bloc_resa {
-        background-color: #E9E8E2;
+        background-color: #e9e8e2;
         text-align: center;
         width: 100%;
         position: relative;
@@ -101,7 +111,7 @@
 
     h2 {
         font-size: 25px;
-        position:relative;
+        position: relative;
         left: 18px;
         font-weight: bold;
         text-align: left;
@@ -115,7 +125,6 @@
         position: relative;
         padding-bottom: 40px;
         padding-top: 12px;
-    
     }
 
     .slide {
@@ -134,8 +143,9 @@
         position: relative;
         height: 70px;
         line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
+
     .slide3 {
         font-family: "Roboto-Regular";
         text-decoration: none;
@@ -147,12 +157,12 @@
         font-size: 20px;
         text-align: center;
         width: 94%;
-        background-color: #9356DC26;
+        background-color: #9356dc26;
         margin-left: 20px;
         position: relative;
         height: 70px;
         line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
 
     .icones_fonctionnement {
@@ -161,7 +171,7 @@
     }
 
     .icones_fonctionnement3 {
-        color: #9356DC;
+        color: #9356dc;
         margin-right: 22px;
     }
 
@@ -186,7 +196,6 @@
         bottom: -14px;
         position: absolute;
         border-radius: 20px 20px 0px 0px;
-       
     }
 
     .img_resto_2 {
@@ -201,7 +210,6 @@
         position: relative;
         bottom: 68px;
         border-radius: 20px 20px 0px 0px;
-       
     }
 
     .img_resto_4 {
@@ -212,8 +220,8 @@
     }
 
     .btn_new1 {
-        font-family:"Roboto-Regular";
-        background-color: #99E2D0;
+        font-family: "Roboto-Regular";
+        background-color: #99e2d0;
         color: #008766;
         justify-content: center;
         display: flex;
@@ -230,7 +238,7 @@
 
     .btn_new2 {
         font-family: "Roboto-Regular";
-        background-color: #99E2D0;
+        background-color: #99e2d0;
         color: #008766;
         justify-content: center;
         display: flex;
@@ -251,7 +259,7 @@
         border-radius: 15px 15px 15px 15px;
         background: white;
         margin-bottom: 24px;
-        bottom:15px;
+        bottom: 15px;
         position: relative;
         left: 15px;
     }
@@ -261,7 +269,7 @@
         top: 8px;
         left: 215px;
         font-size: 20px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
+        background-image: linear-gradient(#ff79da, #9356dc);
     }
 
     .icone_like_homepage {
@@ -269,7 +277,6 @@
         top: 3px;
         left: 285px;
         font-size: 20px;
-        
     }
 
     .lieu_1 {
@@ -316,22 +323,21 @@
     }
 
     .bloc_resto {
-        background-color: #E9E8E2;
+        background-color: #e9e8e2;
         width: 100%;
         padding-top: 57px;
         position: relative;
-        top:25px;
+        top: 25px;
     }
 
     footer {
         font-family: "Roboto-Regular";
-        background-color: #3B444C;
+        background-color: #3b444c;
         color: white;
         font-size: 20px;
         text-align: left;
         width: 100%;
         height: 225px;
-
     }
 
     .numero {
@@ -340,14 +346,14 @@
         height: 30px;
         border: solid;
         border-radius: 100%;
-        background-color: #9356DC;
+        background-color: #9356dc;
         color: white;
         text-align: center;
         line-height: 30px;
         position: absolute;
-        top: calc((70px - 30px)/2);
+        top: calc((70px - 30px) / 2);
         left: -15px;
-        font-size:17px;
+        font-size: 17px;
     }
 
     .contenu {
@@ -380,9 +386,8 @@
         position: relative;
         top: 5px;
         right: 1px;
-        margin-right:2px;
+        margin-right: 2px;
     }
-
 
     footer li {
         list-style: none;
@@ -390,8 +395,8 @@
         top: 1px;
         right: 7px;
         line-height: 29px;
-        text-decoration:none;
-        margin-bottom:5px;
+        text-decoration: none;
+        margin-bottom: 5px;
 
         i {
             margin-right: 10px;
@@ -404,8 +409,8 @@
         color: white;
         color: white;
     }
-        
-        .img_conteneur1 {
+
+    .img_conteneur1 {
         width: 100%;
         height: 165px;
         overflow: hidden;
@@ -437,16 +442,15 @@
         border-radius: 20px 20px 0px 0px;
     }
 
-
     /*/------------Menu 1-2-3-4------------/*/
 
-    .fleche{
-    position: relative;
-    bottom:0px;
-    right:75px;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
+    .fleche {
+        position: relative;
+        bottom: 0px;
+        right: 75px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
     }
 
     .img_menu1 {
@@ -472,7 +476,6 @@
         margin-top: 5px;
     }
 
-
     .icone_like_menus {
         position: relative;
         left: 65px;
@@ -491,19 +494,7 @@
     }
 
     .menu_frame1 {
-        background-color: #EEE8E3;
-        border-radius: 40px 40px 0px 0px;
-        z-index: 2;
-        width: 100%;
-        //bottom: 43px;
-        position: relative;
-        padding-top: 40px;
-        bottom:40px;
-        padding-bottom:40px;
-    }
-
-    .menu_frame2 {
-        background-color: #EEE8E3;
+        background-color: #eee8e3;
         border-radius: 40px 40px 0px 0px;
         z-index: 2;
         width: 100%;
@@ -512,11 +503,23 @@
         padding-top: 40px;
         bottom: 40px;
         padding-bottom: 40px;
-        margin-top:-117px;
+    }
+
+    .menu_frame2 {
+        background-color: #eee8e3;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 2;
+        width: 100%;
+        //bottom: 43px;
+        position: relative;
+        padding-top: 40px;
+        bottom: 40px;
+        padding-bottom: 40px;
+        margin-top: -117px;
     }
 
     .menu_frame4 {
-        background-color: #EEE8E3;
+        background-color: #eee8e3;
         border-radius: 40px 40px 0px 0px;
         z-index: 2;
         width: 100%;
@@ -528,7 +531,7 @@
         margin-top: -15px;
     }
 
-    .contenant {
+    .contenant_1 {
         background-color: white;
         width: 325px;
         height: 40px;
@@ -538,6 +541,207 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
+        transition-delay: 100ms;
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari et Chrome */
+        -o-animation: fadein 1s; /* Opera */
+    }
+
+    .contenant_2 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 105ms;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari et Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+
+    .contenant_3 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 110ms;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari et Chrome */
+        -o-animation: fadein 3s; /* Opera */
+    }
+
+    .contenant_4 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 115ms;
+        animation: fadein 4s;
+        -moz-animation: fadein 4s; /* Firefox */
+        -webkit-animation: fadein 4s; /* Safari et Chrome */
+        -o-animation: fadein 4s; /* Opera */
+    }
+
+    .contenant_5 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 120ms;
+        animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
+    }
+
+    .contenant_6 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 125ms;
+        animation: fadein 6s;
+        -moz-animation: fadein 6s; /* Firefox */
+        -webkit-animation: fadein 6s; /* Safari et Chrome */
+        -o-animation: fadein 4s; /* Opera */
+    }
+
+    .contenant_7 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 130ms;
+        animation: fadein 7s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    .contenant_8 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 135ms;
+        animation: fadein 8s;
+        -moz-animation: fadein 8s; /* Firefox */
+        -webkit-animation: fadein 8s; /* Safari et Chrome */
+        -o-animation: fadein 8s; /* Opera */
+    }
+
+    .contenant_9 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 140ms;
+        animation: fadein 9s;
+        -moz-animation: fadein 9s; /* Firefox */
+        -webkit-animation: fadein 9s; /* Safari et Chrome */
+        -o-animation: fadein 9s; /* Opera */
+    }
+
+    .contenant_10 {
+        background-color: white;
+        width: 325px;
+        height: 40px;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 20px;
+        padding-left: 18px;
+        padding-top: 10px;
+        position: relative;
+        left: 16px;
+        transition-delay: 145ms;
+        animation: fadein 10s;
+        -moz-animation: fadein 10s; /* Firefox */
+        -webkit-animation: fadein 10s; /* Safari et Chrome */
+        -o-animation: fadein 10s; /* Opera */
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* sur Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* sur Safari et Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* sur Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .nom_entree {
@@ -554,9 +758,8 @@
         font-family: "Roboto-Regular";
     }
 
-
     .entree {
-        font-family:"Roboto-Regular";
+        font-family: "Roboto-Regular";
         color: black;
         font-size: 15px;
         text-align: left;
@@ -572,8 +775,8 @@
         width: 40px;
         visibility: visible;
         position: relative;
-        background-color: #99E2D0;
-        top:5px;
+        background-color: #99e2d0;
+        top: 5px;
     }
 
     .nom_plat {
@@ -618,7 +821,7 @@
         display: block;
         margin: auto;
         font-size: 15px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
+        background-image: linear-gradient(#ff79da, #9356dc);
         width: 180px;
         height: 55px;
         border: none;
@@ -626,7 +829,7 @@
         top: 10px;
         bottom: 10px;
         margin-top: 20px;
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
 
     header {
@@ -641,8 +844,21 @@
         left: 260px;
         bottom: 19px;
     }
-}
 
+    .bloc_vert {
+        position: relative;
+        left: 30px;
+        right: 0px;
+        overflow: hidden;
+        background-color: #99e2d0;
+    }
+
+    .bloc_vert:hover {
+        right: 0px;
+        transition: right 2s;
+        background-color: #99e2d0;
+    }
+}
 
 /*/-------------------------------------------------------------------------------------------- Media Tablettes -----------------------------------------------------------------------------------------------------------------------/*/
 @media only screen and (min-width:481px) and (max-width:1149px) {

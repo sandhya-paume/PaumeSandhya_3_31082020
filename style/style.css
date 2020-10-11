@@ -13,6 +13,17 @@
     margin: 0px;
   }
 
+  .loader {
+    position: fixed;
+    z-index: 9999;
+    background: url("loader_spinner.gif") 50% 50% no-repeat;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: wait;
+  }
+
   h1 {
     text-align: center;
     font-size: 30px;
@@ -38,7 +49,7 @@
   }
 
   .bloc_resa {
-    background-color: #E9E8E2;
+    background-color: #e9e8e2;
     text-align: center;
     width: 100%;
     position: relative;
@@ -144,7 +155,7 @@
     font-size: 20px;
     text-align: center;
     width: 94%;
-    background-color: #9356DC26;
+    background-color: #9356dc26;
     margin-left: 20px;
     position: relative;
     height: 70px;
@@ -158,7 +169,7 @@
   }
 
   .icones_fonctionnement3 {
-    color: #9356DC;
+    color: #9356dc;
     margin-right: 22px;
   }
 
@@ -208,7 +219,7 @@
 
   .btn_new1 {
     font-family: "Roboto-Regular";
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #008766;
     justify-content: center;
     display: flex;
@@ -225,7 +236,7 @@
 
   .btn_new2 {
     font-family: "Roboto-Regular";
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #008766;
     justify-content: center;
     display: flex;
@@ -256,7 +267,7 @@
     top: 8px;
     left: 215px;
     font-size: 20px;
-    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-image: linear-gradient(#ff79da, #9356dc);
   }
 
   .icone_like_homepage {
@@ -310,7 +321,7 @@
   }
 
   .bloc_resto {
-    background-color: #E9E8E2;
+    background-color: #e9e8e2;
     width: 100%;
     padding-top: 57px;
     position: relative;
@@ -319,7 +330,7 @@
 
   footer {
     font-family: "Roboto-Regular";
-    background-color: #3B444C;
+    background-color: #3b444c;
     color: white;
     font-size: 20px;
     text-align: left;
@@ -333,12 +344,12 @@
     height: 30px;
     border: solid;
     border-radius: 100%;
-    background-color: #9356DC;
+    background-color: #9356dc;
     color: white;
     text-align: center;
     line-height: 30px;
     position: absolute;
-    top: calc((70px - 30px)/2);
+    top: calc((70px - 30px) / 2);
     left: -15px;
     font-size: 17px;
   }
@@ -479,7 +490,7 @@
   }
 
   .menu_frame1 {
-    background-color: #EEE8E3;
+    background-color: #eee8e3;
     border-radius: 40px 40px 0px 0px;
     z-index: 2;
     width: 100%;
@@ -490,7 +501,7 @@
   }
 
   .menu_frame2 {
-    background-color: #EEE8E3;
+    background-color: #eee8e3;
     border-radius: 40px 40px 0px 0px;
     z-index: 2;
     width: 100%;
@@ -502,7 +513,7 @@
   }
 
   .menu_frame4 {
-    background-color: #EEE8E3;
+    background-color: #eee8e3;
     border-radius: 40px 40px 0px 0px;
     z-index: 2;
     width: 100%;
@@ -513,7 +524,7 @@
     margin-top: -15px;
   }
 
-  .contenant {
+  .contenant_1 {
     background-color: white;
     width: 325px;
     height: 40px;
@@ -523,8 +534,231 @@
     padding-top: 10px;
     position: relative;
     left: 16px;
+    transition-delay: 100ms;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari et Chrome */
+    -o-animation: fadein 1s;
+    /* Opera */
   }
 
+  .contenant_2 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 105ms;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari et Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+  }
+
+  .contenant_3 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 110ms;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari et Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */
+  }
+
+  .contenant_4 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 115ms;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari et Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+  }
+
+  .contenant_5 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 120ms;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    /* Firefox */
+    -webkit-animation: fadein 5s;
+    /* Safari et Chrome */
+    -o-animation: fadein 5s;
+    /* Opera */
+  }
+
+  .contenant_6 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 125ms;
+    animation: fadein 6s;
+    -moz-animation: fadein 6s;
+    /* Firefox */
+    -webkit-animation: fadein 6s;
+    /* Safari et Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+  }
+
+  .contenant_7 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 130ms;
+    animation: fadein 7s;
+    -moz-animation: fadein 7s;
+    /* Firefox */
+    -webkit-animation: fadein 7s;
+    /* Safari et Chrome */
+    -o-animation: fadein 7s;
+    /* Opera */
+  }
+
+  .contenant_8 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 135ms;
+    animation: fadein 8s;
+    -moz-animation: fadein 8s;
+    /* Firefox */
+    -webkit-animation: fadein 8s;
+    /* Safari et Chrome */
+    -o-animation: fadein 8s;
+    /* Opera */
+  }
+
+  .contenant_9 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 140ms;
+    animation: fadein 9s;
+    -moz-animation: fadein 9s;
+    /* Firefox */
+    -webkit-animation: fadein 9s;
+    /* Safari et Chrome */
+    -o-animation: fadein 9s;
+    /* Opera */
+  }
+
+  .contenant_10 {
+    background-color: white;
+    width: 325px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    padding-top: 10px;
+    position: relative;
+    left: 16px;
+    transition-delay: 145ms;
+    animation: fadein 10s;
+    -moz-animation: fadein 10s;
+    /* Firefox */
+    -webkit-animation: fadein 10s;
+    /* Safari et Chrome */
+    -o-animation: fadein 10s;
+    /* Opera */
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadein {
+    /* sur Firefox */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadein {
+    /* sur Safari et Chrome */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadein {
+    /* sur Opera */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .nom_entree {
     font-size: 15px;
     font-weight: bold;
@@ -556,7 +790,7 @@
     width: 40px;
     visibility: visible;
     position: relative;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     top: 5px;
   }
 
@@ -602,7 +836,7 @@
     display: block;
     margin: auto;
     font-size: 15px;
-    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-image: linear-gradient(#ff79da, #9356dc);
     width: 180px;
     height: 55px;
     border: none;
@@ -624,6 +858,20 @@
     position: relative;
     left: 260px;
     bottom: 19px;
+  }
+
+  .bloc_vert {
+    position: relative;
+    left: 30px;
+    right: 0px;
+    overflow: hidden;
+    background-color: #99e2d0;
+  }
+
+  .bloc_vert:hover {
+    right: 0px;
+    transition: right 2s;
+    background-color: #99e2d0;
   }
 }
 /*/-------------------------------------------------------------------------------------------- Media Tablettes -----------------------------------------------------------------------------------------------------------------------/*/
