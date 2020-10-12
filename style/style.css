@@ -1060,7 +1060,7 @@
     color: #008766;
     justify-content: center;
     display: flex;
-    width: 86px;
+    width: 110px;
     height: 30px;
     border-radius: 2px 2px 2px 2px;
     font-weight: bold;
@@ -1075,7 +1075,7 @@
     color: #008766;
     justify-content: center;
     display: flex;
-    width: 86px;
+    width: 110px;
     height: 30px;
     border-radius: 2px 2px 2px 2px;
     font-weight: bold;
@@ -1127,7 +1127,7 @@
     position: relative;
     line-height: 35px;
     top: 190px;
-    right: 205px;
+    right: 250px;
     font-size: 20px;
   }
 
@@ -1136,8 +1136,8 @@
     font-weight: normal;
     position: relative;
     line-height: 35px;
-    top: 180px;
-    right: 205px;
+    top: 188px;
+    right: 252px;
     font-size: 20px;
   }
 
@@ -1147,7 +1147,7 @@
     position: relative;
     line-height: 35px;
     top: 190px;
-    right: 160px;
+    right: 243px;
     font-size: 20px;
   }
 
@@ -1173,7 +1173,7 @@
     text-align: left;
     margin: 5px;
     width: 100%;
-    height: 220px;
+    height: 690px;
   }
 
   .numero {
@@ -1198,9 +1198,9 @@
   h3 {
     font-family: "Shrikhand-Regular";
     text-align: left;
-    font-size: 20px;
-    font-family: Shrikhand-Regular;
+    font-size: 25px;
     color: white;
+    font-weight: 100;
     margin-bottom: 20px;
     padding: 10px;
     position: relative;
@@ -1208,9 +1208,17 @@
     right: -20px;
   }
 
-  .icones_footer {
+  .icones_footer1 {
     color: white;
     padding: 10px;
+    position: relative;
+    top: 5px;
+    right: 1px;
+  }
+
+  .icones_footer2 {
+    color: white;
+    padding: 5px;
     position: relative;
     top: 5px;
     right: 1px;
@@ -1219,13 +1227,18 @@
   footer li {
     list-style: none;
     position: relative;
-    top: 1px;
     right: 7px;
-    line-height: 29px;
+    line-height: 30px;
   }
   footer li i {
     margin-right: 10px;
     margin-left: -10px;
+  }
+
+  .contact {
+    text-decoration: none;
+    color: white;
+    color: white;
   }
 
   .img_conteneur1 {
