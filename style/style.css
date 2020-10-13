@@ -523,23 +523,34 @@
   .contenant_1 {
     background-color: white;
     width: 325px;
-    height: 40px;
+    max-height: 80px;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    display: flex;
     transition-delay: 100ms;
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    /* Firefox */
-    -webkit-animation: fadein 1s;
-    /* Safari et Chrome */
-    -o-animation: fadein 1s;
-    /* Opera */
   }
 
+  /* animation: fadein 1s;
+  -moz-animation: fadein 1s; 
+  -webkit-animation: fadein 1s; 
+  -o-animation: fadein 1s; */
+  .contenant_left {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .bloc_vert {
+    background-color: #99e2d0;
+    height: 100px;
+    width: 20%;
+  }
+
+  /*/.contenant:hover .bloc_vert {
+      right: 0px;
+      transition: right 2s;
+      background-color: #99e2d0;
+  }/*/
   .contenant_2 {
     background-color: white;
     width: 325px;
@@ -829,9 +840,8 @@
   .price {
     font-family: "Roboto-Regular";
     font-weight: bold;
-    position: relative;
-    left: 260px;
-    bottom: 19px;
+    position: absolute;
+    right: 20px;
     font-size: 15px;
   }
 
@@ -842,20 +852,6 @@
     left: 263px;
     bottom: 50px;
     font-size: 15px;
-  }
-
-  .bloc_vert {
-    position: relative;
-    left: 30px;
-    right: 0px;
-    overflow: hidden;
-    background-color: #99e2d0;
-  }
-
-  .bloc_vert:hover {
-    right: 0px;
-    transition: right 2s;
-    background-color: #99e2d0;
   }
 
   /*/---Animation---/*/
@@ -1161,7 +1157,7 @@
     position: relative;
     line-height: 35px;
     top: 190px;
-    right: 250px;
+    right: 215px;
     font-size: 20px;
     font-family: "Roboto-Regular";
   }
@@ -1172,8 +1168,9 @@
     position: relative;
     line-height: 35px;
     top: 188px;
-    right: 252px;
+    right: 220px;
     font-size: 20px;
+    font-family: "Roboto-Regular";
   }
 
   .lieu_3 {
@@ -1182,7 +1179,7 @@
     position: relative;
     line-height: 35px;
     top: 190px;
-    right: 193px;
+    right: 167px;
     font-size: 20px;
     font-family: "Roboto-Regular";
   }
@@ -1193,7 +1190,7 @@
     position: relative;
     line-height: 35px;
     top: 190px;
-    right: 245px;
+    right: 217px;
     font-size: 20px;
     font-family: "Roboto-Regular";
   }
@@ -1201,6 +1198,8 @@
   .bloc_resto {
     background-color: #F2EBEA;
     width: 100%;
+    position: relative;
+    top: 50px;
   }
 
   footer {
