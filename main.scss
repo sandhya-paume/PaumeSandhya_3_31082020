@@ -698,49 +698,6 @@
         -o-animation: fadein 10s; /* Opera */
     }
 
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-moz-keyframes fadein {
-        /* sur Firefox */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes fadein {
-        /* sur Safari et Chrome */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-o-keyframes fadein {
-        /* sur Opera */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
     .nom_entree {
         font-size: 15px;
         font-weight: bold;
@@ -854,6 +811,51 @@
         right: 0px;
         transition: right 2s;
         background-color: #99e2d0;
+    }
+
+    /*/---Animation---/*/
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* sur Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* sur Safari et Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* sur Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 }
 
@@ -1344,6 +1346,18 @@
         font-size: 30px;
     }
 
+    .icone_like_menu3 {
+        position: relative;
+        left: 300px;
+        font-size: 30px;
+    }
+
+    .icone_like_menu3:hover {
+        position: relative;
+        left: 300px;
+        font-size: 30px;
+        background-color: linear-gradient(#ff79da, #9356dc);
+    }
 
     .icone_like_menus:hover {
         position: relative;
@@ -1359,7 +1373,12 @@
         margin-left: 20px;
         border-radius: 30px 30px 30px 30px;
         position: relative;
-        bottom: 35px; 
+        bottom: 35px;
+        transition-delay: 100ms;
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari et Chrome */
+        -o-animation: fadein 1s; /* Opera */
     }
 
     .contenant_2 {
@@ -1370,6 +1389,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 105ms;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari et Chrome */
+        -o-animation: fadein 2s; /* Opera */
     }
 
     .contenant_3 {
@@ -1380,6 +1404,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 110ms;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari et Chrome */
+        -o-animation: fadein 3s; /* Opera */
     }
 
     .contenant_4 {
@@ -1390,6 +1419,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 115ms;
+        animation: fadein 4s;
+        -moz-animation: fadein 4s; /* Firefox */
+        -webkit-animation: fadein 4s; /* Safari et Chrome */
+        -o-animation: fadein 4s; /* Opera */
     }
 
     .legumes {
@@ -1412,6 +1446,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 120ms;
+        animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
     }
 
     .contenant_6 {
@@ -1422,6 +1461,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 125ms;
+        animation: fadein 6s;
+        -moz-animation: fadein 6s; /* Firefox */
+        -webkit-animation: fadein 6s; /* Safari et Chrome */
+        -o-animation: fadein 6s; /* Opera */
     }
 
     .contenant_7 {
@@ -1432,6 +1476,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 130ms;
+        animation: fadein 7s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
     }
 
     .contenant_8 {
@@ -1442,6 +1491,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 135ms;
+        animation: fadein 8s;
+        -moz-animation: fadein 8s; /* Firefox */
+        -webkit-animation: fadein 8s; /* Safari et Chrome */
+        -o-animation: fadein 8s; /* Opera */
     }
 
     .contenant_9 {
@@ -1452,6 +1506,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 140ms;
+        animation: fadein 9s;
+        -moz-animation: fadein 9s; /* Firefox */
+        -webkit-animation: fadein 9s; /* Safari et Chrome */
+        -o-animation: fadein 9s; /* Opera */
     }
 
     .contenant_10 {
@@ -1462,6 +1521,11 @@
         border-radius: 30px 30px 30px 30px;
         position: relative;
         bottom: 35px;
+        transition-delay: 145ms;
+        animation: fadein 10s;
+        -moz-animation: fadein 10s; /* Firefox */
+        -webkit-animation: fadein 10s; /* Safari et Chrome */
+        -o-animation: fadein 10s; /* Opera */
     }
 
     .nom_entree {
@@ -1576,6 +1640,51 @@
         position: relative;
     }
 
+
+    /*/---Animation---/*/
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* sur Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* sur Safari et Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* sur Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
   
 }
 
