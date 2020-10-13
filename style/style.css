@@ -2164,8 +2164,8 @@
   /*/-------------------Menu 1-2-3-4------------------/*/
   .fleche {
     position: relative;
-    right: 369px;
-    font-size: 35px;
+    right: 500px;
+    font-size: 40px;
     text-decoration: none;
     color: black;
   }
@@ -2226,13 +2226,13 @@
     font-family: "Shrikhand-Regular";
     font-size: 35px;
     position: relative;
-    left: 340px;
+    left: 560px;
     top: 18px;
   }
 
   .icone_like_menus {
     position: relative;
-    left: 235px;
+    left: 365px;
     font-size: 30px;
   }
 
@@ -2471,7 +2471,7 @@
     font-family: "Roboto-Regular";
     font-weight: bold;
     position: relative;
-    left: 875px;
+    left: 1245px;
     bottom: 28px;
   }
 
@@ -2479,7 +2479,7 @@
     font-family: "Roboto-Regular";
     font-weight: bold;
     position: relative;
-    left: 875px;
+    left: 1245px;
     bottom: 50px;
   }
 
