@@ -703,13 +703,16 @@
         font-weight: bold;
         text-align: left;
         font-family: "Roboto-Regular";
+        top: 5px;
+        position: relative;
     }
 
-    .ingredient {
+    .ingredients {
         font-size: 15px;
         font-weight: normal;
         text-align: left;
         font-family: "Roboto-Regular";
+        margin-top: 10px;
     }
 
     .entree {
@@ -737,6 +740,8 @@
         font-family: "Roboto-Regular";
         font-size: 15px;
         font-weight: bold;
+        top: 5px;
+        position: relative;
     }
 
     .plat {
@@ -765,6 +770,14 @@
         font-family: "Roboto-Regular";
         font-size: 15px;
         font-weight: bold;
+        top: 5px;
+        position: relative;
+    }
+
+    .legumes{
+        font-size:15px;
+        position:relative;
+        bottom:5px;
     }
 
     .btn_commander {
@@ -797,6 +810,16 @@
         position: relative;
         left: 260px;
         bottom: 19px;
+        font-size: 15px;
+    }
+
+    .price_plat1_menu1 {
+        font-family: "Roboto-Regular";
+        font-weight: bold;
+        position: relative;
+        left: 263px;
+        bottom: 50px;
+        font-size:15px;
     }
 
     .bloc_vert {
@@ -881,6 +904,7 @@
         text-align: center;
         padding-top: 25px;
         font-size: 20px;
+        font-family: "Roboto-Regular";
     }
 
 
@@ -895,27 +919,29 @@
         text-align: center;
         font-size: 25px;
         font-weight: bold;
-        padding-top:15px;
+        padding-top: 15px;
+        font-family: "Roboto-Regular";
     }
 
     .reservation2 {
         text-align: center;
         font-size: 25px;
         font-weight: bold;
+        font-family: "Roboto-Regular";
     }
 
     .description {
         text-align: center;
         font-size: 25px;
-        font-family: Roboto-Regular;
+        font-family: "Roboto-Regular";
     }
 
     .description2 {
         text-align: center;
         font-size: 25px;
-        font-family: Roboto-Regular;
         position: relative;
         bottom: 15px;
+        font-family: "Roboto-Regular";
     }
 
     .btn_explorer {
@@ -928,6 +954,7 @@
         text-decoration: none;
         display: inline-block;
         box-shadow: 0px 2px grey;
+        font-family: "Roboto-Regular";
     }
 
     h2 {
@@ -937,9 +964,9 @@
         margin-bottom: 25px;
         padding-bottom: 10px;
         padding-top: 10px;
-        font-family: Shrikhand-Regular;
-        position:relative;
-        left:10px;
+        font-family: "Roboto-Regular";
+        position: relative;
+        left: 10px;
     }
 
     .bloc_fonctionnement {
@@ -963,6 +990,7 @@
         height: 70px;
         line-height: 74px;
         box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+        font-family: "Roboto-Regular";
     }
 
     .slide3 {
@@ -982,6 +1010,7 @@
         height: 70px;
         line-height: 74px;
         box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+        font-family: "Roboto-Regular";
     }
 
     .icones_fonctionnement {
@@ -1009,8 +1038,9 @@
         font-weight: bold;
         text-align: left;
         position: relative;
-       right:8px;
-       top: 160px;
+        right: 8px;
+        top: 160px;
+        font-family: "Roboto-Regular";
     }
 
     main {
@@ -1059,9 +1089,10 @@
         top: 30px;
         right: 30px;
         line-height: 30px;
+        font-family: "Roboto-Regular";
     }
 
-    .btn_new2{
+    .btn_new2 {
         background-color: #99E2D0;
         color: #008766;
         justify-content: center;
@@ -1074,6 +1105,7 @@
         top: 30px;
         right: 30px;
         line-height: 30px;
+        font-family: "Roboto-Regular";
     }
 
     .frame {
@@ -1121,6 +1153,7 @@
         top: 190px;
         right: 250px;
         font-size: 20px;
+        font-family: "Roboto-Regular";
     }
 
     .lieu_2 {
@@ -1141,17 +1174,19 @@
         top: 190px;
         right: 193px;
         font-size: 20px;
+        font-family: "Roboto-Regular";
     }
 
-.lieu_4 {
-    text-align: left;
-    font-weight: normal;
-    position: relative;
-    line-height: 35px;
-    top: 190px;
-    right: 245px;
-    font-size: 20px;
-}
+    .lieu_4 {
+        text-align: left;
+        font-weight: normal;
+        position: relative;
+        line-height: 35px;
+        top: 190px;
+        right: 245px;
+        font-size: 20px;
+        font-family: "Roboto-Regular";
+    }
     
 
     .bloc_resto {
@@ -1167,6 +1202,7 @@
         margin: 5px;
         width: 100%;
         height: 690px;
+        font-family: "Roboto-Regular";
     }
 
     .numero {
@@ -1233,6 +1269,7 @@
         text-decoration: none;
         color: white;
         color: white;
+        font-family: "Roboto-Regular";
     }
 
     .img_conteneur1 {
@@ -1430,12 +1467,14 @@
         position: relative;
         bottom: 25px;
         left: 302px;
+        font-family: "Roboto-Regular";
     }
 
     .noire {
         position: relative;
         bottom: 25px;
         left: 308px;
+        font-family: "Roboto-Regular";
     }
 
     .contenant_5 {
@@ -1692,61 +1731,13 @@
 /*/--------------------------------------------------------------------------------------------------- Media PC ---------------------------------------------------------------------------------------------------------------------------/*/
 @media only screen and (min-width:1150px) {
 
-    /*/---------Page principale-----------/*/
-
+    /*/-------------------- Page Principale --------------------/*/
     h1 {
         text-align: center;
-        font-size: 75px;
-        font-family: Shrikhand-Regular;
+        font-size: 50px;
+        font-family: "Shrikhand-Regular";
     }
 
-    .btn_explorer {
-        width:350px ;
-        text-align: center;
-        background-image: linear-gradient(#ff79da, #9356dc);
-        border-radius: 30px;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        box-shadow: 0px 2px grey;
-    }
-
-    .slide {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 18px;
-        padding-bottom: 3px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 25px;
-        text-align: center;
-        width: 50%;
-        background-color: #f7f7f7;
-        margin-left: 395px;
-        position: relative;
-        height: 70px;
-        line-height: 78px;
-        box-shadow: 0px 1px grey;
-    }
-
-    h2 {
-        font-size: 30px;
-        font-weight: bold;
-        position: relative;
-        right:-705px;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-family: Shrikhand-Regular;
-    }
-
-    .bloc_resto {
-        background-color: #F2EBEA;
-        width: 100%;
-    }
-
-    
     .name {
         width: 200px;
         height: 200px;
@@ -1758,7 +1749,8 @@
         width: 100%;
         text-align: center;
         padding-top: 25px;
-        font-size: 20px;
+        font-size: 25px;
+        font-family:"Roboto-Regular";
     }
 
 
@@ -1766,28 +1758,121 @@
         padding-bottom: 50px;
         background-color: #E5EFE7;
         text-align: center;
+        width: 100%;
     }
 
     .reservation {
         text-align: center;
         font-size: 25px;
         font-weight: bold;
+        padding-top: 15px;
+        font-family: "Roboto-Regular";
+    }
+
+    .reservation2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Roboto-Regular";
     }
 
     .description {
         text-align: center;
         font-size: 25px;
-        font-family: Roboto-Regular;
+        font-family: "Roboto-Regular";
+    }
+
+    .description2 {
+        text-align: center;
+        font-size: 25px;
+        font-family: "Roboto-Regular";
+        position: relative;
+        bottom: 15px;
+    }
+
+    .btn_explorer {
+        width: 30%;
+        text-align: center;
+        background-image: linear-gradient(#ff79da, #9356dc);
+        border-radius: 30px;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0px 2px grey;
+        height: 30px;
+        font-size: 20px;
+        font-family: "Roboto-Regular";
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: "Roboto-Regular";
+        position: relative;
+        left: 10px;
     }
 
     .bloc_fonctionnement {
         background-color: white;
+     }
+
+    .slide {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
+        text-align: center;
+        width: 60%;
+        background-color: #f7f7f7;
+        margin-left: 235px;
+        position: relative;
+        left: 19px;
+        height: 70px;
+        line-height: 74px;
+        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+        font-family: "Roboto-Regular";
     }
 
-    
+    .slide3 {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
+        text-align: center;
+        width: 60%;
+        background-color: #9356dc26;
+        margin-left: 235px;
+        position: relative;
+        left: 19px;
+        height: 70px;
+        line-height: 74px;
+        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+        font-family: "Roboto-Regular";
+    }
+
     .icones_fonctionnement {
         color: grey;
         margin-right: 20px;
+        position: relative;
+        right: 235px;
+    }
+
+    .icones_fonctionnement3 {
+        color: #9356dc;
+        margin-right: 20px;
+        position: relative;
+        right: 235px;
     }
 
     .rond {
@@ -1797,69 +1882,81 @@
     }
 
     .resto {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         text-align: left;
         position: relative;
-        right: 27px;
-    }
-
-    main {
-        margin-left: 20px;
-        margin-right: 20px;
+        right: 8px;
+        top: 160px;
     }
 
     .img_resto_1 {
-        width: 100%;
+        width: 700px;
+        height: 300px;
         position: absolute;
         border-radius: 20px 20px 0px 0px;
-        top: -62px;
     }
 
     .img_resto_2 {
-        width: 100%;
-        position: absolute;
+        width: 700px;
+        height: 300px;
+        position: relative;
         border-radius: 20px 20px 0px 0px;
-        top: -175px;
     }
 
     .img_resto_3 {
-        width: 100%;
+        width: 700px;
+        height: 300px;
         position: absolute;
         border-radius: 20px 20px 0px 0px;
-        top: -85px;
     }
 
     .img_resto_4 {
-        width: 100%;
+        width: 700px;
+        height: 300px;
         position: absolute;
         border-radius: 20px 20px 0px 0px;
-        top: -101px;
     }
 
-    .btn_new {
+    .btn_new1 {
         background-color: #99E2D0;
         color: #008766;
         justify-content: center;
         display: flex;
-        width: 100px;
+        width: 110px;
         height: 30px;
         border-radius: 2px 2px 2px 2px;
         font-weight: bold;
         position: absolute;
-        top: 20px;
-        right: 10px;
+        top: 30px;
+        right: 30px;
+        line-height: 30px;
+    }
+
+    .btn_new2 {
+        background-color: #99E2D0;
+        color: #008766;
+        justify-content: center;
+        display: flex;
+        width: 110px;
+        height: 30px;
+        border-radius: 2px 2px 2px 2px;
+        font-weight: bold;
+        position: absolute;
+        top: 30px;
+        right: 30px;
         line-height: 30px;
     }
 
     .frame {
-        width: 375px;
-        height: 230px;
+        width: 700px;
+        height: 400px;
         border-radius: 20px 20px 20px 20px;
         background: white;
         margin: 0 0 15px 0;
-        margin-bottom: 15px;
+        margin-bottom: 50px;
         position: relative;
+        left: 380px;
     }
 
     .icone_like:hover {
@@ -1870,12 +1967,21 @@
         background-image: linear-gradient(#FF79DA, #9356DC);
     }
 
-    .icone_like {
+
+    .icone_like_homepage:hover {
         text-align: right;
-        left: 340px;
         position: relative;
-        top: 13px;
-        left: 317px;
+        top: 170px;
+        left: 600px;
+        font-size: 25px;
+        background-image: linear-gradient(#ff79da, #9356dc);
+    }
+
+    .icone_like_homepage {
+        text-align: right;
+        position: relative;
+        top: 170px;
+        left: 600px;
         font-size: 25px;
     }
 
@@ -1884,8 +1990,9 @@
         font-weight: normal;
         position: relative;
         line-height: 35px;
-        top: 23px;
-        right: 187px;
+        top: 190px;
+        right: 250px;
+        font-size: 20px;
     }
 
     .lieu_2 {
@@ -1893,8 +2000,9 @@
         font-weight: normal;
         position: relative;
         line-height: 35px;
-        top: 23px;
-        right: 188px;
+        top: 188px;
+        right: 252px;
+        font-size: 20px;
     }
 
     .lieu_3 {
@@ -1902,8 +2010,9 @@
         font-weight: normal;
         position: relative;
         line-height: 35px;
-        top: 23px;
-        right: 149px;
+        top: 190px;
+        right: 193px;
+        font-size: 20px;
     }
 
     .lieu_4 {
@@ -1911,8 +2020,15 @@
         font-weight: normal;
         position: relative;
         line-height: 35px;
-        top: 23px;
-        right: 181px;
+        top: 190px;
+        right: 245px;
+        font-size: 20px;
+    }
+
+
+    .bloc_resto {
+        background-color: #F2EBEA;
+        width: 100%;
     }
 
     footer {
@@ -1938,6 +2054,7 @@
         position: absolute;
         top: calc((70px - 30px)/2);
         left: -15px;
+        font-family: "Roboto-Regular";
     }
 
     .contenu {
@@ -1947,9 +2064,9 @@
     h3 {
         font-family: "Shrikhand-Regular";
         text-align: left;
-        font-size: 20px;
-        font-family: Shrikhand-Regular;
+        font-size: 25px;
         color: white;
+        font-weight: 100;
         margin-bottom: 20px;
         padding: 10px;
         position: relative;
@@ -1957,9 +2074,17 @@
         right: -20px;
     }
 
-    .icones_footer {
+    .icones_footer1 {
         color: white;
         padding: 10px;
+        position: relative;
+        top: 5px;
+        right: 1px;
+    }
+
+    .icones_footer2 {
+        color: white;
+        padding: 5px;
         position: relative;
         top: 5px;
         right: 1px;
@@ -1968,9 +2093,8 @@
     footer li {
         list-style: none;
         position: relative;
-        top: 1px;
         right: 7px;
-        line-height: 29px;
+        line-height: 30px;
 
         i {
             margin-right: 10px;
@@ -1978,56 +2102,347 @@
         }
     }
 
-    .img_conteneur {
+    .contact {
+        text-decoration: none;
+        color: white;
+        color: white;
+    }
+
+    .img_conteneur1 {
         width: 100%;
         height: 150px;
-        overflow: hidden;
         position: relative;
         border-radius: 20px 20px 0px 0px;
     }
-    /*/---------Menu 1-2-3-4----------/*/
 
-    .img_menu1 {
-        width: 365px;
-        height: 175px;
+    .img_conteneur2 {
+        width: 100%;
+        height: 154px;
+        position: relative;
+        border-radius: 20px 20px 0px 0px;
     }
 
-    .menu_frame {
-        background-color: #EEE8E3;
+    .img_conteneur3 {
+        width: 100%;
+        height: 150px;
+        position: relative;
         border-radius: 20px 20px 0px 0px;
-        margin-top: -50px;
+    }
+
+    .img_conteneur4 {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .img_conteneur5 {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    /*/-------------------Menu 1-2-3-4------------------/*/
+
+    .fleche {
+        position: relative;
+        right: 369px;
+        font-size: 35px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .img_menu1 {
+        width: 100%;
+        height: 530px;
+    }
+
+    .img_menu2 {
+        width: 100%;
+        height: 530px;
+    }
+
+    .img_menu3 {
+        width: 100%;
+        height: 530px;
+    }
+
+    .img_menu4 {
+        width: 100%;
+        height: 530px;
+    }
+
+    .menu_frame1 {
+        background-color: #EEE8E3;
+        border-radius: 65px 65px 0px 0px;
+        margin-top: -110px;
         z-index: 2;
         position: relative;
     }
 
-    .contenant {
+    .menu_frame2 {
+        background-color: #EEE8E3;
+        border-radius: 65px 65px 0px 0px;
+        margin-top: -110px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .menu_frame3 {
+        background-color: #EEE8E3;
+        border-radius: 65px 65px 0px 0px;
+        margin-top: -110px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .menu_frame4 {
+        background-color: #EEE8E3;
+        border-radius: 65px 65px 0px 0px;
+        margin-top: -110px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .entete_resto {
+        font-family: "Shrikhand-Regular";
+        font-size: 35px;
+        position: relative;
+        left: 340px;
+        top: 18px;
+    }
+
+    .icone_like_menus {
+        position: relative;
+        left: 235px;
+        font-size: 30px;
+    }
+
+    .icone_like_menu3 {
+        position: relative;
+        left: 300px;
+        font-size: 30px;
+    }
+
+    .icone_like_menu3:hover {
+        position: relative;
+        left: 300px;
+        font-size: 30px;
+        background-color: linear-gradient(#ff79da, #9356dc);
+    }
+
+    .icone_like_menus:hover {
+        position: relative;
+        left: 235px;
+        font-size: 30px;
+        background-color: linear-gradient(#ff79da, #9356dc);
+    }
+
+    .contenant_1 {
         background-color: white;
-        width: 350px;
-        height: 50px;
-        border-radius: 20px 20px 20px 20px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-        padding-top: 20px;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 100ms;
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari et Chrome */
+        -o-animation: fadein 1s; /* Opera */
+    }
+
+    .contenant_2 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 105ms;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari et Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+
+    .contenant_3 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 110ms;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari et Chrome */
+        -o-animation: fadein 3s; /* Opera */
+    }
+
+    .contenant_4 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 115ms;
+        animation: fadein 4s;
+        -moz-animation: fadein 4s; /* Firefox */
+        -webkit-animation: fadein 4s; /* Safari et Chrome */
+        -o-animation: fadein 4s; /* Opera */
+    }
+
+    .legumes {
+        position: relative;
+        bottom: 25px;
+        left: 302px;
+    }
+
+    .noire {
+        position: relative;
+        bottom: 25px;
+        left: 308px;
+    }
+
+    .contenant_5 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 120ms;
+        animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
+    }
+
+    .contenant_6 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 125ms;
+        animation: fadein 6s;
+        -moz-animation: fadein 6s; /* Firefox */
+        -webkit-animation: fadein 6s; /* Safari et Chrome */
+        -o-animation: fadein 6s; /* Opera */
+    }
+
+    .contenant_7 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 130ms;
+        animation: fadein 7s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    .contenant_8 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 135ms;
+        animation: fadein 8s;
+        -moz-animation: fadein 8s; /* Firefox */
+        -webkit-animation: fadein 8s; /* Safari et Chrome */
+        -o-animation: fadein 8s; /* Opera */
+    }
+
+    .contenant_9 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 140ms;
+        animation: fadein 9s;
+        -moz-animation: fadein 9s; /* Firefox */
+        -webkit-animation: fadein 9s; /* Safari et Chrome */
+        -o-animation: fadein 9s; /* Opera */
+    }
+
+    .contenant_10 {
+        background-color: white;
+        width: 95%;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+        position: relative;
+        bottom: 35px;
+        transition-delay: 145ms;
+        animation: fadein 10s;
+        -moz-animation: fadein 10s; /* Firefox */
+        -webkit-animation: fadein 10s; /* Safari et Chrome */
+        -o-animation: fadein 10s; /* Opera */
     }
 
     .nom_entree {
+        font-family: "Roboto-Regular";
         font-size: 20px;
         font-weight: bold;
         text-align: left;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        position: relative;
+        top: 10px;
     }
 
-    .ingredient {
-        font-size: 15px;
+    .ingredients {
+        font-family: "Roboto-Regular";
+        font-size: 18px;
         font-weight: normal;
         text-align: left;
+        margin-left: 30px;
+    }
+
+    .price {
+        font-family: "Roboto-Regular";
+        font-weight: bold;
+        position: relative;
+        left: 875px;
+        bottom: 28px;
+    }
+
+    .price_plat1_menu1 {
+        font-family: "Roboto-Regular";
+        font-weight: bold;
+        position: relative;
+        left: 875px;
+        bottom: 50px;
     }
 
 
     .entree {
+        font-family: "Roboto-Regular";
         color: black;
-        font-size: 15px;
+        font-size: 22px;
         text-align: left;
-        padding: 10px;
+        padding: 50px;
     }
 
     .soulignement {
@@ -2036,33 +2451,49 @@
         visibility: visible;
         position: relative;
         background-color: #99E2D0;
+        margin-top: 10px;
     }
 
     .nom_plat {
+        font-family: "Roboto-Regular";
         font-size: 20px;
         font-weight: bold;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        position: relative;
+        top: 10px;
     }
 
     .plat {
+        font-family: "Roboto-Regular";
         color: black;
-        font-size: 15px;
+        font-size: 22px;
         text-align: left;
-        padding: 10px;
+        padding: 50px;
     }
 
     .dessert {
+        font-family: "Roboto-Regular";
         color: black;
-        font-size: 15px;
+        font-size: 22px;
         text-align: left;
-        padding: 10px;
+        padding: 50px;
     }
 
     .nom_dessert {
+        font-family: "Roboto-Regular";
         font-size: 20px;
         font-weight: bold;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        position: relative;
+        top: 10px;
     }
 
     .btn_commander {
+        font-family: "Roboto-Regular";
         border-radius: 25px 25px 25px 25px;
         text-align: center;
         color: white;
@@ -2070,9 +2501,10 @@
         margin: auto;
         font-size: 15px;
         background-image: linear-gradient(#FF79DA, #9356DC);
-        width: 180px;
-        height: 55px;
+        width: 30%;
         border: none;
+        font-size: 20px;
+        height: 50px;
     }
 
     header {
@@ -2080,7 +2512,49 @@
         position: relative;
     }
 
-    .price {
-        font-weight: bold;
+
+    /*/---Animation---/*/
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* sur Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* sur Safari et Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* sur Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 }
