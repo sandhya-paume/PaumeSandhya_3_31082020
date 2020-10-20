@@ -367,6 +367,7 @@
     margin-bottom: 20px;
     padding: 10px;
     padding-left: 30px;
+    font-weight: 100;
   }
 
   .icones_footer1 {
@@ -519,7 +520,6 @@
   .contenant_1 {
     background-color: white;
     width: 325px;
-    color: black;
     cursor: pointer;
     margin: 20px;
     padding-left: 15px;
@@ -589,7 +589,7 @@
     color: white;
     border-radius: 26px 26px;
     transform: rotate(0deg);
-    transition: transform 2s;
+    transition: transform 1s;
     transform-origin: center center;
     position: relative;
     right: 7px;
@@ -605,21 +605,21 @@
     width: 80%;
   }
 
-  .contenant_1:hover .square {
+  .contenant_1:hover .icone_valide {
     transform: rotate(360deg);
     transform-origin: center center;
   }
 
   .contenant_2 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    display: flex;
+    overflow: hidden;
+    padding-left: 15px;
+    max-height: 80px;
     transition-delay: 305ms;
     animation: fadein 4s;
     -moz-animation: fadein 4s;
@@ -630,16 +630,30 @@
     /* Opera */
   }
 
+  .contenant_2:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_2:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_2:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_3 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    max-height: 80px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 310ms;
     animation: fadein 5s;
     -moz-animation: fadein 5s;
@@ -650,16 +664,30 @@
     /* Opera */
   }
 
+  .contenant_3:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_3:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_3:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_4 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    max-height: 80px;
+    margin: 20px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 315ms;
     animation: fadein 6s;
     -moz-animation: fadein 6s;
@@ -670,16 +698,30 @@
     /* Opera */
   }
 
+  .contenant_4:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_4:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_4:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_5 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    max-height: 80px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 320ms;
     animation: fadein 7s;
     -moz-animation: fadein 7s;
@@ -690,16 +732,30 @@
     /* Opera */
   }
 
+  .contenant_5:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_5:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_5:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_6 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    max-height: 80px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 325ms;
     animation: fadein 8s;
     -moz-animation: fadein 8s;
@@ -710,16 +766,30 @@
     /* Opera */
   }
 
+  .contenant_6:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_6:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_6:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_7 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    max-height: 80px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 330ms;
     animation: fadein 9s;
     -moz-animation: fadein 9s;
@@ -730,16 +800,30 @@
     /* Opera */
   }
 
+  .contenant_7:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_7:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_7:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_8 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    max-height: 80px;
+    margin: 20px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 335ms;
     animation: fadein 10s;
     -moz-animation: fadein 10s;
@@ -750,16 +834,30 @@
     /* Opera */
   }
 
+  .contenant_8:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_8:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_8:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_9 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    background-color: white;
+    max-height: 80px;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 340ms;
     animation: fadein 11s;
     -moz-animation: fadein 11s;
@@ -770,16 +868,30 @@
     /* Opera */
   }
 
+  .contenant_9:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_9:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_9:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
   .contenant_10 {
-    background-color: white;
     width: 325px;
-    height: 40px;
+    display: flex;
+    overflow: hidden;
+    max-height: 80px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 10px;
-    position: relative;
-    left: 16px;
+    padding-left: 15px;
     transition-delay: 345ms;
     animation: fadein 12s;
     -moz-animation: fadein 12s;
@@ -788,6 +900,20 @@
     /* Safari et Chrome */
     -o-animation: fadein 12s;
     /* Opera */
+  }
+
+  .contenant_10:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_10:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_10:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
   }
 
   .nom_entree {
