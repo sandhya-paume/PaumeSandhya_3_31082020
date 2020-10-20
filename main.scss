@@ -98,7 +98,7 @@
         font-family: "Roboto-Regular";
     }
 
-    h2 {
+        h2 {
         font-size: 25px;
         position: relative;
         left: 18px;
@@ -327,7 +327,21 @@
         text-align: left;
         width: 100%;
         height: 225px;
+        text-decoration: none;
     }
+
+    .bas_de_page li {
+        list-style: none;
+        line-height: 29px;
+        text-decoration: none;
+        margin-bottom: 5px;
+
+        i {
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+    }
+    
 
     .numero {
         display: block;
@@ -356,9 +370,7 @@
         color: white;
         margin-bottom: 20px;
         padding: 10px;
-        position: relative;
-        top: 15px;
-        right: -20px;
+        padding-left: 30px;
     }
 
     .icones_footer1 {
@@ -377,22 +389,7 @@
         right: 1px;
         margin-right: 2px;
     }
-
-    footer li {
-        list-style: none;
-        position: relative;
-        top: 1px;
-        right: 7px;
-        line-height: 29px;
-        text-decoration: none;
-        margin-bottom: 5px;
-
-        i {
-            margin-right: 10px;
-            margin-left: -10px;
-        }
-    }
-
+       
     .contact {
         text-decoration: none;
         color: white;
@@ -531,15 +528,65 @@
     .contenant_1 {
         background-color: white;
         width: 325px;
+        color: black;
+        cursor: pointer;
+        margin: 20px;
+        padding-left: 15px;
         max-height: 80px;
         border-radius: 20px 20px 20px 20px;
-        display:flex;
-        transition-delay: 100ms;
+        display: flex;
+        transition-delay: 300ms;
+        overflow: hidden;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+        -o-animation: fadein 3s;
+    }
+
+    /*/---Animation---/*/
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
         }
-        /* animation: fadein 1s;
-        -moz-animation: fadein 1s; 
-        -webkit-animation: fadein 1s; 
-        -o-animation: fadein 1s; */
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* sur Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* sur Safari et Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* sur Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
     
 
     .contenant_left{
@@ -547,19 +594,42 @@
         width:100%;
         padding-bottom: 20px;
         padding-top: 10px;
+        transition: width 500ms;
     }
 
-    .bloc_vert {
+    .box {
         background-color: #99e2d0;
-        height: 100px;
-        width: 20%;
+        width: 0;
+        overflow: hidden;
+        transition: all 500ms;
     }
 
-    /*/.contenant:hover .bloc_vert {
-        right: 0px;
-        transition: right 2s;
-        background-color: #99e2d0;
-    }/*/
+    
+    .icone_valide {
+        color: white;
+        border-radius: 26px 26px;
+        transform: rotate(0deg);
+        transition: transform 2s;
+        transform-origin: center center;
+        position: relative;
+        right: 7px;
+        top: 16px;
+    }
+
+    .contenant_1:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_1:hover .contenant_left{
+        width: 80%;
+    }
+
+    .contenant_1:hover .square{
+        transform:rotate(360deg);
+        transform-origin: center center;
+    }
+
 
     .contenant_2 {
         background-color: white;
@@ -571,11 +641,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 105ms;
-        animation: fadein 2s;
-        -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari et Chrome */
-        -o-animation: fadein 2s; /* Opera */
+        transition-delay: 305ms;
+        animation: fadein 4s;
+        -moz-animation: fadein 4s; /* Firefox */
+        -webkit-animation: fadein 4s; /* Safari et Chrome */
+        -o-animation: fadein 4s; /* Opera */
     }
 
     .contenant_3 {
@@ -588,11 +658,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 110ms;
-        animation: fadein 3s;
-        -moz-animation: fadein 3s; /* Firefox */
-        -webkit-animation: fadein 3s; /* Safari et Chrome */
-        -o-animation: fadein 3s; /* Opera */
+        transition-delay: 310ms;
+        animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
     }
 
     .contenant_4 {
@@ -605,11 +675,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 115ms;
-        animation: fadein 4s;
-        -moz-animation: fadein 4s; /* Firefox */
-        -webkit-animation: fadein 4s; /* Safari et Chrome */
-        -o-animation: fadein 4s; /* Opera */
+        transition-delay: 315ms;
+        animation: fadein 6s;
+        -moz-animation: fadein 6s; /* Firefox */
+        -webkit-animation: fadein 6s; /* Safari et Chrome */
+        -o-animation: fadein 6s; /* Opera */
     }
 
     .contenant_5 {
@@ -622,11 +692,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 120ms;
-        animation: fadein 5s;
-        -moz-animation: fadein 5s; /* Firefox */
-        -webkit-animation: fadein 5s; /* Safari et Chrome */
-        -o-animation: fadein 5s; /* Opera */
+        transition-delay: 320ms;
+        animation: fadein 7s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
     }
 
     .contenant_6 {
@@ -639,11 +709,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 125ms;
-        animation: fadein 6s;
-        -moz-animation: fadein 6s; /* Firefox */
-        -webkit-animation: fadein 6s; /* Safari et Chrome */
-        -o-animation: fadein 4s; /* Opera */
+        transition-delay: 325ms;
+        animation: fadein 8s;
+        -moz-animation: fadein 8s; /* Firefox */
+        -webkit-animation: fadein 8s; /* Safari et Chrome */
+        -o-animation: fadein 8s; /* Opera */
     }
 
     .contenant_7 {
@@ -656,11 +726,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 130ms;
-        animation: fadein 7s;
-        -moz-animation: fadein 7s; /* Firefox */
-        -webkit-animation: fadein 7s; /* Safari et Chrome */
-        -o-animation: fadein 7s; /* Opera */
+        transition-delay: 330ms;
+        animation: fadein 9s;
+        -moz-animation: fadein 9s; /* Firefox */
+        -webkit-animation: fadein 9s; /* Safari et Chrome */
+        -o-animation: fadein 9s; /* Opera */
     }
 
     .contenant_8 {
@@ -673,11 +743,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 135ms;
-        animation: fadein 8s;
-        -moz-animation: fadein 8s; /* Firefox */
-        -webkit-animation: fadein 8s; /* Safari et Chrome */
-        -o-animation: fadein 8s; /* Opera */
+        transition-delay: 335ms;
+        animation: fadein 10s;
+        -moz-animation: fadein 10s; /* Firefox */
+        -webkit-animation: fadein 10s; /* Safari et Chrome */
+        -o-animation: fadein 10s; /* Opera */
     }
 
     .contenant_9 {
@@ -690,11 +760,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 140ms;
-        animation: fadein 9s;
-        -moz-animation: fadein 9s; /* Firefox */
-        -webkit-animation: fadein 9s; /* Safari et Chrome */
-        -o-animation: fadein 9s; /* Opera */
+        transition-delay: 340ms;
+        animation: fadein 11s;
+        -moz-animation: fadein 11s; /* Firefox */
+        -webkit-animation: fadein 11s; /* Safari et Chrome */
+        -o-animation: fadein 11s; /* Opera */
     }
 
     .contenant_10 {
@@ -707,11 +777,11 @@
         padding-top: 10px;
         position: relative;
         left: 16px;
-        transition-delay: 145ms;
-        animation: fadein 10s;
-        -moz-animation: fadein 10s; /* Firefox */
-        -webkit-animation: fadein 10s; /* Safari et Chrome */
-        -o-animation: fadein 10s; /* Opera */
+        transition-delay: 345ms;
+        animation: fadein 12s;
+        -moz-animation: fadein 12s; /* Firefox */
+        -webkit-animation: fadein 12s; /* Safari et Chrome */
+        -o-animation: fadein 12s; /* Opera */
     }
 
     .nom_entree {
@@ -825,6 +895,7 @@
         font-weight: bold;
         position: absolute;
         right: 20px;
+        top: 35px;
         font-size: 15px;
     }
 
@@ -839,50 +910,7 @@
 
    
 
-    /*/---Animation---/*/
-
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-moz-keyframes fadein {
-        /* sur Firefox */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes fadein {
-        /* sur Safari et Chrome */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-o-keyframes fadein {
-        /* sur Opera */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
+   
 }
 
 /*/-------------------------------------------------------------------------------------------- Media Tablettes -----------------------------------------------------------------------------------------------------------------------/*/
@@ -1211,6 +1239,18 @@
         font-family: "Roboto-Regular";
     }
 
+    bas_de_page li {
+        list-style: none;
+        position: relative;
+        right: 7px;
+        line-height: 30px;
+
+        i {
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+    }
+
     .numero {
         display: block;
         width: 30px;
@@ -1259,17 +1299,7 @@
         right: 1px;
     }
 
-    footer li {
-        list-style: none;
-        position: relative;
-        right: 7px;
-        line-height: 30px;
-
-        i {
-            margin-right: 10px;
-            margin-left: -10px;
-        }
-    }
+    
 
     .contact {
         text-decoration: none;
@@ -2047,6 +2077,18 @@
         height: 220px;
     }
 
+    bas_de_page li {
+        list-style: none;
+        position: relative;
+        right: 7px;
+        line-height: 30px;
+
+        i {
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+    }
+
     .numero {
         display: block;
         width: 30px;
@@ -2095,19 +2137,7 @@
         top: 5px;
         right: 1px;
     }
-
-    footer li {
-        list-style: none;
-        position: relative;
-        right: 7px;
-        line-height: 30px;
-
-        i {
-            margin-right: 10px;
-            margin-left: -10px;
-        }
-    }
-
+       
     .contact {
         text-decoration: none;
         color: white;
