@@ -3186,3 +3186,55 @@
     }
     }
 
+
+
+//**//Loading_spinner//**//
+
+.msg{
+    text-align: center;
+    font-family: "Roboto-Regular";
+    font-size: 65px;
+    color: black;
+}
+
+.section {
+    background-color: #eee8e3;
+    height: 890px;
+    line-height: 500px;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+   top: 50px;
+    position: relative;
+}
+
+.loading_spinner{
+    position: absolute; 
+    border-radius: 50px;
+    border: 6px solid rgba (255,255,255,0.4)
+}
+
+.loading_spinner:after{
+    content:'';
+    position: absolute;
+    top:-6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
