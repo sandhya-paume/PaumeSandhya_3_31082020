@@ -15,6 +15,76 @@
         margin: 0px;
     }
 
+    //**//Loading_spinner//**//
+
+    .bloc_chargement{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: loading fadein 3s;
+    }
+
+    @keyframes loading{
+        from{
+            opacity:1;
+        }
+        to{
+            opacity:0;
+        }
+    }
+
+    .msg {
+        text-align: center;
+        font-family: "Roboto-Regular";
+        font-size: 65px;
+        color: black;
+    }
+
+    .section {
+        background-color: #eee8e3;
+        height: 890px;
+        line-height: 500px;
+    }
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        top: 50px;
+        position: relative;
+    }
+
+    .loading_spinner {
+        position: absolute;
+        border-radius: 50px;
+        border: 6px solid rgba (255,255,255,0.4)
+    }
+
+    .loading_spinner:after {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        bottom: -6px;
+        right: -6px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color: #FFF;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*/........................./*/
+
     h1 {
         text-align: center;
         font-size: 30px;
@@ -602,6 +672,9 @@
         width: 0;
         overflow: hidden;
         transition: all 500ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -611,9 +684,6 @@
         transform: rotate(0deg);
         transition: transform 1s;
         transform-origin: center center;
-        position: relative;
-        right: 7px;
-        top: 16px;
     }
 
     .contenant_1:hover .box {
@@ -1027,9 +1097,9 @@
     .price_plat1_menu1 {
         font-family: "Roboto-Regular";
         font-weight: bold;
-        position: relative;
-        left: 263px;
-        bottom: 50px;
+        position: absolute;
+        right: 20px;
+        bottom: 26px;
         font-size:15px;
     }
 
@@ -1403,9 +1473,6 @@
         font-weight:100;
         margin-bottom: 20px;
         padding: 10px;
-        position: relative;
-        top: 15px;
-        right: -20px;
         font-weight: 100;
     }
 
@@ -1643,6 +1710,9 @@
         width: 0;
         overflow: hidden;
         transition: all 500ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -1652,9 +1722,6 @@
         transform: rotate(0deg);
         transition: transform 1s;
         transform-origin: center center;
-        position: relative;
-        left: 18px;
-        top: 16px;
     }
 
     .contenant_1:hover .box {
@@ -2008,7 +2075,7 @@
         font-family: "Roboto-Regular";
         font-weight: bold;
         position: absolute;
-        left: 875px;
+        right: 30px;
         bottom: 28px;
 
     }
@@ -2017,7 +2084,7 @@
         font-family: "Roboto-Regular";
         font-weight: bold;
         position: absolute;
-        left: 875px;
+        right: 30px;
         bottom: 50px;
     }
 
@@ -2454,7 +2521,6 @@
         color: white;
         font-size: 20px;
         text-align: left;
-        margin: 5px;
         width: 100%;
         height: 220px;
     }
@@ -2499,9 +2565,6 @@
         font-weight: 100;
         margin-bottom: 20px;
         padding: 10px;
-        position: relative;
-        top: 15px;
-        right: -20px;
         font-weight: 100;
     }
 
@@ -2691,6 +2754,9 @@
         width: 0;
         overflow: hidden;
         transition: all 500ms;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -2700,9 +2766,6 @@
         transform: rotate(0deg);
         transition: transform 1s;
         transform-origin: center center;
-        position: relative;
-        left: 18px;
-        top: 16px;
     }
 
     .contenant_1:hover .box {
@@ -3050,16 +3113,16 @@
     .price {
         font-family: "Roboto-Regular";
         font-weight: bold;
-        position: relative;
-        left: 1245px;
+        position: absolute;
+        right: 30px;
         bottom: 28px;
     }
 
     .price_plat1_menu1 {
         font-family: "Roboto-Regular";
         font-weight: bold;
-        position: relative;
-        left: 1245px;
+        position: absolute;
+        right: 30px;
         bottom: 50px;
     }
 
@@ -3188,53 +3251,3 @@
 
 
 
-//**//Loading_spinner//**//
-
-.msg{
-    text-align: center;
-    font-family: "Roboto-Regular";
-    font-size: 65px;
-    color: black;
-}
-
-.section {
-    background-color: #eee8e3;
-    height: 890px;
-    line-height: 500px;
-}
-
-.loader{
-    width: 50px;
-    height: 50px;
-    display:inline-block;
-   top: 50px;
-    position: relative;
-}
-
-.loading_spinner{
-    position: absolute; 
-    border-radius: 50px;
-    border: 6px solid rgba (255,255,255,0.4)
-}
-
-.loading_spinner:after{
-    content:'';
-    position: absolute;
-    top:-6px;
-    left: -6px;
-    bottom: -6px;
-    right: -6px;
-    border-radius: 50px;
-    border: 6px solid transparent;
-    border-top-color: #FFF;
-    animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
