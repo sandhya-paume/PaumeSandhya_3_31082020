@@ -657,14 +657,16 @@
             opacity: 1;
         }
     }
-    
 
-    .contenant_left{
-        position:relative;
-        width:100%;
+
+    .contenant_left {
+        position: relative;
+        width: 100%;
         padding-bottom: 20px;
         padding-top: 10px;
         transition: width 500ms;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .box {
@@ -1003,7 +1005,7 @@
         text-align: left;
         position: relative;
         top: 7px;
-        left: 32px;
+        margin: 32px;
         padding-top: 25px;
         padding-bottom: 5px;
     }
@@ -1032,7 +1034,7 @@
         text-align: left;
         position: relative;
         top: 7px;
-        left: 32px;
+        margin: 32px;
         padding-bottom: 5px;
     }
 
@@ -1043,7 +1045,7 @@
         text-align: left;
         position: relative;
         top: 7px;
-        left: 32px;
+        margin:32px;
         padding-bottom: 5px;
     }
 
