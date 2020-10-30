@@ -1,0 +1,597 @@
+@media only screen and (max-width: 480px) {
+
+    .fleche {
+        position: relative;
+        bottom: 0px;
+        right: 75px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .img_menu1 {
+        width: 100%;
+        margin-top: 6px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .img_menu2 {
+        width: 100%;
+        margin-top: 6px;
+        z-index: 2;
+        position: relative;
+        margin-top: -100px;
+    }
+
+    .img_menu4 {
+        width: 100%;
+        margin-top: 6px;
+        z-index: 2;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    .icone_like_menus {
+        position: relative;
+        left: 65px;
+        font-size: 22px;
+    }
+
+
+    .icone_like_menus:hover {
+        position: relative;
+        left: 65px;
+        font-size: 22px;
+        background-color: linear-gradient(#ff79da, #9356dc);
+    }
+
+    .entete_resto {
+        font-family: "Shrikhand-Regular";
+        font-size: 23px;
+        margin-left: 20px;
+    }
+
+    .menu_frame1 {
+        background-color: #eee8e3;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 2;
+        width: 100%;
+        //bottom: 43px;
+        position: relative;
+        padding-top: 40px;
+        bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    .menu_frame2 {
+        background-color: #eee8e3;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 2;
+        width: 100%;
+        //bottom: 43px;
+        position: relative;
+        padding-top: 40px;
+        bottom: 40px;
+        padding-bottom: 40px;
+        margin-top: -117px;
+    }
+
+    .menu_frame4 {
+        background-color: #eee8e3;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 2;
+        width: 100%;
+        //bottom: 43px;
+        position: relative;
+        padding-top: 40px;
+        bottom: 40px;
+        padding-bottom: 40px;
+        margin-top: -15px;
+    }
+
+    .contenant_1 {
+        background-color: white;
+        width: 325px;
+        cursor: pointer;
+        margin: 20px;
+        padding-left: 15px;
+        max-height: 80px;
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        transition-delay: 300ms;
+        overflow: hidden;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+        -o-animation: fadein 3s;
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /*/---Animation---/*/
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* sur Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* sur Safari et Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* sur Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    .contenant_left {
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        transition: width 500ms;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .box {
+        background-color: #99e2d0;
+        width: 0;
+        overflow: hidden;
+        transition: all 500ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .icone_valide {
+        color: white;
+        border-radius: 26px 26px;
+        transform: rotate(0deg);
+        transition: transform 1s;
+        transform-origin: center center;
+    }
+
+    .contenant_1:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_1:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_1:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_2 {
+        width: 325px;
+        cursor: pointer;
+        margin: 20px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        overflow: hidden;
+        padding-left: 15px;
+        max-height: 80px;
+        transition-delay: 305ms;
+        animation: fadein 4s;
+        -moz-animation: fadein 4s; /* Firefox */
+        -webkit-animation: fadein 4s; /* Safari et Chrome */
+        -o-animation: fadein 4s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_2:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_2:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_2:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_3 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        max-height: 80px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 310ms;
+        animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_3:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_3:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_3:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_4 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        max-height: 80px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 315ms;
+        animation: fadein 6s;
+        -moz-animation: fadein 6s; /* Firefox */
+        -webkit-animation: fadein 6s; /* Safari et Chrome */
+        -o-animation: fadein 6s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_4:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_4:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_4:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_5 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        max-height: 80px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 320ms;
+        animation: fadein 7s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_5:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_5:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_5:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_6 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        max-height: 80px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 325ms;
+        animation: fadein 8s;
+        -moz-animation: fadein 8s; /* Firefox */
+        -webkit-animation: fadein 8s; /* Safari et Chrome */
+        -o-animation: fadein 8s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_6:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_6:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_6:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_7 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        max-height: 80px;
+        cursor: pointer;
+        margin: 20px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 330ms;
+        animation: fadein 9s;
+        -moz-animation: fadein 9s; /* Firefox */
+        -webkit-animation: fadein 9s; /* Safari et Chrome */
+        -o-animation: fadein 9s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_7:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_7:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_7:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_8 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        max-height: 80px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 335ms;
+        animation: fadein 10s;
+        -moz-animation: fadein 10s; /* Firefox */
+        -webkit-animation: fadein 10s; /* Safari et Chrome */
+        -o-animation: fadein 10s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_8:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_8:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_8:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_9 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        background-color: white;
+        max-height: 80px;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 340ms;
+        animation: fadein 11s;
+        -moz-animation: fadein 11s; /* Firefox */
+        -webkit-animation: fadein 11s; /* Safari et Chrome */
+        -o-animation: fadein 11s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_9:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_9:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_9:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+    .contenant_10 {
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        max-height: 80px;
+        cursor: pointer;
+        margin: 20px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 15px;
+        transition-delay: 345ms;
+        animation: fadein 12s;
+        -moz-animation: fadein 12s; /* Firefox */
+        -webkit-animation: fadein 12s; /* Safari et Chrome */
+        -o-animation: fadein 12s; /* Opera */
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenant_10:hover .box {
+        width: 3%;
+        padding: 10px 30px;
+    }
+
+    .contenant_10:hover .contenant_left {
+        width: 80%;
+    }
+
+    .contenant_10:hover .icone_valide {
+        transform: rotate(360deg);
+        transform-origin: center center;
+    }
+
+
+    .nom_entree {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        font-family: "Roboto-Regular";
+        top: 5px;
+        position: relative;
+    }
+
+    .ingredients {
+        font-size: 15px;
+        font-weight: normal;
+        text-align: left;
+        font-family: "Roboto-Regular";
+        margin-top: 10px;
+        color: #939393;
+    }
+
+    .entree {
+        font-family: "Roboto-Regular";
+        color: black;
+        font-size: 15px;
+        text-align: left;
+        position: relative;
+        top: 7px;
+        margin: 32px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+
+    .soulignement {
+        height: 3px;
+        width: 40px;
+        visibility: visible;
+        position: relative;
+        background-color: #99e2d0;
+        top: 5px;
+    }
+
+    .nom_plat {
+        font-family: "Roboto-Regular";
+        font-size: 15px;
+        font-weight: bold;
+        top: 5px;
+        position: relative;
+    }
+
+    .plat {
+        font-family: "Roboto-Regular";
+        color: black;
+        font-size: 15px;
+        text-align: left;
+        position: relative;
+        top: 7px;
+        margin: 32px;
+        padding-bottom: 5px;
+    }
+
+    .dessert {
+        font-family: "Roboto-Regular";
+        color: black;
+        font-size: 15px;
+        text-align: left;
+        position: relative;
+        top: 7px;
+        margin: 32px;
+        padding-bottom: 5px;
+    }
+
+    .nom_dessert {
+        font-family: "Roboto-Regular";
+        font-size: 15px;
+        font-weight: bold;
+        top: 5px;
+        position: relative;
+    }
+
+    .legumes {
+        font-size: 15px;
+        position: relative;
+        bottom: 5px;
+    }
+
+ 
+
+    header {
+        z-index: 1;
+        position: relative;
+    }
+
+    .price {
+        font-family: "Roboto-Regular";
+        font-weight: bold;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        font-size: 15px;
+    }
+
+    .price_plat1_menu1 {
+        font-family: "Roboto-Regular";
+        font-weight: bold;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        font-size: 15px;
+    }
+}
