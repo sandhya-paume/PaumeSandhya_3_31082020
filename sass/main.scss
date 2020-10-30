@@ -1,12 +1,8 @@
-@font-face {
-    font-family: "Shrikhand-Regular";
-    src: url("../style/Shrikhand-Regular.ttf");
-}
+@import 'base/font'; 
+/*/ Import accueil css /*/
 
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url("../style/Roboto-Regular.ttf");
-}
+@import 'pages/accueil/desktop', 'pages/accueil/mobile', 'pages/accueil/tablette';
+
 /*/---------------------------------------------------------------------------------------------------- Media Smartphone -----------------------------------------------------------------------------------------------------------------/*/
 @media only screen and (max-width: 480px) {
     /*/--------- Page Principale----------/*/
@@ -17,81 +13,7 @@
 
     //**//Loading_spinner//**//
 
-    .bloc_chargement {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        font-family: "Roboto-Regular";
-        font-size: 20px;
-        color: black;
-        text-align: center;
-        z-index: 0;
-        animation: loading 3s;
-        opacity: 0;
-
-    }
-    
-    @keyframes loading{
-        0% {
-            opacity: 1;
-            z-index: 2;
-        }
-        70% {
-            opacity: 1;
-            z-index: 2;
-        }
-        100%{
-            opacity:0;
-            z-index:0;
-        }
-    }
-
-
    
-    .section {
-        background-color: #eee8e3;
-        height: 890px;
-        padding-top:30px;
-              
-    }
-
-    .loader {
-        width: 50px;
-        height: 50px;
-       margin: 0 auto; 
-       margin-bottom: 30px;
-        position: relative;
-    }
-
-    .loading_spinner {
-      
-        border-radius: 50px;
-        border: 6px solid rgba (255,255,255,0.4)
-    }
-
-    .loading_spinner:after {
-        content: '';
-        position: absolute;
-        top: -6px;
-        left: -6px;
-        bottom: -6px;
-        right: -6px;
-        border-radius: 50px;
-        border: 6px solid transparent;
-        border-top-color: #FFF;
-        animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
     /*/........................./*/
 
     h1 {
@@ -107,77 +29,7 @@
         top:7px;
     }
 
-    .localisation {
-        height: 40px;
-        background-color: #eaeaea;
-        width: 100%;
-        text-align: center;
-        padding-top: 25px;
-        font-size: 15px;
-        box-shadow: 0px 14px 0px grey;
-        position: relative;
-        font-family: "Roboto-Regular";
-    }
-
-    .bloc_resa {
-        background-color: #f6f6f6;
-        text-align: center;
-        width: 100%;
-        position: relative;
-        font-family: "Roboto-Regular";
-        margin-bottom: 20px;
-    }
-
-    .reservation {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        padding-top: 25px;
-        font-family: "Roboto-Regular";
-    }
-
-    .reservation2 {
-        position: relative;
-        bottom: 30px;
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        padding-top: 25px;
-        font-family: "Roboto-Regular";
-    }
-
-    .description {
-        text-align: center;
-        font-size: 15px;
-        font-family: "Roboto-Regular";
-        margin-top: 15px;
-        margin-bottom: 20px;
-        position: relative;
-        bottom: 26px;
-    }
-
-    .description2 {
-        position: relative;
-        bottom: 44px;
-        text-align: center;
-        font-size: 15px;
-        font-family: "Roboto-Regular";
-    }
-
-    .btn_explorer {
-        width: auto;
-        text-align: center;
-        background-image: linear-gradient(#ff79da, #9356dc);
-        border-radius: 30px;
-        color: white;
-        padding: 12px 24px;
-        text-decoration: none;
-        display: inline-block;
-        box-shadow: 0px 2px 2px grey;
-        bottom: 35px;
-        position: relative;
-        font-family: "Roboto-Regular";
-    }
+    
 
     h2 {
         font-size: 25px;
@@ -202,217 +54,7 @@
 
 
 
-    .bloc_fonctionnement {
-        background-color: #f7f7f7;
-        position: relative;
-        padding-bottom: 40px;
-        padding-top: 12px;
-    }
-
-    .slide {
-        font-family: "Roboto-Regular";
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 94%;
-        background-color: #f6f6f6;
-        margin-left: 20px;
-        position: relative;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-
-    .slide3 {
-        font-family: "Roboto-Regular";
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 94%;
-        background-color: #f5edff;
-        margin-left: 20px;
-        position: relative;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .icones_fonctionnement {
-        color: grey;
-        margin-right: 22px;
-    }
-
-    .icones_fonctionnement3 {
-        color: #9356dc;
-        margin-right: 22px;
-    }
-
-    .rond {
-        color: #9356dc;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    .resto {
-        font-size: 17px;
-        font-weight: bold;
-        font-family: "Roboto-Regular";
-        text-align: left;
-        position: relative;
-        right: 18px;
-        bottom: 5px;
-    }
-
-    .img_resto_1 {
-        width: 100%;
-        bottom: -14px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_2 {
-        width: 100%;
-        position: relative;
-        bottom: 163px;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_3 {
-        width: 100%;
-        position: relative;
-        bottom: 68px;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_4 {
-        width: 100%;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-        bottom: 75px;
-    }
-
-    .btn_new1 {
-        font-family: "Roboto-Regular";
-        background-color: #99e2d0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 77px;
-        height: 27px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 19px;
-        right: 23px;
-        line-height: 30px;
-        font-size: 15px;
-    }
-
-    .btn_new2 {
-        font-family: "Roboto-Regular";
-        background-color: #99e2d0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 77px;
-        height: 27px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 19px;
-        right: 23px;
-        line-height: 30px;
-        font-size: 15px;
-    }
-
-    .frame {
-        width: 345px;
-        height: 228px;
-        border-radius: 15px 15px 15px 15px;
-        background-color: #ffffff;
-        margin-bottom: 24px;
-        bottom: 15px;
-        position: relative;
-        left: 15px;
-        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .icone_like_homepage:hover {
-        position: relative;
-        top: 3px;
-        left: 285px;
-        font-size: 20px;
-        background-image: linear-gradient(#ff79da, #9356dc);
-    }
-
-    .icone_like_homepage {
-        position: relative;
-        top: 3px;
-        left: 285px;
-        font-size: 20px;
-        color: #717171;
-    }
-
-    .lieu_1 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
-        right: 156px;
-        font-size: 15px;
-    }
-
-    .lieu_2 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
-        right: 162px;
-        font-size: 15px;
-    }
-
-    .lieu_3 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
-        right: 127px;
-        font-size: 15px;
-    }
-
-    .lieu_4 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
-        right: 160px;
-        font-size: 15px;
-    }
-
-    .bloc_resto {
-        background-color: #f6f6f6;
-        width: 100%;
-        padding-top: 57px;
-    }  
+   
 
     footer {
         font-family: "Roboto-Regular";
@@ -439,25 +81,7 @@
     }
     
 
-    .numero {
-        display: block;
-        width: 30px;
-        height: 30px;
-        border: solid;
-        border-radius: 100%;
-        background-color: #9356dc;
-        color: white;
-        text-align: center;
-        line-height: 30px;
-        position: absolute;
-        top: calc((70px - 30px) / 2);
-        left: -15px;
-        font-size: 17px;
-    }
-
-    .contenu {
-        padding: 10px;
-    }
+    
 
     h4 {
         font-family: "Shrikhand-Regular";
@@ -493,37 +117,7 @@
         color: white;
     }
 
-    .img_conteneur1 {
-        width: 100%;
-        height: 165px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur2 {
-        width: 100%;
-        height: 154px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur3 {
-        width: 100%;
-        height: 154px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur4 {
-        width: 100%;
-        height: 154px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
+   
 
     /*/------------Menu 1-2-3-4------------/*/
 
@@ -689,6 +283,7 @@
         transition: width 500ms;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .box {
@@ -1122,7 +717,7 @@
         font-weight: bold;
         position: absolute;
         right: 20px;
-        top: 35px;
+        top: 40px;
         font-size: 15px;
     }
 
@@ -1145,84 +740,7 @@
 
     /*/-------------------- Page Principale --------------------/*/
 
-    //**//Loading_spinner//**//
-
-    .bloc_chargement {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        font-family: "Roboto-Regular";
-        font-size: 20px;
-        color: black;
-        text-align: center;
-        z-index: 0;
-        animation: loading 3s;
-        opacity: 0;
-    }
-
-    @keyframes loading {
-        0% {
-            opacity: 1;
-            z-index: 2;
-        }
-
-        70% {
-            opacity: 1;
-            z-index: 2;
-        }
-
-        100% {
-            opacity: 0;
-            z-index: 0;
-        }
-    }
-
-
-
-    .section {
-        background-color: #eee8e3;
-        height: 890px;
-        padding-top: 30px;
-    }
-
-    .loader {
-        width: 50px;
-        height: 50px;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        position: relative;
-    }
-
-    .loading_spinner {
-        border-radius: 50px;
-        border: 6px solid rgba (255,255,255,0.4)
-    }
-
-    .loading_spinner:after {
-        content: '';
-        position: absolute;
-        top: -6px;
-        left: -6px;
-        bottom: -6px;
-        right: -6px;
-        border-radius: 50px;
-        border: 6px solid transparent;
-        border-top-color: #FFF;
-        animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    /*/........................./*/
-
+   
 
     h1 {
         text-align: center;
@@ -1230,72 +748,7 @@
         font-family: Shrikhand-Regular;
     }
 
-    .name {
-        width: 200px;
-        height: 200px;
-    }
-
-    .localisation {
-        height: 50px;
-        background-color: #eaeaea;
-        width: 100%;
-        text-align: center;
-        padding-top: 25px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-        box-shadow: 0px 1px 0px grey;
-    }
-
-
-    .bloc_resa {
-        padding-bottom: 50px;
-        background-color: #f6f6f6;
-        text-align: center;
-        width: 100%;
-    }
-
-    .reservation {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        padding-top: 15px;
-        font-family: "Roboto-Regular";
-    }
-
-    .reservation2 {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: "Roboto-Regular";
-    }
-
-    .description {
-        text-align: center;
-        font-size: 25px;
-        font-family: "Roboto-Regular";
-    }
-
-    .description2 {
-        text-align: center;
-        font-size: 25px;
-        position: relative;
-        bottom: 15px;
-        font-family: "Roboto-Regular";
-    }
-
-    .btn_explorer {
-        width: 30%;
-        text-align: center;
-        background-image: linear-gradient(#ff79da, #9356dc);
-        border-radius: 30px;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        box-shadow: 0px 2px grey;
-        font-family: "Roboto-Regular";
-    }
-
+   
     h2 {
         font-size: 25px;
         font-weight: bold;
@@ -1320,237 +773,7 @@
         left: 10px;
     }
 
-    .bloc_fonctionnement {
-        background-color: #f6f6f6;
-    }
-
-    .slide {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 90%;
-        background-color: #f6f6f6;
-        margin-left: 20px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
-    }
-
-    .slide3 {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 90%;
-        background-color: #f5edff;
-        margin-left: 20px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
-    }
-
-    .icones_fonctionnement {
-        color: grey;
-        margin-right: 20px;
-        position: relative;
-        right: 250px;
-    }
-
-    .icones_fonctionnement3 {
-        color: #9356dc;
-        margin-right: 20px;
-        position: relative;
-        right: 250px;
-    }
-
-    .rond {
-        color: #9356dc;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    .resto {
-        font-size: 25px;
-        font-weight: bold;
-        text-align: left;
-        position: relative;
-        right: 8px;
-        top: 160px;
-        font-family: "Roboto-Regular";
-    }
-
-    main {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .img_resto_1 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_2 {
-        width: 700px;
-        height: 300px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_3 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_4 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .btn_new1 {
-        background-color: #99E2D0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 110px;
-        height: 30px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        line-height: 30px;
-        font-family: "Roboto-Regular";
-    }
-
-    .btn_new2 {
-        background-color: #99E2D0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 110px;
-        height: 30px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        line-height: 30px;
-        font-family: "Roboto-Regular";
-    }
-
-    .frame {
-        width: 700px;
-        height: 400px;
-        border-radius: 20px 20px 20px 20px;
-        background: #ffffff;
-        margin: 0 0 15px 0;
-        margin-bottom: 50px;
-        position: relative;
-        left: 155px;
-        bottom:18px;
-        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .icone_like:hover {
-        text-align: right;
-        font-size: 25px;
-        top: 13px;
-        left: 317px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-    }
-
-
-    .icone_like_homepage:hover {
-        text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
-        background-image: linear-gradient(#ff79da, #9356dc);
-
-    }
-
-    .icone_like_homepage {
-        text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
-       color: #717171;
-    }
-
-    .lieu_1 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 215px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
-    .lieu_2 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 188px;
-        right: 220px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
-    .lieu_3 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 167px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
-    .lieu_4 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 217px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
-
-    .bloc_resto {
-        background-color: #f6f6f6;
-        width: 100%;
-        position: relative;
-        top: 50px;
-    }
+   
 
     footer {
         background-color: #3B444C;
@@ -1575,24 +798,7 @@
         }
     }
 
-    .numero {
-        display: block;
-        width: 30px;
-        height: 30px;
-        border: solid;
-        border-radius: 100%;
-        background-color: #9356DC;
-        color: white;
-        text-align: center;
-        line-height: 30px;
-        position: absolute;
-        top: calc((70px - 30px)/2);
-        left: -15px;
-    }
-
-    .contenu {
-        padding: 10px;
-    }
+    
 
     h4 {
         font-family: "Shrikhand-Regular";
@@ -1631,40 +837,7 @@
         font-family: "Roboto-Regular";
     }
 
-    .img_conteneur1 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur2 {
-        width: 100%;
-        height: 154px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur3 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur4 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur5 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
+   
 
     /*/-------------------Menu 1-2-3-4------------------/*/
 
@@ -2353,73 +1526,7 @@
         font-family: "Shrikhand-Regular";
     }
 
-    .name {
-        width: 200px;
-        height: 200px;
-    }
-
-    .localisation {
-        height: 50px;
-        background-color: #ededed;
-        width: 100%;
-        text-align: center;
-        padding-top: 25px;
-        font-size: 25px;
-        font-family:"Roboto-Regular";
-    }
-
-
-    .bloc_resa {
-        padding-bottom: 50px;
-        background-color: #E5EFE7;
-        text-align: center;
-        width: 100%;
-    }
-
-    .reservation {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        padding-top: 15px;
-        font-family: "Roboto-Regular";
-    }
-
-    .reservation2 {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: "Roboto-Regular";
-    }
-
-    .description {
-        text-align: center;
-        font-size: 25px;
-        font-family: "Roboto-Regular";
-    }
-
-    .description2 {
-        text-align: center;
-        font-size: 25px;
-        font-family: "Roboto-Regular";
-        position: relative;
-        bottom: 15px;
-    }
-
-    .btn_explorer {
-        width: 30%;
-        text-align: center;
-        background-image: linear-gradient(#ff79da, #9356dc);
-        border-radius: 30px;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        box-shadow: 0px 2px grey;
-        height: 30px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
+    
     h2 {
         font-size: 30px;
         font-weight: bold;
@@ -2432,219 +1539,7 @@
         left: 10px;
     }
 
-    .bloc_fonctionnement {
-        background-color: white;
-     }
-
-    .slide {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 60%;
-        background-color: #f7f7f7;
-        margin-left: 235px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
-    }
-
-    .slide3 {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 60%;
-        background-color: #9356dc26;
-        margin-left: 235px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
-    }
-
-    .icones_fonctionnement {
-        color: grey;
-        margin-right: 20px;
-        position: relative;
-        right: 235px;
-    }
-
-    .icones_fonctionnement3 {
-        color: #9356dc;
-        margin-right: 20px;
-        position: relative;
-        right: 235px;
-    }
-
-    .rond {
-        color: #9356dc;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    .resto {
-        font-size: 25px;
-        font-weight: bold;
-        text-align: left;
-        position: relative;
-        right: 8px;
-        top: 160px;
-    }
-
-    .img_resto_1 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_2 {
-        width: 700px;
-        height: 300px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_3 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_4 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .btn_new1 {
-        background-color: #99E2D0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 110px;
-        height: 30px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        line-height: 30px;
-    }
-
-    .btn_new2 {
-        background-color: #99E2D0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 110px;
-        height: 30px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        line-height: 30px;
-    }
-
-    .frame {
-        width: 700px;
-        height: 400px;
-        border-radius: 20px 20px 20px 20px;
-        background: white;
-        margin: 0 0 15px 0;
-        margin-bottom: 50px;
-        position: relative;
-        left: 380px;
-    }
-
-    .icone_like:hover {
-        text-align: right;
-        font-size: 25px;
-        top: 13px;
-        left: 317px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-    }
-
-
-    .icone_like_homepage:hover {
-        text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
-        background-image: linear-gradient(#ff79da, #9356dc);
-    }
-
-    .icone_like_homepage {
-        text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
-    }
-
-    .lieu_1 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 250px;
-        font-size: 20px;
-    }
-
-    .lieu_2 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 188px;
-        right: 252px;
-        font-size: 20px;
-    }
-
-    .lieu_3 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 193px;
-        font-size: 20px;
-    }
-
-    .lieu_4 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 245px;
-        font-size: 20px;
-    }
-
-
-    .bloc_resto {
-        background-color: #F2EBEA;
-        width: 100%;
-    }
+   
 
     footer {
         background-color: #3B444C;
@@ -2667,25 +1562,7 @@
         }
     }
 
-    .numero {
-        display: block;
-        width: 30px;
-        height: 30px;
-        border: solid;
-        border-radius: 100%;
-        background-color: #9356DC;
-        color: white;
-        text-align: center;
-        line-height: 30px;
-        position: absolute;
-        top: calc((70px - 30px)/2);
-        left: -15px;
-        font-family: "Roboto-Regular";
-    }
-
-    .contenu {
-        padding: 10px;
-    }
+   
 
     h3 {
         font-family: "Shrikhand-Regular";
@@ -2720,40 +1597,7 @@
         color: white;
     }
 
-    .img_conteneur1 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur2 {
-        width: 100%;
-        height: 154px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur3 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur4 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur5 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
+   
 
     /*/-------------------Menu 1-2-3-4------------------/*/
 
