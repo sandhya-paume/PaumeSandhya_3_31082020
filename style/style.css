@@ -8,6 +8,73 @@
 }
 /*/ Import accueil css /*/
 @media only screen and (min-width: 1150px) {
+  .bloc_chargement {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    z-index: 0;
+    animation: loading 3s;
+    opacity: 0;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 1;
+      z-index: 2;
+    }
+    70% {
+      opacity: 1;
+      z-index: 2;
+    }
+    100% {
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+  .section {
+    background-color: #eee8e3;
+    height: 890px;
+    padding-top: 30px;
+  }
+
+  .loader {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .loading_spinner {
+    border-radius: 50px;
+    border: 6px solid rgba 255, 255, 255, 0.4;
+  }
+
+  .loading_spinner:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .name {
     width: 200px;
     height: 200px;
@@ -782,7 +849,6 @@
       transform: rotate(360deg);
     }
   }
-  /*/........................./*/
   .name {
     width: 200px;
     height: 200px;
@@ -3195,7 +3261,30 @@
     font-family: "Roboto-Regular";
   }
 }
-/*/-------------- Media Smartphone -----------------/*/
+@media only screen and (min-width: 1150px) {
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Roboto-Regular";
+    position: relative;
+    left: 10px;
+  }
+
+  h3 {
+    font-family: "Shrikhand-Regular";
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-weight: 100;
+  }
+}
 @media only screen and (max-width: 480px) {
   body {
     margin: 0px;
@@ -3232,10 +3321,8 @@
     padding-left: 30px;
     font-weight: 100;
   }
-
-  /*/------------------------- Media Tablettes ----------------------------------/*/
 }
-@media only screen and (max-width: 480px) and (min-width: 481px) and (max-width: 1149px) {
+@media only screen and (min-width: 481px) and (max-width: 1149px) {
   h2 {
     font-size: 25px;
     font-weight: bold;
@@ -3268,32 +3355,6 @@
     font-weight: 100;
     margin-bottom: 8px;
     margin-left: 21px;
-    padding: 10px;
-    font-weight: 100;
-  }
-
-  /*/--------------------------------- Media PC -----------------------------------/*/
-}
-@media only screen and (max-width: 480px) and (min-width: 481px) and (max-width: 1149px) and (min-width: 1150px) {
-  h2 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-family: "Roboto-Regular";
-    position: relative;
-    left: 10px;
-  }
-
-  h3 {
-    font-family: "Shrikhand-Regular";
-    text-align: left;
-    font-size: 25px;
-    color: white;
-    font-weight: 100;
-    margin-bottom: 20px;
     padding: 10px;
     font-weight: 100;
   }

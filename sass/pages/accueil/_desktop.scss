@@ -1,5 +1,78 @@
 @media only screen and (min-width:1150px) {
 
+    .bloc_chargement {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        font-family: "Roboto-Regular";
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        z-index: 0;
+        animation: loading 3s;
+        opacity: 0;
+    }
+
+    @keyframes loading {
+        0% {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        70% {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        100% {
+            opacity: 0;
+            z-index: 0;
+        }
+    }
+
+
+
+    .section {
+        background-color: #eee8e3;
+        height: 890px;
+        padding-top: 30px;
+    }
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .loading_spinner {
+        border-radius: 50px;
+        border: 6px solid rgba (255,255,255,0.4)
+    }
+
+    .loading_spinner:after {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        bottom: -6px;
+        right: -6px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color: #FFF;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 
     .name {
         width: 200px;

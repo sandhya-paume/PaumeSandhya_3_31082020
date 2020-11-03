@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\sass",
+    "\\sass\\pages",
+    "\\sass\\pages\\accueil"
   ],
-  "SelectedNode": "\\menu1.html",
+  "SelectedNode": "\\sass\\pages\\accueil\\_mobile.scss",
   "PreviewInSolutionExplorer": false
 }
