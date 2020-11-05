@@ -1,6 +1,8 @@
 @import 'base/font'; 
 /*/ Import accueil css /*/
 
+@import 'abstracts/mixins';
+
 @import 'pages/accueil/desktop', 'pages/accueil/mobile', 'pages/accueil/tablette';
 
 @import 'pages/menus/desktop', 'pages/menus/mobile', 'pages/menus/tablette';
@@ -12,7 +14,6 @@
 @import 'components/boutons/desktop', 'components/boutons/mobile', 'components/boutons/tablette';
 
 @import 'base/shared/desktop', 'base/shared/mobile', 'base/shared/tablette'; 
-
 
 
     

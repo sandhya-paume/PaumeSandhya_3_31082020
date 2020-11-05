@@ -1,38 +1,25 @@
 @media only screen and (min-width:481px) and (max-width:1149px) {
 
-    h2 {
-        font-size: 25px;
+    
+
+    h2, h3 {        
+        @include h_title;
         font-weight: bold;
-        text-align: left;
         margin-bottom: 25px;
-        padding-bottom: 10px;
-        padding-top: 10px;
         font-family: "Roboto-Regular";
-        position: relative;
-        left: 10px;
+        
     }
 
-    h3 {
-        font-size: 25px;
-        font-weight: bold;
-        text-align: left;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-family: "Roboto-Regular";
-        position: relative;
-        left: 10px;
-    }
 
-    h4 {
+h4 {
+    @include h_title;
         font-family: "Shrikhand-Regular";
-        text-align: left;
-        font-size: 25px;
         color: white;
         font-weight: 100;
         margin-bottom: 8px;
         margin-left: 21px;
-        padding: 10px;
         font-weight: 100;
     }
+
+   
 }

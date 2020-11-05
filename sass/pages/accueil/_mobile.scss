@@ -100,16 +100,7 @@
         font-size: 25px;
         font-weight: bold;
         padding-top: 25px;
-        font-family: "Roboto-Regular";
-    }
-
-    .reservation2 {
-        position: relative;
-        bottom: 30px;
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        padding-top: 25px;
+        padding-bottom: 18px;
         font-family: "Roboto-Regular";
     }
 
@@ -123,15 +114,6 @@
         bottom: 26px;
     }
 
-    .description2 {
-        position: relative;
-        bottom: 44px;
-        text-align: center;
-        font-size: 15px;
-        font-family: "Roboto-Regular";
-    }
-
- 
     .bloc_fonctionnement {
         background-color: #f7f7f7;
         position: relative;
@@ -156,38 +138,22 @@
         height: 70px;
         line-height: 74px;
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+
+        i {
+            color: grey;
+                  margin-right: 22px;
+
+        }
     }
 
-
-    .slide3 {
-        font-family: "Roboto-Regular";
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 94%;
+    .slide--selected {
         background-color: #f5edff;
-        margin-left: 20px;
-        position: relative;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
 
-    .icones_fonctionnement {
-        color: grey;
-        margin-right: 22px;
+        i {
+            color: #9356dc;
+        }
     }
-
-    .icones_fonctionnement3 {
-        color: #9356dc;
-        margin-right: 22px;
-    }
-
+       
     .rond {
         color: #9356dc;
         font-size: 20px;
@@ -204,31 +170,24 @@
         bottom: 5px;
     }
 
+
     .img_resto_1 {
-        width: 100%;
+        @include img_resto;
         bottom: -14px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_resto_2 {
-        width: 100%;
-        position: relative;
+        @include img_resto;
         bottom: 163px;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_resto_3 {
-        width: 100%;
-        position: relative;
+        @include img_resto;
         bottom: 68px;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_resto_4 {
-        width: 100%;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
+        @include img_resto;
         bottom: 75px;
     }
 
@@ -284,6 +243,7 @@
         left: 285px;
         font-size: 20px;
         background-image: linear-gradient(#ff79da, #9356dc);
+        display: block;
     }
 
     .icone_like_homepage {
@@ -292,6 +252,7 @@
         left: 285px;
         font-size: 20px;
         color: #717171;
+        display:none;
     }
 
     .lieu_1 {
@@ -348,7 +309,6 @@
         display: block;
         width: 30px;
         height: 30px;
-        border: solid;
         border-radius: 100%;
         background-color: #9356dc;
         color: white;
@@ -356,7 +316,7 @@
         line-height: 30px;
         position: absolute;
         top: calc((70px - 30px) / 2);
-        left: -15px;
+        left: -14px;
         font-size: 17px;
     }
 

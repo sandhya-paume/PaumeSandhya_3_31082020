@@ -487,16 +487,7 @@
     font-size: 25px;
     font-weight: bold;
     padding-top: 25px;
-    font-family: "Roboto-Regular";
-  }
-
-  .reservation2 {
-    position: relative;
-    bottom: 30px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding-top: 25px;
+    padding-bottom: 18px;
     font-family: "Roboto-Regular";
   }
 
@@ -508,14 +499,6 @@
     margin-bottom: 20px;
     position: relative;
     bottom: 26px;
-  }
-
-  .description2 {
-    position: relative;
-    bottom: 44px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Roboto-Regular";
   }
 
   .bloc_fonctionnement {
@@ -543,34 +526,16 @@
     line-height: 74px;
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
-
-  .slide3 {
-    font-family: "Roboto-Regular";
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-radius: 20px 20px 20px 20px;
-    font-size: 20px;
-    text-align: center;
-    width: 94%;
-    background-color: #f5edff;
-    margin-left: 20px;
-    position: relative;
-    height: 70px;
-    line-height: 74px;
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .icones_fonctionnement {
+  .slide i {
     color: grey;
     margin-right: 22px;
   }
 
-  .icones_fonctionnement3 {
+  .slide--selected {
+    background-color: #f5edff;
+  }
+  .slide--selected i {
     color: #9356dc;
-    margin-right: 22px;
   }
 
   .rond {
@@ -590,30 +555,30 @@
   }
 
   .img_resto_1 {
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
     bottom: -14px;
-    position: absolute;
-    border-radius: 20px 20px 0px 0px;
   }
 
   .img_resto_2 {
-    width: 100%;
     position: relative;
-    bottom: 163px;
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    bottom: 163px;
   }
 
   .img_resto_3 {
-    width: 100%;
     position: relative;
-    bottom: 68px;
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    bottom: 68px;
   }
 
   .img_resto_4 {
-    width: 100%;
     position: relative;
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
     bottom: 75px;
   }
 
@@ -669,6 +634,7 @@
     left: 285px;
     font-size: 20px;
     background-image: linear-gradient(#ff79da, #9356dc);
+    display: block;
   }
 
   .icone_like_homepage {
@@ -677,6 +643,7 @@
     left: 285px;
     font-size: 20px;
     color: #717171;
+    display: none;
   }
 
   .lieu_1 {
@@ -733,7 +700,6 @@
     display: block;
     width: 30px;
     height: 30px;
-    border: solid;
     border-radius: 100%;
     background-color: #9356dc;
     color: white;
@@ -741,7 +707,7 @@
     line-height: 30px;
     position: absolute;
     top: calc((70px - 30px) / 2);
-    left: -15px;
+    left: -14px;
     font-size: 17px;
   }
 
@@ -3025,7 +2991,6 @@
     margin: 0px;
     height: 50px;
     line-height: 50px;
-    top: 7px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
@@ -3323,39 +3288,24 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
-  h2 {
-    font-size: 25px;
-    font-weight: bold;
+  h2, h3 {
     text-align: left;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-family: "Roboto-Regular";
-    position: relative;
-    left: 10px;
-  }
-
-  h3 {
     font-size: 25px;
+    padding: 10px;
     font-weight: bold;
-    text-align: left;
     margin-bottom: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
     font-family: "Roboto-Regular";
-    position: relative;
-    left: 10px;
   }
 
   h4 {
-    font-family: "Shrikhand-Regular";
     text-align: left;
     font-size: 25px;
+    padding: 10px;
+    font-family: "Shrikhand-Regular";
     color: white;
     font-weight: 100;
     margin-bottom: 8px;
     margin-left: 21px;
-    padding: 10px;
     font-weight: 100;
   }
 }
