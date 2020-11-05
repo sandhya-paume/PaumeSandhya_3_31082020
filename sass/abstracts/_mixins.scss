@@ -4,8 +4,32 @@
 	padding: 10px;
 }
 
-@mixin img_resto {
+/*/ mixins de la page d'accueil en mobile/*/
+
+@mixin img_resto {  /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
 	position: relative;
 	border-radius: 20px 20px 0px 0px;
 	width: 100%;
+}
+
+@mixin bloc_resa { /*/ Concerne les "bloc_resa, description, reservation" /*/
+	text-align: center;
+	font-family: "Roboto-Regular";
+}
+
+@mixin lieu { /*/ Concerne tous les lieux des resto /*/
+	font-family: "Roboto-Regular";
+	text-align: left;
+	font-weight: normal;
+	position: relative;
+	line-height: 35px;
+	top: 15px;
+	font-size: 15px;
+}
+
+@mixin conteneur { /*/ Concerne tous les conteneurs /*/
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px 20px 0px 0px;
 }

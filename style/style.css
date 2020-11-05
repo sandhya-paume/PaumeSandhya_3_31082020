@@ -7,6 +7,7 @@
   src: url("../style/Roboto-Regular.ttf");
 }
 /*/ Import accueil css /*/
+/*/ mixins de la page d'accueil en mobile/*/
 @media only screen and (min-width: 1150px) {
   .bloc_chargement {
     position: fixed;
@@ -474,38 +475,35 @@
   }
 
   .bloc_resa {
-    background-color: #f6f6f6;
+    /*/ Concerne les "bloc_resa, description, reservation" /*/
     text-align: center;
+    font-family: "Roboto-Regular";
+    background-color: #f6f6f6;
     width: 100%;
     position: relative;
-    font-family: "Roboto-Regular";
-    margin-bottom: 20px;
   }
 
   .reservation {
+    /*/ Concerne les "bloc_resa, description, reservation" /*/
     text-align: center;
+    font-family: "Roboto-Regular";
     font-size: 25px;
     font-weight: bold;
     padding-top: 25px;
     padding-bottom: 18px;
-    font-family: "Roboto-Regular";
   }
 
   .description {
+    /*/ Concerne les "bloc_resa, description, reservation" /*/
     text-align: center;
-    font-size: 15px;
     font-family: "Roboto-Regular";
-    margin-top: 15px;
-    margin-bottom: 20px;
-    position: relative;
-    bottom: 26px;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 54px;
   }
 
   .bloc_fonctionnement {
     background-color: #f7f7f7;
-    position: relative;
-    padding-bottom: 40px;
-    padding-top: 12px;
   }
 
   .slide {
@@ -555,13 +553,15 @@
   }
 
   .img_resto_1 {
+    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    bottom: -14px;
+    bottom: 0px;
   }
 
   .img_resto_2 {
+    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -569,6 +569,7 @@
   }
 
   .img_resto_3 {
+    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -576,13 +577,14 @@
   }
 
   .img_resto_4 {
+    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     bottom: 75px;
   }
 
-  .btn_new1 {
+  .btn_new1, btn_new2 {
     font-family: "Roboto-Regular";
     background-color: #99e2d0;
     color: #008766;
@@ -593,25 +595,8 @@
     border-radius: 2px 2px 2px 2px;
     font-weight: bold;
     position: absolute;
-    top: 19px;
-    right: 23px;
-    line-height: 30px;
-    font-size: 15px;
-  }
-
-  .btn_new2 {
-    font-family: "Roboto-Regular";
-    background-color: #99e2d0;
-    color: #008766;
-    justify-content: center;
-    display: flex;
-    width: 77px;
-    height: 27px;
-    border-radius: 2px 2px 2px 2px;
-    font-weight: bold;
-    position: absolute;
-    top: 19px;
-    right: 23px;
+    margin-left: 260px;
+    margin-top: -130px;
     line-height: 30px;
     font-size: 15px;
   }
@@ -622,72 +607,70 @@
     border-radius: 15px 15px 15px 15px;
     background-color: #ffffff;
     margin-bottom: 24px;
-    bottom: 15px;
-    position: relative;
-    left: 15px;
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 13px;
   }
 
   .icone_like_homepage:hover {
     position: relative;
-    top: 3px;
-    left: 285px;
+    left: 275px;
     font-size: 20px;
     background-image: linear-gradient(#ff79da, #9356dc);
-    display: block;
   }
 
   .icone_like_homepage {
     position: relative;
-    top: 3px;
-    left: 285px;
+    left: 300px;
     font-size: 20px;
     color: #717171;
-    display: none;
   }
 
   .lieu_1 {
+    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
     position: relative;
     line-height: 35px;
     top: 15px;
-    right: 156px;
     font-size: 15px;
+    right: 156px;
   }
 
   .lieu_2 {
+    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
     position: relative;
     line-height: 35px;
     top: 15px;
-    right: 162px;
     font-size: 15px;
+    right: 162px;
   }
 
   .lieu_3 {
+    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
     position: relative;
     line-height: 35px;
     top: 15px;
-    right: 127px;
     font-size: 15px;
+    right: 127px;
   }
 
   .lieu_4 {
+    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
     position: relative;
     line-height: 35px;
     top: 15px;
-    right: 160px;
     font-size: 15px;
+    right: 160px;
   }
 
   .bloc_resto {
@@ -716,35 +699,39 @@
   }
 
   .img_conteneur1 {
+    /*/ Concerne tous les conteneurs /*/
     width: 100%;
-    height: 165px;
     overflow: hidden;
     position: relative;
     border-radius: 20px 20px 0px 0px;
+    height: 165px;
   }
 
   .img_conteneur2 {
+    /*/ Concerne tous les conteneurs /*/
     width: 100%;
-    height: 154px;
     overflow: hidden;
     position: relative;
     border-radius: 20px 20px 0px 0px;
+    height: 154px;
   }
 
   .img_conteneur3 {
+    /*/ Concerne tous les conteneurs /*/
     width: 100%;
-    height: 154px;
     overflow: hidden;
     position: relative;
     border-radius: 20px 20px 0px 0px;
+    height: 154px;
   }
 
   .img_conteneur4 {
+    /*/ Concerne tous les conteneurs /*/
     width: 100%;
-    height: 154px;
     overflow: hidden;
     position: relative;
     border-radius: 20px 20px 0px 0px;
+    height: 154px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
@@ -3257,26 +3244,14 @@
 
   h2 {
     font-size: 25px;
-    position: relative;
-    left: 18px;
+    margin-left: 22px;
     font-weight: bold;
     text-align: left;
     font-family: "Roboto-Regular";
-    bottom: 27px;
     margin-top: 24px;
   }
 
   h3 {
-    font-size: 25px;
-    position: relative;
-    left: 18px;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Roboto-Regular";
-    bottom: 24px;
-  }
-
-  h4 {
     font-family: "Shrikhand-Regular";
     text-align: left;
     font-size: 20px;

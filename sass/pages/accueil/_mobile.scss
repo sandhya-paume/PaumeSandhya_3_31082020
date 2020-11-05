@@ -85,40 +85,31 @@
         position: relative;
         font-family: "Roboto-Regular";
     }
-
+    
     .bloc_resa {
+        @include bloc-resa;
         background-color: #f6f6f6;
-        text-align: center;
         width: 100%;
         position: relative;
-        font-family: "Roboto-Regular";
-        margin-bottom: 20px;
     }
 
     .reservation {
-        text-align: center;
+        @include bloc-resa;
         font-size: 25px;
         font-weight: bold;
         padding-top: 25px;
         padding-bottom: 18px;
-        font-family: "Roboto-Regular";
     }
 
     .description {
-        text-align: center;
+        @include bloc-resa;
         font-size: 15px;
-        font-family: "Roboto-Regular";
-        margin-top: 15px;
-        margin-bottom: 20px;
-        position: relative;
-        bottom: 26px;
+        margin-top: 0px;
+        margin-bottom: 54px;
     }
 
     .bloc_fonctionnement {
         background-color: #f7f7f7;
-        position: relative;
-        padding-bottom: 40px;
-        padding-top: 12px;
     }
 
     .slide {
@@ -173,7 +164,7 @@
 
     .img_resto_1 {
         @include img_resto;
-        bottom: -14px;
+        bottom: 0px;
     }
 
     .img_resto_2 {
@@ -191,7 +182,8 @@
         bottom: 75px;
     }
 
-    .btn_new1 {
+
+    .btn_new1, btn_new2 {
         font-family: "Roboto-Regular";
         background-color: #99e2d0;
         color: #008766;
@@ -202,101 +194,56 @@
         border-radius: 2px 2px 2px 2px;
         font-weight: bold;
         position: absolute;
-        top: 19px;
-        right: 23px;
+        margin-left: 260px;
+        margin-top: -130px;
         line-height: 30px;
         font-size: 15px;
     }
 
-    .btn_new2 {
-        font-family: "Roboto-Regular";
-        background-color: #99e2d0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 77px;
-        height: 27px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 19px;
-        right: 23px;
-        line-height: 30px;
-        font-size: 15px;
-    }
-
+    
     .frame {
         width: 345px;
         height: 228px;
         border-radius: 15px 15px 15px 15px;
         background-color: #ffffff;
         margin-bottom: 24px;
-        bottom: 15px;
-        position: relative;
-        left: 15px;
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+        margin-left:13px;
     }
 
     .icone_like_homepage:hover {
         position: relative;
-        top: 3px;
-        left: 285px;
+        left: 275px;
         font-size: 20px;
         background-image: linear-gradient(#ff79da, #9356dc);
-        display: block;
     }
 
     .icone_like_homepage {
         position: relative;
-        top: 3px;
-        left: 285px;
+        left: 300px;
         font-size: 20px;
         color: #717171;
-        display:none;
     }
 
+  
     .lieu_1 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
+        @include lieu;
         right: 156px;
-        font-size: 15px;
     }
 
     .lieu_2 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
+        @include lieu;
         right: 162px;
-        font-size: 15px;
     }
 
     .lieu_3 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
+        @include lieu;
         right: 127px;
-        font-size: 15px;
     }
 
     .lieu_4 {
-        font-family: "Roboto-Regular";
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 15px;
+        @include lieu;
         right: 160px;
-        font-size: 15px;
     }
 
     .bloc_resto {
@@ -325,34 +272,23 @@
     }
 
     .img_conteneur1 {
-        width: 100%;
+        @include conteneur; 
         height: 165px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_conteneur2 {
-        width: 100%;
+        @include conteneur;
         height: 154px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_conteneur3 {
-        width: 100%;
+        @include conteneur;
         height: 154px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_conteneur4 {
-        width: 100%;
+        @include conteneur;
         height: 154px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
-    }
+
+ }
