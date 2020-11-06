@@ -8,6 +8,7 @@
 }
 /*/ Import accueil css /*/
 /*/ mixins de la page d'accueil en mobile/*/
+/*/ Mixins des pages menus en mobile /*/
 @media only screen and (min-width: 1150px) {
   .bloc_chargement {
     position: fixed;
@@ -424,7 +425,7 @@
   }
   .section {
     background-color: #eee8e3;
-    height: 890px;
+    height: 885px;
     padding-top: 30px;
   }
 
@@ -516,7 +517,7 @@
     border-radius: 20px 20px 20px 20px;
     font-size: 20px;
     text-align: center;
-    width: 94%;
+    width: 90%;
     background-color: #f6f6f6;
     margin-left: 20px;
     position: relative;
@@ -553,7 +554,6 @@
   }
 
   .img_resto_1 {
-    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -561,7 +561,6 @@
   }
 
   .img_resto_2 {
-    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -569,7 +568,6 @@
   }
 
   .img_resto_3 {
-    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -577,14 +575,13 @@
   }
 
   .img_resto_4 {
-    /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
     position: relative;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     bottom: 75px;
   }
 
-  .btn_new1, btn_new2 {
+  .btn_new1, .btn_new2 {
     font-family: "Roboto-Regular";
     background-color: #99e2d0;
     color: #008766;
@@ -626,7 +623,6 @@
   }
 
   .lieu_1 {
-    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
@@ -638,7 +634,6 @@
   }
 
   .lieu_2 {
-    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
@@ -650,7 +645,6 @@
   }
 
   .lieu_3 {
-    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
@@ -662,7 +656,6 @@
   }
 
   .lieu_4 {
-    /*/ Concerne tous les lieux des resto /*/
     font-family: "Roboto-Regular";
     text-align: left;
     font-weight: normal;
@@ -699,7 +692,6 @@
   }
 
   .img_conteneur1 {
-    /*/ Concerne tous les conteneurs /*/
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -708,7 +700,6 @@
   }
 
   .img_conteneur2 {
-    /*/ Concerne tous les conteneurs /*/
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -717,7 +708,6 @@
   }
 
   .img_conteneur3 {
-    /*/ Concerne tous les conteneurs /*/
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -726,7 +716,6 @@
   }
 
   .img_conteneur4 {
-    /*/ Concerne tous les conteneurs /*/
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -1750,7 +1739,13 @@
     margin-top: 6px;
     z-index: 2;
     position: relative;
-    margin-top: -100px;
+  }
+
+  .img_menu3 {
+    width: 100%;
+    margin-top: 6px;
+    z-index: 2;
+    position: relative;
   }
 
   .img_menu4 {
@@ -1758,7 +1753,6 @@
     margin-top: 6px;
     z-index: 2;
     position: relative;
-    margin-top: 5px;
   }
 
   .icone_like_menus {
@@ -1824,13 +1818,341 @@
     max-height: 80px;
     border-radius: 20px 20px 20px 20px;
     display: flex;
-    transition-delay: 300ms;
     overflow: hidden;
+    transition-delay: 300ms;
     animation: fadein 3s;
     -moz-animation: fadein 3s;
     -webkit-animation: fadein 3s;
     -o-animation: fadein 3s;
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_left {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    transition: width 500ms;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .box {
+    background-color: #99e2d0;
+    width: 0;
+    overflow: hidden;
+    transition: all 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icone_valide {
+    color: white;
+    border-radius: 26px 26px;
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: center center;
+  }
+
+  .contenant_1:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_1:hover, .contenant_2:hover, .contenant_3:hover, .contenant_4:hover, .contenant_5:hover, .contenant_6:hover, .contenant_7:hover, .contenant_8:hover, .contenant_9:hover, .contenant_10:hover .contenant_left {
+    width: 80%;
+  }
+
+  .contenant_1:hover, .contenant_2:hover, .contenant_3:hover, .contenant_4:hover, .contenant_5:hover, .contenant_6:hover, .contenant_7:hover, .contenant_8:hover, .contenant_9:hover, .contenant_10:hover .icone_valide {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+
+  .contenant_2 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 305ms;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari et Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_2:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_3 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 310ms;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    /* Firefox */
+    -webkit-animation: fadein 5s;
+    /* Safari et Chrome */
+    -o-animation: fadein 5s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_3:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_4 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 315ms;
+    animation: fadein 6s;
+    -moz-animation: fadein 6s;
+    /* Firefox */
+    -webkit-animation: fadein 6s;
+    /* Safari et Chrome */
+    -o-animation: fadein 6s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_4:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_5 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    animation: fadein 7s;
+    -moz-animation: fadein 7s;
+    /* Firefox */
+    -webkit-animation: fadein 7s;
+    /* Safari et Chrome */
+    -o-animation: fadein 7s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_5:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_6 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 325ms;
+    animation: fadein 8s;
+    -moz-animation: fadein 8s;
+    /* Firefox */
+    -webkit-animation: fadein 8s;
+    /* Safari et Chrome */
+    -o-animation: fadein 8s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_6:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_7 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 330ms;
+    animation: fadein 9s;
+    -moz-animation: fadein 9s;
+    /* Firefox */
+    -webkit-animation: fadein 9s;
+    /* Safari et Chrome */
+    -o-animation: fadein 9s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_7:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_8 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 335ms;
+    animation: fadein 10s;
+    -moz-animation: fadein 10s;
+    /* Firefox */
+    -webkit-animation: fadein 10s;
+    /* Safari et Chrome */
+    -o-animation: fadein 10s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_8:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_9 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 340ms;
+    animation: fadein 11s;
+    -moz-animation: fadein 11s;
+    /* Firefox */
+    -webkit-animation: fadein 11s;
+    /* Safari et Chrome */
+    -o-animation: fadein 11s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_9:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .contenant_10 {
+    background-color: white;
+    width: 325px;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 345ms;
+    animation: fadein 12s;
+    -moz-animation: fadein 12s;
+    /* Firefox */
+    -webkit-animation: fadein 12s;
+    /* Safari et Chrome */
+    -o-animation: fadein 12s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contenant_10:hover .box {
+    width: 3%;
+    padding: 10px 30px;
+  }
+
+  .entree, .plat, .dessert {
+    font-family: "Roboto-Regular";
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    margin: 32px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+  }
+
+  .nom_entree, .nom_plat, .nom_dessert {
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+  }
+
+  .ingredients {
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    font-family: "Roboto-Regular";
+    margin-top: 10px;
+    color: #939393;
+  }
+
+  .soulignement {
+    height: 3px;
+    width: 40px;
+    visibility: visible;
+    position: relative;
+    background-color: #99e2d0;
+    top: 5px;
+  }
+
+  header {
+    z-index: 1;
+    position: relative;
+  }
+
+  .price {
+    font-family: "Roboto-Regular";
+    font-weight: bold;
+    position: absolute;
+    margin-left: 275px;
+    margin-top: -17px;
+    font-size: 15px;
   }
 
   /*/---Animation---/*/
@@ -1868,469 +2190,6 @@
     to {
       opacity: 1;
     }
-  }
-  .contenant_left {
-    position: relative;
-    width: 100%;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    transition: width 500ms;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .box {
-    background-color: #99e2d0;
-    width: 0;
-    overflow: hidden;
-    transition: all 500ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .icone_valide {
-    color: white;
-    border-radius: 26px 26px;
-    transform: rotate(0deg);
-    transition: transform 1s;
-    transform-origin: center center;
-  }
-
-  .contenant_1:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_1:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_1:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_2 {
-    width: 325px;
-    cursor: pointer;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    overflow: hidden;
-    padding-left: 15px;
-    max-height: 80px;
-    transition-delay: 305ms;
-    animation: fadein 4s;
-    -moz-animation: fadein 4s;
-    /* Firefox */
-    -webkit-animation: fadein 4s;
-    /* Safari et Chrome */
-    -o-animation: fadein 4s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_2:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_2:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_2:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_3 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 20px;
-    max-height: 80px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 310ms;
-    animation: fadein 5s;
-    -moz-animation: fadein 5s;
-    /* Firefox */
-    -webkit-animation: fadein 5s;
-    /* Safari et Chrome */
-    -o-animation: fadein 5s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_3:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_3:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_3:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_4 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    max-height: 80px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 315ms;
-    animation: fadein 6s;
-    -moz-animation: fadein 6s;
-    /* Firefox */
-    -webkit-animation: fadein 6s;
-    /* Safari et Chrome */
-    -o-animation: fadein 6s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_4:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_4:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_4:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_5 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 20px;
-    max-height: 80px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 320ms;
-    animation: fadein 7s;
-    -moz-animation: fadein 7s;
-    /* Firefox */
-    -webkit-animation: fadein 7s;
-    /* Safari et Chrome */
-    -o-animation: fadein 7s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_5:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_5:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_5:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_6 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 20px;
-    max-height: 80px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 325ms;
-    animation: fadein 8s;
-    -moz-animation: fadein 8s;
-    /* Firefox */
-    -webkit-animation: fadein 8s;
-    /* Safari et Chrome */
-    -o-animation: fadein 8s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_6:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_6:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_6:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_7 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    max-height: 80px;
-    cursor: pointer;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 330ms;
-    animation: fadein 9s;
-    -moz-animation: fadein 9s;
-    /* Firefox */
-    -webkit-animation: fadein 9s;
-    /* Safari et Chrome */
-    -o-animation: fadein 9s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_7:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_7:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_7:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_8 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    max-height: 80px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 335ms;
-    animation: fadein 10s;
-    -moz-animation: fadein 10s;
-    /* Firefox */
-    -webkit-animation: fadein 10s;
-    /* Safari et Chrome */
-    -o-animation: fadein 10s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_8:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_8:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_8:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_9 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 20px;
-    background-color: white;
-    max-height: 80px;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 340ms;
-    animation: fadein 11s;
-    -moz-animation: fadein 11s;
-    /* Firefox */
-    -webkit-animation: fadein 11s;
-    /* Safari et Chrome */
-    -o-animation: fadein 11s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_9:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_9:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_9:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .contenant_10 {
-    width: 325px;
-    display: flex;
-    overflow: hidden;
-    max-height: 80px;
-    cursor: pointer;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding-left: 15px;
-    transition-delay: 345ms;
-    animation: fadein 12s;
-    -moz-animation: fadein 12s;
-    /* Firefox */
-    -webkit-animation: fadein 12s;
-    /* Safari et Chrome */
-    -o-animation: fadein 12s;
-    /* Opera */
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .contenant_10:hover .box {
-    width: 3%;
-    padding: 10px 30px;
-  }
-
-  .contenant_10:hover .contenant_left {
-    width: 80%;
-  }
-
-  .contenant_10:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .nom_entree {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Roboto-Regular";
-    top: 5px;
-    position: relative;
-  }
-
-  .ingredients {
-    font-size: 15px;
-    font-weight: normal;
-    text-align: left;
-    font-family: "Roboto-Regular";
-    margin-top: 10px;
-    color: #939393;
-  }
-
-  .entree {
-    font-family: "Roboto-Regular";
-    color: black;
-    font-size: 15px;
-    text-align: left;
-    position: relative;
-    top: 7px;
-    margin: 32px;
-    padding-top: 25px;
-    padding-bottom: 5px;
-  }
-
-  .soulignement {
-    height: 3px;
-    width: 40px;
-    visibility: visible;
-    position: relative;
-    background-color: #99e2d0;
-    top: 5px;
-  }
-
-  .nom_plat {
-    font-family: "Roboto-Regular";
-    font-size: 15px;
-    font-weight: bold;
-    top: 5px;
-    position: relative;
-  }
-
-  .plat {
-    font-family: "Roboto-Regular";
-    color: black;
-    font-size: 15px;
-    text-align: left;
-    position: relative;
-    top: 7px;
-    margin: 32px;
-    padding-bottom: 5px;
-  }
-
-  .dessert {
-    font-family: "Roboto-Regular";
-    color: black;
-    font-size: 15px;
-    text-align: left;
-    position: relative;
-    top: 7px;
-    margin: 32px;
-    padding-bottom: 5px;
-  }
-
-  .nom_dessert {
-    font-family: "Roboto-Regular";
-    font-size: 15px;
-    font-weight: bold;
-    top: 5px;
-    position: relative;
-  }
-
-  .legumes {
-    font-size: 15px;
-    position: relative;
-    bottom: 5px;
-  }
-
-  header {
-    z-index: 1;
-    position: relative;
-  }
-
-  .price {
-    font-family: "Roboto-Regular";
-    font-weight: bold;
-    position: absolute;
-    right: 20px;
-    top: 40px;
-    font-size: 15px;
-  }
-
-  .price_plat1_menu1 {
-    font-family: "Roboto-Regular";
-    font-weight: bold;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 15px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {

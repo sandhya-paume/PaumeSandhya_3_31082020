@@ -6,7 +6,7 @@
 
 /*/ mixins de la page d'accueil en mobile/*/
 
-@mixin img_resto {  /*/	Concerne toutes les "img_resto" de la page d'accueil) /*/
+@mixin img_resto { 
 	position: relative;
 	border-radius: 20px 20px 0px 0px;
 	width: 100%;
@@ -17,7 +17,7 @@
 	font-family: "Roboto-Regular";
 }
 
-@mixin lieu { /*/ Concerne tous les lieux des resto /*/
+@mixin lieu { 
 	font-family: "Roboto-Regular";
 	text-align: left;
 	font-weight: normal;
@@ -27,9 +27,41 @@
 	font-size: 15px;
 }
 
-@mixin conteneur { /*/ Concerne tous les conteneurs /*/
+@mixin conteneur { 
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 	border-radius: 20px 20px 0px 0px;
 }
+
+/*/ Mixins des pages menus en mobile /*/
+
+@mixin menu_frame { 
+	background-color: #eee8e3;
+	border-radius: 40px 40px 0px 0px;
+	z-index: 2;
+	width: 100%;
+	//bottom: 43px;
+	position: relative;
+	padding-top: 40px;
+	bottom: 40px;
+	padding-bottom: 40px;
+}
+
+@mixin contenant { 
+	background-color: white;
+	width: 325px;
+	cursor: pointer;
+	margin: 20px;
+	padding-left: 15px;
+	max-height: 80px;
+	border-radius: 20px 20px 20px 20px;
+	display: flex;
+	overflow: hidden;
+}
+
+@mixin alimentaire {
+	font-family: "Roboto-Regular";
+	font-size: 15px;
+}
+
