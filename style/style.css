@@ -608,7 +608,7 @@
     margin-left: 13px;
   }
 
-  .icone_like_homepage:hover {
+  .icone_like_homepage :hover {
     position: relative;
     left: 275px;
     font-size: 20px;
@@ -1759,6 +1759,7 @@
     position: relative;
     left: 65px;
     font-size: 22px;
+    background-color: linear-gradient(#ff79da, #9356dc);
   }
 
   .icone_like_menus:hover {
