@@ -156,9 +156,6 @@
         font-weight: bold;
         font-family: "Roboto-Regular";
         text-align: left;
-        position: relative;
-        right: 18px;
-        bottom: 5px;
     }
 
 
@@ -183,7 +180,8 @@
     }
 
 
-    .btn_new1, .btn_new2 {
+    .btn_new1, 
+    .btn_new2 {
         font-family: "Roboto-Regular";
         background-color: #99e2d0;
         color: #008766;
@@ -212,41 +210,32 @@
     }
 
     .icone_like_homepage :hover {
-        position: relative;
+        position: absolute;
         left: 275px;
         font-size: 20px;
         background-image: linear-gradient(#ff79da, #9356dc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
-    .icone_like_homepage  {
-        position: relative;
+    .icone_like_homepage {
+        position: absolute;
         left: 300px;
         font-size: 20px;
         color: #717171;
     }
 
-  
-    .lieu_1 {
-        @include lieu;
-        right: 156px;
-    }
 
-    .lieu_2 {
-        @include lieu;
-        right: 162px;
+    .lieu {
+        font-family: "Roboto-Regular";
+        text-align: left;
+        font-weight: normal;
+        line-height: 35px;
+        font-size: 15px;
+        margin-top:-6px;
     }
-
-    .lieu_3 {
-        @include lieu;
-        right: 127px;
-    }
-
-    .lieu_4 {
-        @include lieu;
-        right: 160px;
-    }
-
-    .bloc_resto {
+    
+        .bloc_resto {
         background-color: #f6f6f6;
         width: 100%;
         padding-top: 57px;
@@ -269,6 +258,7 @@
 
     .contenu {
         padding: 10px;
+        position: relative; 
     }
 
     .img_conteneur1 {

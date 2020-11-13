@@ -9,34 +9,14 @@
         color: black;
     }
 
-    .img_menu1 /*img_menu2, img_menu3, img_menu4*/ {
+    .img_menu {
         width: 100%;
         margin-top: 6px;
         z-index: 2;
         position: relative;
     }
 
-    .img_menu2 {
-        width: 100%;
-        margin-top: 6px;
-        z-index: 2;
-        position: relative;
-    }
-
-    .img_menu3 {
-        width: 100%;
-        margin-top: 6px;
-        z-index: 2;
-        position: relative;
-     }  
-
-     .img_menu4 {
-        width: 100%;
-        margin-top: 6px;
-        z-index: 2;
-        position: relative;
-     }
-
+    
     .icone_like_menus {
         position: relative;
         left: 65px;
@@ -51,11 +31,7 @@
         background-color: linear-gradient(#ff79da, #9356dc);
     }
 
-    .entete_resto {
-        font-family: "Shrikhand-Regular";
-        font-size: 23px;
-        margin-left: 20px;
-    }
+    
 
     .menu_frame1 {
         background-color: #eee8e3;
@@ -118,16 +94,45 @@
         transform-origin: center center;
     }
 
-    .contenant_1:hover .box {
+    .contenant_1:hover .box,
+    .contenant_2:hover .box,
+    .contenant_3:hover .box,
+    .contenant_4:hover .box,
+    .contenant_5:hover .box,
+    .contenant_6:hover .box,
+    .contenant_7:hover .box,
+    .contenant_8:hover .box,
+    .contenant_9:hover .box,
+    .contenant_10:hover .box {
         width: 3%;
         padding: 10px 30px;
     }
 
-    .contenant_1:hover, .contenant_2:hover, .contenant_3:hover, .contenant_4:hover, .contenant_5:hover, .contenant_6:hover, .contenant_7:hover, .contenant_8:hover, .contenant_9:hover, .contenant_10:hover .contenant_left {
+    .contenant_1:hover,
+    .contenant_2:hover,
+    .contenant_3:hover,
+    .contenant_4:hover,
+    .contenant_5:hover,
+    .contenant_6:hover,
+    .contenant_7:hover,
+    .contenant_8:hover,
+    .contenant_9:hover,
+    .contenant_10:hover
+    .contenant_left {
         width: 80%;
     }
 
-    .contenant_1:hover, .contenant_2:hover, .contenant_3:hover, .contenant_4:hover, .contenant_5:hover, .contenant_6:hover, .contenant_7:hover, .contenant_8:hover, .contenant_9:hover, .contenant_10:hover .icone_valide {
+    .contenant_1:hover,
+    .contenant_2:hover, 
+    .contenant_3:hover, 
+    .contenant_4:hover, 
+    .contenant_5:hover, 
+    .contenant_6:hover, 
+    .contenant_7:hover, 
+    .contenant_8:hover, 
+    .contenant_9:hover, 
+    .contenant_10:hover 
+    .icone_valide {
         transform: rotate(360deg);
         transform-origin: center center;
     }
@@ -142,11 +147,6 @@
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .contenant_2:hover .box {
-        width: 3%;
-        padding: 10px 30px;
-    }
-
     .contenant_3 {
        @include contenant;
         transition-delay: 310ms;
@@ -155,11 +155,6 @@
         -webkit-animation: fadein 5s; /* Safari et Chrome */
         -o-animation: fadein 5s; /* Opera */
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .contenant_3:hover .box {
-        width: 3%;
-        padding: 10px 30px;
     }
 
     .contenant_4 {
@@ -172,11 +167,6 @@
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .contenant_4:hover .box {
-        width: 3%;
-        padding: 10px 30px;
-    }
-
     .contenant_5 {
         @include contenant;
         animation: fadein 7s;
@@ -184,11 +174,6 @@
         -webkit-animation: fadein 7s; /* Safari et Chrome */
         -o-animation: fadein 7s; /* Opera */
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .contenant_5:hover .box {
-        width: 3%;
-        padding: 10px 30px;
     }
 
     .contenant_6 {
@@ -201,11 +186,6 @@
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .contenant_6:hover .box {
-        width: 3%;
-        padding: 10px 30px;
-    }
-
     .contenant_7 {
         @include contenant;
         transition-delay: 330ms;
@@ -214,11 +194,6 @@
         -webkit-animation: fadein 9s; /* Safari et Chrome */
         -o-animation: fadein 9s; /* Opera */
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .contenant_7:hover .box {
-        width: 3%;
-        padding: 10px 30px;
     }
 
     .contenant_8 {
@@ -231,11 +206,6 @@
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .contenant_8:hover .box {
-        width: 3%;
-        padding: 10px 30px;
-    }
-
     .contenant_9 {
         @include contenant;
         transition-delay: 340ms;
@@ -244,11 +214,6 @@
         -webkit-animation: fadein 11s; /* Safari et Chrome */
         -o-animation: fadein 11s; /* Opera */
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .contenant_9:hover .box {
-        width: 3%;
-        padding: 10px 30px;
     }
 
     .contenant_10 {
@@ -260,12 +225,7 @@
         -o-animation: fadein 12s; /* Opera */
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
-
-    .contenant_10:hover .box {
-        width: 3%;
-        padding: 10px 30px;
-    }
-       
+  
     .entree, .plat, .dessert {
         font-family: "Roboto-Regular";
         color: black;
@@ -311,8 +271,8 @@
         font-family: "Roboto-Regular";
         font-weight: bold;
         position: absolute;
-        margin-left: 275px;
-        margin-top:-17px;
+        right:33px;
+        bottom:18px;
         font-size: 15px;
     }
 

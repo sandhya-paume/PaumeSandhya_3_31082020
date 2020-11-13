@@ -17,15 +17,6 @@
 	font-family: "Roboto-Regular";
 }
 
-@mixin lieu { 
-	font-family: "Roboto-Regular";
-	text-align: left;
-	font-weight: normal;
-	position: relative;
-	line-height: 35px;
-	top: 15px;
-	font-size: 15px;
-}
 
 @mixin conteneur { 
 	width: 100%;
@@ -65,3 +56,81 @@
 	font-size: 15px;
 }
 
+/*/ mixins de la page d'accueil en desktop/*/
+
+@mixin reservation {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Roboto-Regular";
+}
+
+
+@mixin i {
+	padding-bottom: 10px;
+	background-color: #f7f7f7;
+	margin-right: 20px;
+	position: relative;
+	right: 235px;
+}
+
+@mixin image_resto {
+	width: 700px;
+	height: 300px;
+	border-radius: 20px 20px 0px 0px;
+}
+
+@mixin icone_like_homepage {
+	text-align: right;
+	margin-top:52px;
+	margin-left: 192px;
+	font-size: 25px;
+}
+
+/*/ mixins de la pages des menus en desktop/*/
+
+@mixin image_conteneur {
+	width: 100%;
+	position: relative;
+	border-radius: 20px 20px 0px 0px;
+}
+
+@mixin contenant {
+	background-color: white;
+	cursor: pointer;
+	margin: 20px;
+	padding-left: 15px;
+	max-height: 80px;
+	width: 95%;
+	margin-left: 20px;
+	border-radius: 30px 30px 30px 30px;
+	display: flex;
+	overflow: hidden;
+}
+
+/*/ mixins de la page d'accueil en tablette /*/
+
+@mixin slide {
+	margin-left: 20px;
+	position: relative;
+	left: 19px;
+	height: 70px;
+	line-height: 74px;
+	box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
+	font-family: "Roboto-Regular";
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	border-radius: 20px 20px 20px 20px;
+	font-size: 20px;
+	text-align: center;
+	width: 90%;
+}
+
+@mixin image_resto {
+	width: 700px;
+	height: 300px;
+	border-radius: 20px 20px 0px 0px;
+}

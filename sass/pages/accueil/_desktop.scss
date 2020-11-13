@@ -98,18 +98,12 @@
     }
 
     .reservation {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
+        @include reservation;
         padding-top: 15px;
-        font-family: "Roboto-Regular";
     }
 
     .reservation2 {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: "Roboto-Regular";
+       @include reservation; 
     }
 
     .description {
@@ -117,15 +111,6 @@
         font-size: 25px;
         font-family: "Roboto-Regular";
     }
-
-    .description2 {
-        text-align: center;
-        font-size: 25px;
-        font-family: "Roboto-Regular";
-        position: relative;
-        bottom: 15px;
-    }
-
 
     .bloc_fonctionnement {
         background-color: white;
@@ -136,12 +121,6 @@
         color: black;
         font-weight: bold;
         margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 60%;
-        background-color: #f7f7f7;
         margin-left: 235px;
         position: relative;
         left: 19px;
@@ -149,42 +128,27 @@
         line-height: 74px;
         box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
         font-family: "Roboto-Regular";
-    }
-
-    .slide3 {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
         border-radius: 20px 20px 20px 20px;
         font-size: 20px;
         text-align: center;
         width: 60%;
+
+        .i {
+            @include i;
+            color: grey;
+        }
+    }
+
+    .slide--selected {
         background-color: #9356dc26;
-        margin-left: 235px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
+
+        .i {
+            @include i;
+            color: #9356dc;
+        }
     }
 
-    .icones_fonctionnement {
-        color: grey;
-        margin-right: 20px;
-        position: relative;
-        right: 235px;
-    }
-
-    .icones_fonctionnement3 {
-        color: #9356dc;
-        margin-right: 20px;
-        position: relative;
-        right: 235px;
-    }
-
+               
     .rond {
         color: #9356dc;
         font-size: 20px;
@@ -195,54 +159,24 @@
         font-size: 25px;
         font-weight: bold;
         text-align: left;
-        position: relative;
-        right: 8px;
-        top: 160px;
+        margin-left: -105px;
+        margin-top: 12px;
     }
 
-    .img_resto_1 {
-        width: 700px;
-        height: 300px;
+    .img_resto_1,
+    .img_resto_3,
+    .img_resto_4 {
+        @include image_resto;
         position: absolute;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_resto_2 {
-        width: 700px;
-        height: 300px;
+        @include image_resto;
         position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
 
-    .img_resto_3 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
 
-    .img_resto_4 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .btn_new1 {
-        background-color: #99E2D0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 110px;
-        height: 30px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        line-height: 30px;
-    }
-
+    .btn_new1,
     .btn_new2 {
         background-color: #99E2D0;
         color: #008766;
@@ -258,6 +192,8 @@
         line-height: 30px;
     }
 
+    
+
     .frame {
         width: 700px;
         height: 400px;
@@ -269,39 +205,22 @@
         left: 380px;
     }
 
-    .icone_like:hover {
-        text-align: right;
-        font-size: 25px;
-        top: 13px;
-        left: 317px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-    }
-
-
+    
     .icone_like_homepage:hover {
-        text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
+      @include icone_like_homepage;
         background-image: linear-gradient(#ff79da, #9356dc);
     }
 
-    .icone_like_homepage {
-        text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
+    .icone_like_homepage{
+        @include icone_like_homepage;
     }
 
-    .lieu_1 {
+    /*/ faire la methode sass/bem pour tout les lieux quand j aurais regle le probleme des coeurs /*/
+    .lieu_1 { 
         text-align: left;
         font-weight: normal;
-        position: relative;
         line-height: 35px;
-        top: 190px;
-        right: 250px;
+        margin-left: -103px;
         font-size: 20px;
     }
 
@@ -358,42 +277,21 @@
     }
 
     .contenu {
-        padding: 10px;
+        padding: 130px;
     }
 
-    .img_conteneur1 {
-        width: 100%;
+    .img_conteneur1,
+    .img_conteneur3,
+    .img_conteneur4,
+    .img_conteneur5 {
+        @include image_conteneur;
         height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
+        
     }
 
     .img_conteneur2 {
-        width: 100%;
+      @include image_conteneur;
         height: 154px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
 
-    .img_conteneur3 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur4 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur5 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    }
+ }

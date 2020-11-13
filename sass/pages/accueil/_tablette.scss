@@ -111,87 +111,33 @@
         font-family: "Roboto-Regular";
     }
 
-    .reservation2 {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: "Roboto-Regular";
-    }
-
     .description {
         text-align: center;
         font-size: 25px;
         font-family: "Roboto-Regular";
     }
-
-    .description2 {
-        text-align: center;
-        font-size: 25px;
-        position: relative;
-        bottom: 15px;
-        font-family: "Roboto-Regular";
-    }
-
-  
-
+             
     .bloc_fonctionnement {
         background-color: #f6f6f6;
     }
 
     .slide {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 90%;
+        @include slide;
         background-color: #f6f6f6;
-        margin-left: 20px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
+
+        i {
+            color: grey;
+        }
     }
 
-    .slide3 {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        width: 90%;
+    .slide--selected {
         background-color: #f5edff;
-        margin-left: 20px;
-        position: relative;
-        left: 19px;
-        height: 70px;
-        line-height: 74px;
-        box-shadow: 2px 3px 12px rgba(0,0,0,0.2);
-        font-family: "Roboto-Regular";
-    }
 
-    .icones_fonctionnement {
-        color: grey;
-        margin-right: 20px;
-        position: relative;
-        right: 250px;
+        i {
+            color: #9356dc;
+        }
     }
-
-    .icones_fonctionnement3 {
-        color: #9356dc;
-        margin-right: 20px;
-        position: relative;
-        right: 250px;
-    }
-
+         
     .rond {
         color: #9356dc;
         font-size: 20px;
@@ -202,9 +148,7 @@
         font-size: 25px;
         font-weight: bold;
         text-align: left;
-        position: relative;
-        right: 8px;
-        top: 160px;
+       padding-top:133px;
         font-family: "Roboto-Regular";
     }
 
@@ -213,50 +157,19 @@
         margin-right: 20px;
     }
 
-    .img_resto_1 {
-        width: 700px;
-        height: 300px;
+    .img_resto_1,
+    .img_resto_3,
+    .img_resto_4 {
+        @include image_resto;
         position: absolute;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .img_resto_2 {
-        width: 700px;
-        height: 300px;
+        @include image_resto;
         position: relative;
-        border-radius: 20px 20px 0px 0px;
     }
-
-    .img_resto_3 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_resto_4 {
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .btn_new1 {
-        background-color: #99E2D0;
-        color: #008766;
-        justify-content: center;
-        display: flex;
-        width: 110px;
-        height: 30px;
-        border-radius: 2px 2px 2px 2px;
-        font-weight: bold;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        line-height: 30px;
-        font-family: "Roboto-Regular";
-    }
-
+       
+    .btn_new1,
     .btn_new2 {
         background-color: #99E2D0;
         color: #008766;
@@ -285,16 +198,7 @@
         bottom: 18px;
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
-
-    .icone_like:hover {
-        text-align: right;
-        font-size: 25px;
-        top: 13px;
-        left: 317px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-    }
-
-
+       
     .icone_like_homepage:hover {
         text-align: right;
         position: relative;
@@ -312,52 +216,19 @@
         font-size: 25px;
         color: #717171;
     }
-
-    .lieu_1 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 215px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
-    .lieu_2 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 188px;
-        right: 220px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
-    .lieu_3 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 167px;
-        font-size: 20px;
-        font-family: "Roboto-Regular";
-    }
-
+      
+    .lieu_1,
+    .lieu_2,
+    .lieu_3,
     .lieu_4 {
         text-align: left;
         font-weight: normal;
-        position: relative;
+        padding-bottom: 145px;
         line-height: 35px;
-        top: 190px;
-        right: 217px;
         font-size: 20px;
         font-family: "Roboto-Regular";
     }
-
-
+       
     .bloc_resto {
         background-color: #f6f6f6;
         width: 100%;
@@ -384,38 +255,16 @@
         padding: 10px;
     }
 
-    .img_conteneur1 {
+    .img_conteneur1,
+    .img_conteneur2,
+    .img_conteneur3,
+    .img_conteneur4,
+    .img_conteneur5,
+    {
         width: 100%;
         height: 150px;
         position: relative;
         border-radius: 20px 20px 0px 0px;
     }
-
-    .img_conteneur2 {
-        width: 100%;
-        height: 154px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur3 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur4 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
-
-    .img_conteneur5 {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-    }
+        
     }
