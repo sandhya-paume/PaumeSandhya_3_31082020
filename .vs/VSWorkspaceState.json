@@ -2,10 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\sass",
+    "\\sass\\abstracts",
+    "\\sass\\base",
+    "\\sass\\base\\shared",
+    "\\sass\\components",
     "\\sass\\pages",
     "\\sass\\pages\\accueil",
     "\\sass\\pages\\menus"
   ],
-  "SelectedNode": "\\sass\\pages\\accueil\\_mobile.scss",
+  "SelectedNode": "\\sass\\pages\\accueil\\_desktop.scss",
   "PreviewInSolutionExplorer": false
 }

@@ -104,17 +104,13 @@
     }
 
     .reservation {
-        text-align: center;
-        font-size: 25px;
+        @include resa;
         font-weight: bold;
         padding-top: 15px;
-        font-family: "Roboto-Regular";
     }
 
     .description {
-        text-align: center;
-        font-size: 25px;
-        font-family: "Roboto-Regular";
+      @include resa; 
     }
              
     .bloc_fonctionnement {

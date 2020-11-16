@@ -12,6 +12,7 @@
 /*/ mixins de la page d'accueil en desktop/*/
 /*/ mixins de la pages des menus en desktop/*/
 /*/ mixins de la page d'accueil en tablette /*/
+/*/ mixins des pages menus en tablette /*/
 @media only screen and (min-width: 1150px) {
   .bloc_chargement {
     position: fixed;
@@ -706,9 +707,9 @@
   .reservation {
     text-align: center;
     font-size: 25px;
+    font-family: "Roboto-Regular";
     font-weight: bold;
     padding-top: 15px;
-    font-family: "Roboto-Regular";
   }
 
   .description {
@@ -1741,51 +1742,18 @@
     color: black;
   }
 
-  .img_menu1 {
+  .img_menu1,
+.img_menu2,
+.img_menu3,
+.img_menu4 {
     width: 100%;
     height: 530px;
   }
 
-  .img_menu2 {
-    width: 100%;
-    height: 530px;
-  }
-
-  .img_menu3 {
-    width: 100%;
-    height: 530px;
-  }
-
-  .img_menu4 {
-    width: 100%;
-    height: 530px;
-  }
-
-  .menu_frame1 {
-    background-color: #EEE8E3;
-    border-radius: 65px 65px 0px 0px;
-    margin-top: -110px;
-    z-index: 2;
-    position: relative;
-  }
-
-  .menu_frame2 {
-    background-color: #EEE8E3;
-    border-radius: 65px 65px 0px 0px;
-    margin-top: -110px;
-    z-index: 2;
-    position: relative;
-  }
-
-  .menu_frame3 {
-    background-color: #EEE8E3;
-    border-radius: 65px 65px 0px 0px;
-    margin-top: -110px;
-    z-index: 2;
-    position: relative;
-  }
-
-  .menu_frame4 {
+  .menu_frame1,
+.menu_frame2,
+.menu_frame3,
+.menu_frame4 {
     background-color: #EEE8E3;
     border-radius: 65px 65px 0px 0px;
     margin-top: -110px;
@@ -1833,16 +1801,16 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
+    width: 95%;
+    margin-left: 20px;
+    border-radius: 30px 30px 30px 30px;
     display: flex;
-    transition-delay: 300ms;
     overflow: hidden;
+    transition-delay: 300ms;
     animation: fadein 3s;
     -moz-animation: fadein 3s;
     -webkit-animation: fadein 3s;
     -o-animation: fadein 3s;
-    width: 95%;
-    margin-left: 20px;
-    border-radius: 30px 30px 30px 30px;
   }
 
   /*/---Animation---/*/
@@ -1907,16 +1875,43 @@
     transform-origin: center center;
   }
 
-  .contenant_1:hover .box {
+  .contenant_1:hover .box,
+.contenant_2:hover .box,
+.contenant_3:hover .box,
+.contenant_4:hover .box,
+.contenant_5:hover .box,
+.contenant_6:hover .box,
+.contenant_7:hover .box,
+.contenant_8:hover .box,
+.contenant_9:hover .box,
+.contenant_10:hover .box {
     width: 15%;
     padding: 13px 24px;
   }
 
-  .contenant_1:hover .contenant_left {
+  .contenant_1:hover .contenant_left,
+.contenant_2:hover .contenant_left,
+.contenant_3:hover .contenant_left,
+.contenant_4:hover .contenant_left,
+.contenant_5:hover .contenant_left,
+.contenant_6:hover .contenant_left,
+.contenant_7:hover .contenant_left,
+.contenant_8:hover .contenant_left,
+.contenant_9:hover .contenant_left,
+.contenant_10:hover .contenant_left {
     width: 190%;
   }
 
-  .contenant_1:hover .icone_valide {
+  .contenant_1:hover .icone_valide,
+.contenant_2:hover .icone_valide,
+.contenant_3:hover .icone_valide,
+.contenant_4:hover .icone_valide,
+.contenant_5:hover .icone_valide,
+.contenant_6:hover .icone_valide,
+.contenant_7:hover .icone_valide,
+.contenant_8:hover .icone_valide,
+.contenant_9:hover .icone_valide,
+.contenant_10:hover .icone_valide {
     transform: rotate(360deg);
     transform-origin: center center;
   }
@@ -1939,20 +1934,6 @@
     -o-animation: fadein 4s;
   }
 
-  .contenant_2:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_2:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_2:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
   .contenant_3 {
     background-color: white;
     cursor: pointer;
@@ -1969,20 +1950,6 @@
     -moz-animation: fadein 5s;
     -webkit-animation: fadein 5s;
     -o-animation: fadein 5s;
-  }
-
-  .contenant_3:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_3:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_3:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
   }
 
   .contenant_4 {
@@ -2003,34 +1970,6 @@
     -o-animation: fadein 6s;
   }
 
-  .contenant_4:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_4:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_4:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .legumes {
-    position: relative;
-    bottom: 25px;
-    left: 302px;
-    font-family: "Roboto-Regular";
-  }
-
-  .noire {
-    position: relative;
-    bottom: 25px;
-    left: 308px;
-    font-family: "Roboto-Regular";
-  }
-
   .contenant_5 {
     background-color: white;
     cursor: pointer;
@@ -2047,20 +1986,6 @@
     -moz-animation: fadein 7s;
     -webkit-animation: fadein 7s;
     -o-animation: fadein 7s;
-  }
-
-  .contenant_5:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_5:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_5:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
   }
 
   .contenant_6 {
@@ -2081,20 +2006,6 @@
     -o-animation: fadein 8s;
   }
 
-  .contenant_6:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_6:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_6:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
   .contenant_7 {
     background-color: white;
     cursor: pointer;
@@ -2113,20 +2024,6 @@
     -o-animation: fadein 9s;
   }
 
-  .contenant_7:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_7:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_7:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
   .contenant_8 {
     background-color: white;
     cursor: pointer;
@@ -2143,20 +2040,6 @@
     -moz-animation: fadein 10s;
     -webkit-animation: fadein 10s;
     -o-animation: fadein 10s;
-  }
-
-  .contenant_8:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_8:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_8:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
   }
 
   .contenant_9 {
@@ -2180,20 +2063,6 @@
     /* Opera */
   }
 
-  .contenant_9:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_9:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_9:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
   .contenant_10 {
     background-color: white;
     cursor: pointer;
@@ -2212,31 +2081,6 @@
     -o-animation: fadein 10s;
   }
 
-  .contenant_10:hover .box {
-    width: 15%;
-    padding: 13px 24px;
-  }
-
-  .contenant_10:hover .contenant_left {
-    width: 190%;
-  }
-
-  .contenant_10:hover .icone_valide {
-    transform: rotate(360deg);
-    transform-origin: center center;
-  }
-
-  .nom_entree {
-    font-family: "Roboto-Regular";
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 15px;
-    position: relative;
-    top: 10px;
-  }
-
   .ingredients {
     font-family: "Roboto-Regular";
     font-size: 18px;
@@ -2249,20 +2093,13 @@
   .price {
     font-family: "Roboto-Regular";
     font-weight: bold;
-    position: absolute;
-    right: 30px;
-    bottom: 18px;
+    margin-left: 850px;
+    margin-top: -26px;
   }
 
-  .price_plat1_menu1 {
-    font-family: "Roboto-Regular";
-    font-weight: bold;
-    position: absolute;
-    right: 30px;
-    bottom: 18px;
-  }
-
-  .entree {
+  .entree,
+.plat,
+.dessert {
     font-family: "Roboto-Regular";
     color: black;
     font-size: 22px;
@@ -2279,42 +2116,15 @@
     margin-top: 10px;
   }
 
-  .nom_plat {
+  .nom_entree,
+.nom_plat,
+.nom_dessert {
     font-family: "Roboto-Regular";
     font-size: 20px;
     font-weight: bold;
     text-align: left;
     margin-left: 30px;
     margin-bottom: 15px;
-    position: relative;
-    top: 10px;
-  }
-
-  .plat {
-    font-family: "Roboto-Regular";
-    color: black;
-    font-size: 22px;
-    text-align: left;
-    padding: 50px;
-  }
-
-  .dessert {
-    font-family: "Roboto-Regular";
-    color: black;
-    font-size: 22px;
-    text-align: left;
-    padding: 50px;
-  }
-
-  .nom_dessert {
-    font-family: "Roboto-Regular";
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 15px;
-    position: relative;
-    top: 10px;
   }
 
   header {
@@ -2690,7 +2500,7 @@
     font-size: 25px;
     padding: 10px;
     font-family: "Shrikhand-Regular";
-    color: white;
+    color: black;
     font-weight: 100;
     margin-bottom: 8px;
     margin-left: 21px;

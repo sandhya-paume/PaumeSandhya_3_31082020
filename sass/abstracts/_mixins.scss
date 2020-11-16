@@ -134,3 +134,26 @@
 	height: 300px;
 	border-radius: 20px 20px 0px 0px;
 }
+
+@mixin resa {
+	text-align: center;
+	font-size: 25px;
+	font-family: "Roboto-Regular";
+}
+
+
+/*/ mixins des pages menus en tablette /*/
+
+
+@mixin les_contenants {
+	background-color: white;
+	cursor: pointer;
+	margin: 20px;
+	padding-left: 15px;
+	max-height: 80px;
+	width: 95%;
+	margin-left: 20px;
+	border-radius: 30px 30px 30px 30px;
+	display: flex;
+	overflow: hidden;
+}
