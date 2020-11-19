@@ -8,14 +8,19 @@
         color: black;
     }
 
+   
     .img_menu1,
-    .img_menu2,
     .img_menu3,
     .img_menu4 {
         width: 100%;
-        height: 530px;
+        height:500px;
     }
-        
+
+    .img_menu2{
+        width:100%;
+        margin-top: -707px;
+    }
+
     .img_conteneur {
         overflow: hidden;
         width: 100%;

@@ -133,7 +133,7 @@
         text-align: center;
         width: 60%;
 
-        .i {
+        i {
             @include i;
             color: grey;
         }
@@ -142,7 +142,7 @@
     .slide--selected {
         background-color: #9356dc26;
 
-        .i {
+        i {
             @include i;
             color: #9356dc;
         }
@@ -159,7 +159,6 @@
         font-size: 25px;
         font-weight: bold;
         text-align: left;
-        margin-left: -105px;
         margin-top: 12px;
     }
 
@@ -202,7 +201,8 @@
         margin: 0 0 15px 0;
         margin-bottom: 50px;
         position: relative;
-        left: 380px;
+        margin-left: 300px;
+        
     }
 
     
@@ -215,45 +215,12 @@
         @include icone_like_homepage;
     }
 
-    /*/ faire la methode sass/bem pour tout les lieux quand j aurais regle le probleme des coeurs /*/
-    .lieu_1 { 
+    .lieu { 
         text-align: left;
         font-weight: normal;
         line-height: 35px;
-        margin-left: -103px;
         font-size: 20px;
     }
-
-    .lieu_2 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 188px;
-        right: 252px;
-        font-size: 20px;
-    }
-
-    .lieu_3 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 193px;
-        font-size: 20px;
-    }
-
-    .lieu_4 {
-        text-align: left;
-        font-weight: normal;
-        position: relative;
-        line-height: 35px;
-        top: 190px;
-        right: 245px;
-        font-size: 20px;
-    }
-
 
     .bloc_resto {
         background-color: #F2EBEA;
@@ -277,21 +244,23 @@
     }
 
     .contenu {
-        padding: 130px;
+       position: relative;
     }
 
     .img_conteneur1,
+    .img_conteneur2,
     .img_conteneur3,
     .img_conteneur4,
     .img_conteneur5 {
         @include image_conteneur;
-        height: 150px;
+        height: 270px;
+        overflow: hidden;
         
     }
 
     .img_conteneur2 {
       @include image_conteneur;
-        height: 154px;
+      overflow:hidden;
     }
 
  }

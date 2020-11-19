@@ -10,6 +10,6 @@
     "\\sass\\pages\\accueil",
     "\\sass\\pages\\menus"
   ],
-  "SelectedNode": "\\sass\\pages\\accueil\\_desktop.scss",
+  "SelectedNode": "\\sass\\base\\shared\\_tablette.scss",
   "PreviewInSolutionExplorer": false
 }

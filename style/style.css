@@ -145,7 +145,7 @@
     text-align: center;
     width: 60%;
   }
-  .slide .i {
+  .slide i {
     padding-bottom: 10px;
     background-color: #f7f7f7;
     margin-right: 20px;
@@ -157,7 +157,7 @@
   .slide--selected {
     background-color: #9356dc26;
   }
-  .slide--selected .i {
+  .slide--selected i {
     padding-bottom: 10px;
     background-color: #f7f7f7;
     margin-right: 20px;
@@ -176,7 +176,6 @@
     font-size: 25px;
     font-weight: bold;
     text-align: left;
-    margin-left: -105px;
     margin-top: 12px;
   }
 
@@ -220,60 +219,28 @@
     margin: 0 0 15px 0;
     margin-bottom: 50px;
     position: relative;
-    left: 380px;
+    margin-left: 300px;
   }
 
   .icone_like_homepage:hover {
-    text-align: right;
-    margin-top: 52px;
-    margin-left: 192px;
+    position: absolute;
+    right: 68px;
+    top: 10px;
     font-size: 25px;
     background-image: linear-gradient(#ff79da, #9356dc);
   }
 
   .icone_like_homepage {
-    text-align: right;
-    margin-top: 52px;
-    margin-left: 192px;
+    position: absolute;
+    right: 68px;
+    top: 10px;
     font-size: 25px;
   }
 
-  /*/ faire la methode sass/bem pour tout les lieux quand j aurais regle le probleme des coeurs /*/
-  .lieu_1 {
+  .lieu {
     text-align: left;
     font-weight: normal;
     line-height: 35px;
-    margin-left: -103px;
-    font-size: 20px;
-  }
-
-  .lieu_2 {
-    text-align: left;
-    font-weight: normal;
-    position: relative;
-    line-height: 35px;
-    top: 188px;
-    right: 252px;
-    font-size: 20px;
-  }
-
-  .lieu_3 {
-    text-align: left;
-    font-weight: normal;
-    position: relative;
-    line-height: 35px;
-    top: 190px;
-    right: 193px;
-    font-size: 20px;
-  }
-
-  .lieu_4 {
-    text-align: left;
-    font-weight: normal;
-    position: relative;
-    line-height: 35px;
-    top: 190px;
-    right: 245px;
     font-size: 20px;
   }
 
@@ -299,24 +266,26 @@
   }
 
   .contenu {
-    padding: 130px;
+    position: relative;
   }
 
   .img_conteneur1,
+.img_conteneur2,
 .img_conteneur3,
 .img_conteneur4,
 .img_conteneur5 {
     width: 100%;
     position: relative;
     border-radius: 20px 20px 0px 0px;
-    height: 150px;
+    height: 270px;
+    overflow: hidden;
   }
 
   .img_conteneur2 {
     width: 100%;
     position: relative;
     border-radius: 20px 20px 0px 0px;
-    height: 154px;
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -894,11 +863,15 @@
   }
 
   .img_menu1,
-.img_menu2,
 .img_menu3,
 .img_menu4 {
     width: 100%;
-    height: 530px;
+    height: 500px;
+  }
+
+  .img_menu2 {
+    width: 100%;
+    margin-top: -707px;
   }
 
   .img_conteneur {
@@ -1743,11 +1716,15 @@
   }
 
   .img_menu1,
-.img_menu2,
 .img_menu3,
 .img_menu4 {
     width: 100%;
     height: 530px;
+  }
+
+  .img_menu2 {
+    width: 100%;
+    margin-top: -707px;
   }
 
   .menu_frame1,
@@ -2093,8 +2070,9 @@
   .price {
     font-family: "Roboto-Regular";
     font-weight: bold;
-    margin-left: 850px;
-    margin-top: -26px;
+    position: absolute;
+    right: 40px;
+    bottom: 11px;
   }
 
   .entree,
@@ -2442,6 +2420,7 @@
     color: white;
     font-weight: 100;
     margin-bottom: 20px;
+    margin-top: 0px;
     padding: 10px;
     font-weight: 100;
   }
@@ -2475,11 +2454,11 @@
     padding-top: 25px;
     margin: 0px;
     padding-left: 30px;
-    margin-top: -40px;
+    margin-top: 0px;
     font-weight: 100;
   }
 
-  .h4 {
+  h4 {
     font-family: "Shrikhand-Regular";
     font-size: 23px;
     margin-left: 20px;

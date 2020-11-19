@@ -81,9 +81,9 @@
 }
 
 @mixin icone_like_homepage {
-	text-align: right;
-	margin-top:52px;
-	margin-left: 192px;
+	position: absolute;
+	right: 68px;
+	top: 10px;
 	font-size: 25px;
 }
 

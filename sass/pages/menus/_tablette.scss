@@ -9,11 +9,15 @@
     }
 
     .img_menu1,
-    .img_menu2,
     .img_menu3,
     .img_menu4 {
         width: 100%;
         height: 530px;
+    }
+
+    .img_menu2{
+        width:100%;
+        margin-top: -707px;
     }
 
 
@@ -277,11 +281,11 @@
     }
 
     .price {
-        font-family: "Roboto-Regular";
-        font-weight: bold;
-        margin-left: 850px;
-        margin-top: -26px;
-
+       font-family: "Roboto-Regular";
+       font-weight: bold;
+       position:absolute;
+       right: 40px;
+       bottom: 11px;
     }
 
     .entree,
