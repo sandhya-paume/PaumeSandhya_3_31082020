@@ -35,9 +35,8 @@
 
 
 
-    .section {
+    section {
         background-color: #eee8e3;
-        height: 890px;
         padding-top: 30px;
     }
 
@@ -194,7 +193,7 @@
         bottom: 18px;
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
-       
+
     .icone_like_homepage:hover {
         text-align: right;
         position: relative;
@@ -202,6 +201,8 @@
         left: 600px;
         font-size: 25px;
         background-image: linear-gradient(#ff79da, #9356dc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .icone_like_homepage {

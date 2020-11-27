@@ -32,10 +32,8 @@
 
 
 
-    .section {
+    section {
         background-color: #eee8e3;
-        height: 885px;
-        padding-top: 30px;
     }
 
     .loader {
@@ -209,20 +207,18 @@
         margin-left:13px;
     }
 
-    .icone_like_homepage :hover {
-        position: absolute;
-        left: 275px;
-        font-size: 20px;
+    .icone_like_homepage:hover {
+        @include icone_like;
         background-image: linear-gradient(#ff79da, #9356dc);
-        -webkit-background-clip: text;
+       -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     .icone_like_homepage {
-        position: absolute;
-        left: 300px;
-        font-size: 20px;
-        color: #717171;
+        @include icone_like;
+        background-color: white;
+        /*-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
     }
 
 

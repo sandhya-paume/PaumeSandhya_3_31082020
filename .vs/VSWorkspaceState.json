@@ -4,12 +4,13 @@
     "\\sass",
     "\\sass\\abstracts",
     "\\sass\\base",
-    "\\sass\\base\\shared",
     "\\sass\\components",
+    "\\sass\\layout",
+    "\\sass\\layout\\header",
     "\\sass\\pages",
     "\\sass\\pages\\accueil",
     "\\sass\\pages\\menus"
   ],
-  "SelectedNode": "\\sass\\base\\shared\\_tablette.scss",
+  "SelectedNode": "\\sass\\pages\\menus\\_tablette.scss",
   "PreviewInSolutionExplorer": false
 }

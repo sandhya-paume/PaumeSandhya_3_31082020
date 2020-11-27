@@ -44,26 +44,13 @@
         position: relative;
         left: 235px;
         font-size: 30px;
-    }
 
-    .icone_like_menu3 {
-        position: relative;
-        left: 300px;
-        font-size: 30px;
-    }
-
-    .icone_like_menu3:hover {
-        position: relative;
-        left: 300px;
-        font-size: 30px;
-        background-color: linear-gradient(#ff79da, #9356dc);
-    }
-
-    .icone_like_menus:hover {
-        position: relative;
-        left: 235px;
-        font-size: 30px;
-        background-color: linear-gradient(#ff79da, #9356dc);
+        &:hover {
+            position: relative;
+            left: 235px;
+            font-size: 30px;
+            background-color: linear-gradient(#ff79da, #9356dc);
+        }
     }
 
     .contenant_1 {

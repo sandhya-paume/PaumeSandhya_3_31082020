@@ -34,7 +34,6 @@
 
     .section {
         background-color: #eee8e3;
-        height: 890px;
         padding-top: 30px;
     }
 
@@ -92,7 +91,7 @@
 
     .bloc_resa {
         padding-bottom: 50px;
-        background-color: #E5EFE7;
+        background-color: #f6f6f6;
         text-align: center;
         width: 100%;
     }
@@ -158,8 +157,16 @@
     .resto {
         font-size: 25px;
         font-weight: bold;
-        text-align: left;
         margin-top: 12px;
+        margin-left: 10px;
+    }
+
+
+    .lieu {
+        font-weight: normal;
+        line-height: 35px;
+        font-size: 20px;
+        margin-left: 11px;
     }
 
     .img_resto_1,
@@ -173,7 +180,6 @@
         @include image_resto;
         position: relative;
     }
-
 
     .btn_new1,
     .btn_new2 {
@@ -191,8 +197,6 @@
         line-height: 30px;
     }
 
-    
-
     .frame {
         width: 700px;
         height: 400px;
@@ -205,7 +209,6 @@
         
     }
 
-    
     .icone_like_homepage:hover {
       @include icone_like_homepage;
         background-image: linear-gradient(#ff79da, #9356dc);
@@ -213,13 +216,7 @@
 
     .icone_like_homepage{
         @include icone_like_homepage;
-    }
-
-    .lieu { 
-        text-align: left;
-        font-weight: normal;
-        line-height: 35px;
-        font-size: 20px;
+        background-color: white;
     }
 
     .bloc_resto {

@@ -43,7 +43,6 @@
   }
   .section {
     background-color: #eee8e3;
-    height: 890px;
     padding-top: 30px;
   }
 
@@ -98,7 +97,7 @@
 
   .bloc_resa {
     padding-bottom: 50px;
-    background-color: #E5EFE7;
+    background-color: #f6f6f6;
     text-align: center;
     width: 100%;
   }
@@ -175,8 +174,15 @@
   .resto {
     font-size: 25px;
     font-weight: bold;
-    text-align: left;
     margin-top: 12px;
+    margin-left: 10px;
+  }
+
+  .lieu {
+    font-weight: normal;
+    line-height: 35px;
+    font-size: 20px;
+    margin-left: 11px;
   }
 
   .img_resto_1,
@@ -235,13 +241,7 @@
     right: 68px;
     top: 10px;
     font-size: 25px;
-  }
-
-  .lieu {
-    text-align: left;
-    font-weight: normal;
-    line-height: 35px;
-    font-size: 20px;
+    background-color: white;
   }
 
   .bloc_resto {
@@ -316,10 +316,8 @@
       z-index: 0;
     }
   }
-  .section {
+  section {
     background-color: #eee8e3;
-    height: 885px;
-    padding-top: 30px;
   }
 
   .loader {
@@ -499,9 +497,9 @@
     margin-left: 13px;
   }
 
-  .icone_like_homepage :hover {
+  .icone_like_homepage:hover {
     position: absolute;
-    left: 275px;
+    left: 300px;
     font-size: 20px;
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
@@ -512,7 +510,9 @@
     position: absolute;
     left: 300px;
     font-size: 20px;
-    color: #717171;
+    background-color: white;
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
   }
 
   .lieu {
@@ -610,9 +610,8 @@
       z-index: 0;
     }
   }
-  .section {
+  section {
     background-color: #eee8e3;
-    height: 890px;
     padding-top: 30px;
   }
 
@@ -793,6 +792,8 @@
     left: 600px;
     font-size: 25px;
     background-image: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .icone_like_homepage {
@@ -903,27 +904,12 @@
     background-color: linear-gradient(#ff79da, #9356dc);
   }
 
-  .icone_like_menu3 {
-    position: relative;
-    left: 300px;
-    font-size: 30px;
-  }
-
-  .icone_like_menu3:hover {
-    position: relative;
-    left: 300px;
-    font-size: 30px;
-    background-color: linear-gradient(#ff79da, #9356dc);
-  }
-
   .contenant_1 {
     background-color: white;
     cursor: pointer;
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1001,14 +987,25 @@
     transform-origin: center center;
   }
 
+  /*.contenant:hover .contenant_left {
+      width: 190%;
+
+      .box {
+          width: 15%;
+          padding: 13px 24px;
+      }
+
+      .icone_valide {
+          transform: rotate(360deg);
+          transform-origin: center center;
+      }
+  }*/
   .contenant_2 {
     background-color: white;
     cursor: pointer;
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1025,8 +1022,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1043,8 +1038,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1055,26 +1048,12 @@
     -o-animation: fadein 6s;
   }
 
-  .legumes {
-    position: relative;
-    bottom: 25px;
-    left: 302px;
-  }
-
-  .noire {
-    position: relative;
-    bottom: 25px;
-    left: 308px;
-  }
-
   .contenant_5 {
     background-color: white;
     cursor: pointer;
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1091,8 +1070,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1109,8 +1086,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1127,8 +1102,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1145,8 +1118,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1163,8 +1134,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1204,6 +1173,34 @@
     bottom: 28px;
   }
 
+  /* .contenant {
+       font-familly: "Roboto-Regular";
+       font-weight: normal;
+       text-align: left;
+
+       .nom_entree,
+       .nom_plat,
+       .nom_dessert {
+           font-size: 20px;
+           font-weight: bold;
+           margin-left: 30px;
+           margin-bottom: 15px;
+           position: relative;
+           top: 10px;
+
+           .ingredients {
+               font-size: 18px;
+               margin-left: 30px;
+
+
+               .price {
+                   font-weight: bold;
+                   position: absolute;
+                   right: 30px;
+                   bottom: 28px;
+               }
+           }
+       }*/
   .entree,
 .plat,
 .dessert {
@@ -1288,7 +1285,6 @@
     font-size: 22px;
     background-color: linear-gradient(#ff79da, #9356dc);
   }
-
   .icone_like_menus:hover {
     position: relative;
     left: 65px;
@@ -1329,25 +1325,6 @@
     bottom: 40px;
     padding-bottom: 40px;
     margin-top: -15px;
-  }
-
-  .contenant_1 {
-    background-color: white;
-    cursor: pointer;
-    margin: 20px;
-    padding-left: 15px;
-    max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
-    border-radius: 30px 30px 30px 30px;
-    display: flex;
-    overflow: hidden;
-    transition-delay: 300ms;
-    animation: fadein 3s;
-    -moz-animation: fadein 3s;
-    -webkit-animation: fadein 3s;
-    -o-animation: fadein 3s;
-    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
   .contenant_left {
@@ -1393,31 +1370,52 @@
     padding: 10px 30px;
   }
 
-  .contenant_1:hover,
-.contenant_2:hover,
-.contenant_3:hover,
-.contenant_4:hover,
-.contenant_5:hover,
-.contenant_6:hover,
-.contenant_7:hover,
-.contenant_8:hover,
-.contenant_9:hover,
+  .contenant_1:hover .contenant_left,
+.contenant_2:hover .contenant_left,
+.contenant_3:hover .contenant_left,
+.contenant_4:hover .contenant_left,
+.contenant_5:hover .contenant_left,
+.contenant_6:hover .contenant_left,
+.contenant_7:hover .contenant_left,
+.contenant_8:hover .contenant_left,
+.contenant_9:hover .contenant_left,
 .contenant_10:hover .contenant_left {
     width: 80%;
   }
 
-  .contenant_1:hover,
-.contenant_2:hover,
-.contenant_3:hover,
-.contenant_4:hover,
-.contenant_5:hover,
-.contenant_6:hover,
-.contenant_7:hover,
-.contenant_8:hover,
-.contenant_9:hover,
-.contenant_10:hover .icone_valide {
+  /*.contenant_1:hover .icone_valide,
+  .contenant_2:hover .icone_valide,
+  .contenant_3:hover .icone_valide,
+  .contenant_4:hover .icone_valide,
+  .contenant_5:hover .icone_valide,
+  .contenant_6:hover .icone_valide,
+  .contenant_7:hover .icone_valide,
+  .contenant_8:hover .icone_valide,
+  .contenant_9:hover .icone_valide,
+  .contenant_10:hover .icone_valide*/
+  .contenants:hover .icone_valide {
     transform: rotate(360deg);
     transform-origin: center center;
+  }
+
+  .contenant_1 {
+    background-color: white;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 15px;
+    max-height: 80px;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    overflow: hidden;
+    transition-delay: 300ms;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari et Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
   .contenant_2 {
@@ -1426,19 +1424,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 305ms;
     animation: fadein 4s;
     -moz-animation: fadein 4s;
-    /* Firefox */
     -webkit-animation: fadein 4s;
-    /* Safari et Chrome */
     -o-animation: fadein 4s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1448,19 +1441,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 310ms;
     animation: fadein 5s;
     -moz-animation: fadein 5s;
-    /* Firefox */
     -webkit-animation: fadein 5s;
-    /* Safari et Chrome */
     -o-animation: fadein 5s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1470,19 +1458,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 315ms;
     animation: fadein 6s;
     -moz-animation: fadein 6s;
-    /* Firefox */
     -webkit-animation: fadein 6s;
-    /* Safari et Chrome */
     -o-animation: fadein 6s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1492,18 +1475,13 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     animation: fadein 7s;
     -moz-animation: fadein 7s;
-    /* Firefox */
     -webkit-animation: fadein 7s;
-    /* Safari et Chrome */
     -o-animation: fadein 7s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1513,19 +1491,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 325ms;
     animation: fadein 8s;
     -moz-animation: fadein 8s;
-    /* Firefox */
     -webkit-animation: fadein 8s;
-    /* Safari et Chrome */
     -o-animation: fadein 8s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1535,19 +1508,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 330ms;
     animation: fadein 9s;
     -moz-animation: fadein 9s;
-    /* Firefox */
     -webkit-animation: fadein 9s;
-    /* Safari et Chrome */
     -o-animation: fadein 9s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1557,19 +1525,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 335ms;
     animation: fadein 10s;
     -moz-animation: fadein 10s;
-    /* Firefox */
     -webkit-animation: fadein 10s;
-    /* Safari et Chrome */
     -o-animation: fadein 10s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1579,19 +1542,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 340ms;
     animation: fadein 11s;
     -moz-animation: fadein 11s;
-    /* Firefox */
     -webkit-animation: fadein 11s;
-    /* Safari et Chrome */
     -o-animation: fadein 11s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1601,19 +1559,14 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
     transition-delay: 345ms;
     animation: fadein 12s;
     -moz-animation: fadein 12s;
-    /* Firefox */
     -webkit-animation: fadein 12s;
-    /* Safari et Chrome */
     -o-animation: fadein 12s;
-    /* Opera */
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -1751,20 +1704,6 @@
     left: 235px;
     font-size: 30px;
   }
-
-  .icone_like_menu3 {
-    position: relative;
-    left: 300px;
-    font-size: 30px;
-  }
-
-  .icone_like_menu3:hover {
-    position: relative;
-    left: 300px;
-    font-size: 30px;
-    background-color: linear-gradient(#ff79da, #9356dc);
-  }
-
   .icone_like_menus:hover {
     position: relative;
     left: 235px;
@@ -1778,8 +1717,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1899,8 +1836,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1917,8 +1852,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1935,8 +1868,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1953,8 +1884,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1971,8 +1900,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -1989,8 +1916,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -2007,8 +1932,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -2025,8 +1948,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -2046,8 +1967,6 @@
     margin: 20px;
     padding-left: 15px;
     max-height: 80px;
-    width: 95%;
-    margin-left: 20px;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     overflow: hidden;
@@ -2162,9 +2081,11 @@
     z-index: 3;
     position: relative;
     background: white;
-    margin: 0px;
     height: 50px;
     line-height: 50px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
@@ -2431,6 +2352,12 @@
     margin-left: 116px;
     padding-top: 50px;
   }
+
+  h5 {
+    font-size: 15px;
+    font-family: "Roboto-Regular";
+    color: black;
+  }
 }
 @media only screen and (max-width: 480px) {
   body {
@@ -2454,7 +2381,7 @@
     padding-top: 25px;
     margin: 0px;
     padding-left: 30px;
-    margin-top: 0px;
+    margin-top: -38px;
     font-weight: 100;
   }
 
@@ -2462,6 +2389,12 @@
     font-family: "Shrikhand-Regular";
     font-size: 23px;
     margin-left: 20px;
+  }
+
+  h5 {
+    font-size: 15px;
+    font-family: "Roboto-Regular";
+    color: black;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
@@ -2484,6 +2417,12 @@
     margin-bottom: 8px;
     margin-left: 21px;
     font-weight: 100;
+  }
+
+  h5 {
+    font-size: 15px;
+    font-family: "Roboto-Regular";
+    color: black;
   }
 }
 
