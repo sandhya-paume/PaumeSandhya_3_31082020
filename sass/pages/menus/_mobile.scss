@@ -224,100 +224,111 @@
         -o-animation: fadein 12s;
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
-  
-    .entree, .plat, .dessert {
+
+    .contenants {
         font-family: "Roboto-Regular";
-        color: black;
         font-size: 15px;
         text-align: left;
-        margin: 32px;
-        padding-top: 25px;
-        padding-bottom: 5px;
-    }
+       /* overflow:hidden;*/
 
-    .nom_entree, .nom_plat, .nom_dessert {
-        @include alimentaire;
-        font-weight: bold;
-        text-align: left;
-        padding-top: 5px;
-    }
-
-    .ingredients {
-        @include alimentaire;
-        font-size: 15px;
-        font-weight: normal;
-        text-align: left;
-        font-family: "Roboto-Regular";
-        margin-top: 10px;
-        color: #939393;
-    }
-
-    .soulignement {
-        height: 3px;
-        width: 40px;
-        visibility: visible;
-        position: relative;
-        background-color: #99e2d0;
-        top: 5px;
-    }
-       
-    header {
-        z-index: 1;
-        position: relative;
-    }
-
-    .price {
-        font-family: "Roboto-Regular";
-        font-weight: bold;
-        position: absolute;
-        right:33px;
-        bottom:18px;
-        font-size: 15px;
-    }
-
-    /*/---Animation---/*/
-
-    @keyframes fadein {
-        from {
-            opacity: 0;
+        .entree,
+        .plat,
+        .dessert {
+            color: black;
+            margin: 32px;
+            padding-top: 25px;
+            padding-bottom: 5px;
         }
 
-        to {
-            opacity: 1;
+        .nom_entree,
+        .nom_plat,
+        .nom_dessert {
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+        .ingredients {
+            font-weight: normal;
+            margin-top: 10px;
+            color: #939393;
         }
     }
 
-    @-moz-keyframes fadein {
-        /* sur Firefox */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
+   /* .contenants:hover .price-and-icon-check{
+        transform: translateX(0px);
     }
 
-    @-webkit-keyframes fadein {
-        /* sur Safari et Chrome */
-        from {
-            opacity: 0;
+    .price-and-icon-check{
+        display:flex;
+        transform:translateX(50px);
+        transition:transform 500ms;
+    }*/
+
+        .soulignement {
+            height: 3px;
+            width: 40px;
+            visibility: visible;
+            position: relative;
+            background-color: #99e2d0;
+            bottom: 15px;
+            margin-left:35px;
         }
 
-        to {
-            opacity: 1;
+        header {
+            z-index: 1;
+            position: relative;
+        }
+
+        .price {
+            font-family: "Roboto-Regular";
+            font-weight: bold;
+            position: absolute;
+            right: 33px;
+            bottom: 18px;
+            font-size: 15px;
+        }
+
+        /*/---Animation---/*/
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadein {
+            /* sur Firefox */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadein {
+            /* sur Safari et Chrome */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadein {
+            /* sur Opera */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
     }
-
-    @-o-keyframes fadein {
-        /* sur Opera */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-}

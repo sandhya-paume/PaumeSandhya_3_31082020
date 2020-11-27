@@ -1570,42 +1570,49 @@
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
 
-  .entree, .plat, .dessert {
+  .contenants {
     font-family: "Roboto-Regular";
-    color: black;
     font-size: 15px;
     text-align: left;
+    /* overflow:hidden;*/
+  }
+  .contenants .entree,
+.contenants .plat,
+.contenants .dessert {
+    color: black;
     margin: 32px;
     padding-top: 25px;
     padding-bottom: 5px;
   }
-
-  .nom_entree, .nom_plat, .nom_dessert {
-    font-family: "Roboto-Regular";
-    font-size: 15px;
+  .contenants .nom_entree,
+.contenants .nom_plat,
+.contenants .nom_dessert {
     font-weight: bold;
-    text-align: left;
     padding-top: 5px;
   }
-
-  .ingredients {
-    font-family: "Roboto-Regular";
-    font-size: 15px;
-    font-size: 15px;
+  .contenants .ingredients {
     font-weight: normal;
-    text-align: left;
-    font-family: "Roboto-Regular";
     margin-top: 10px;
     color: #939393;
   }
 
+  /* .contenants:hover .price-and-icon-check{
+       transform: translateX(0px);
+   }
+
+   .price-and-icon-check{
+       display:flex;
+       transform:translateX(50px);
+       transition:transform 500ms;
+   }*/
   .soulignement {
     height: 3px;
     width: 40px;
     visibility: visible;
     position: relative;
     background-color: #99e2d0;
-    top: 5px;
+    bottom: 15px;
+    margin-left: 35px;
   }
 
   header {
@@ -2395,6 +2402,7 @@
     font-size: 15px;
     font-family: "Roboto-Regular";
     color: black;
+    margin-left: 35px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
