@@ -3,16 +3,21 @@
     .bloc_chargement {
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: 812px;
         font-family: "Roboto-Regular";
         font-size: 20px;
-        color: black;
+        color:white;
         text-align: center;
         z-index: 0;
         animation: loading 3s;
         opacity: 0;
+        background-color: black;
     }
-
+    .chargement {
+        background-color: black;
+        padding-top: 300px;
+    }
+    
     @keyframes loading {
         0% {
             opacity: 1;
@@ -42,11 +47,12 @@
         margin: 0 auto;
         margin-bottom: 30px;
         position: relative;
+        
     }
 
     .loading_spinner {
         border-radius: 50px;
-        border: 6px solid rgba (255,255,255,0.4)
+        border: 6px solid rgba (255,255,255,0.4);
     }
 
     .loading_spinner:after {

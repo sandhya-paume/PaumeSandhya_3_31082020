@@ -6,11 +6,10 @@
     "\\sass\\base",
     "\\sass\\components",
     "\\sass\\layout",
-    "\\sass\\layout\\header",
     "\\sass\\pages",
     "\\sass\\pages\\accueil",
     "\\sass\\pages\\menus"
   ],
-  "SelectedNode": "\\sass\\pages\\menus\\_tablette.scss",
+  "SelectedNode": "\\sass\\pages\\menus\\_mobile.scss",
   "PreviewInSolutionExplorer": false
 }

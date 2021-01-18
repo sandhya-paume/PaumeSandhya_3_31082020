@@ -17,14 +17,21 @@
   .bloc_chargement {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     font-family: "Roboto-Regular";
     font-size: 20px;
-    color: black;
+    color: white;
     text-align: center;
     z-index: 0;
     animation: loading 3s;
     opacity: 0;
+    background-color: black;
+    top: 0px;
+  }
+
+  .chargement {
+    background-color: black;
+    padding-top: 300px;
   }
 
   @keyframes loading {
@@ -41,11 +48,10 @@
       z-index: 0;
     }
   }
-  .section {
-    background-color: #eee8e3;
-    padding-top: 30px;
-  }
-
+  /*.section {
+      background-color: #eee8e3;
+      padding-top: 30px;
+  }*/
   .loader {
     width: 50px;
     height: 50px;
@@ -125,6 +131,8 @@
 
   .bloc_fonctionnement {
     background-color: white;
+    margin-left: 5%;
+    margin-bottom: 50px;
   }
 
   .slide {
@@ -196,9 +204,10 @@
 
   .img_resto_2 {
     width: 700px;
-    height: 300px;
+    height: 800px;
     border-radius: 20px 20px 0px 0px;
     position: relative;
+    bottom: 300px;
   }
 
   .btn_new1,
@@ -217,6 +226,10 @@
     line-height: 30px;
   }
 
+  .bloc_frame {
+    margin-left: 10%;
+  }
+
   .frame {
     width: 700px;
     height: 400px;
@@ -225,7 +238,7 @@
     margin: 0 0 15px 0;
     margin-bottom: 50px;
     position: relative;
-    margin-left: 300px;
+    margin-left: 380px;
   }
 
   .icone_like_homepage:hover {
@@ -247,6 +260,7 @@
   .bloc_resto {
     background-color: #F2EBEA;
     width: 100%;
+    padding-bottom: 10px;
   }
 
   .numero {
@@ -292,14 +306,20 @@
   .bloc_chargement {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 812px;
     font-family: "Roboto-Regular";
     font-size: 20px;
-    color: black;
+    color: white;
     text-align: center;
     z-index: 0;
     animation: loading 3s;
     opacity: 0;
+    background-color: black;
+  }
+
+  .chargement {
+    background-color: black;
+    padding-top: 300px;
   }
 
   @keyframes loading {
@@ -855,6 +875,10 @@
   }
 }
 @media only screen and (min-width: 1150px) {
+  body {
+    margin-top: 0px;
+  }
+
   .fleche {
     position: relative;
     right: 500px;
@@ -867,7 +891,7 @@
 .img_menu3,
 .img_menu4 {
     width: 100%;
-    height: 500px;
+    margin-top: -707px;
   }
 
   .img_menu2 {
@@ -1220,9 +1244,17 @@
     margin-top: 10px;
   }
 
+  .img_header4 {
+    height: 500px;
+  }
+
   header {
     z-index: 1;
     position: relative;
+    background-color: white;
+    padding-top: 1px;
+    margin-bottom: 178px;
+    padding-bottom: 1px;
   }
 
   /*/---Animation---/*/
@@ -2267,6 +2299,11 @@
     font-size: 20px;
     font-family: "Roboto-Regular";
   }
+
+  form {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .btn_commander {
@@ -2327,6 +2364,10 @@
     box-shadow: 0px 2px grey;
     font-family: "Roboto-Regular";
   }
+
+  form {
+    padding-bottom: 20px;
+  }
 }
 @media only screen and (min-width: 1150px) {
   h2 {
@@ -2339,6 +2380,10 @@
     font-family: "Roboto-Regular";
     position: relative;
     left: 10px;
+  }
+
+  .titre_resto {
+    margin-left: 5%;
   }
 
   h3 {
