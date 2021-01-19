@@ -102,7 +102,7 @@
   }
 
   .bloc_resa {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     background-color: #f6f6f6;
     text-align: center;
     width: 100%;
@@ -340,6 +340,10 @@
     background-color: #eee8e3;
   }
 
+  .bloc_frame {
+    padding-bottom: 65px;
+  }
+
   .loader {
     width: 50px;
     height: 50px;
@@ -415,7 +419,7 @@
   }
 
   .bloc_fonctionnement {
-    background-color: #f7f7f7;
+    background-color: #fff;
   }
 
   .slide {
@@ -545,9 +549,9 @@
   }
 
   .bloc_resto {
-    background-color: #f6f6f6;
+    background-color: #eee8e3;
     width: 100%;
-    padding-top: 57px;
+    padding-top: 6px;
   }
 
   .numero {
@@ -1405,7 +1409,7 @@
   .contenant_1:hover .contenant_left,
 .contenant_2:hover .contenant_left,
 .contenant_3:hover .contenant_left,
-.contenant_4:hover .contenant_left,
+.contenant_4:hover .contenant_left .ingredients,
 .contenant_5:hover .contenant_left,
 .contenant_6:hover .contenant_left,
 .contenant_7:hover .contenant_left,
@@ -1626,6 +1630,11 @@
     font-weight: normal;
     margin-top: 10px;
     color: #939393;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    width: 85%;
   }
 
   /* .contenants:hover .price-and-icon-check{
@@ -1655,10 +1664,13 @@
   .price {
     font-family: "Roboto-Regular";
     font-weight: bold;
-    position: absolute;
-    right: 33px;
-    bottom: 18px;
+    /* position: absolute;
+        right: 33px;
+        bottom: 18px;*/
     font-size: 15px;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
   }
 
   /*/---Animation---/*/
@@ -2376,7 +2388,7 @@
     text-align: left;
     margin-bottom: 25px;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: "Roboto-Regular";
     position: relative;
     left: 10px;

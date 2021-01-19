@@ -99,7 +99,7 @@
     .contenant_1:hover .contenant_left,
     .contenant_2:hover .contenant_left,
     .contenant_3:hover .contenant_left,
-    .contenant_4:hover .contenant_left,
+    .contenant_4:hover .contenant_left .ingredients,
     .contenant_5:hover .contenant_left,
     .contenant_6:hover .contenant_left,
     .contenant_7:hover .contenant_left,
@@ -229,8 +229,7 @@
         font-family: "Roboto-Regular";
         font-size: 15px;
         text-align: left;
-       /* overflow:hidden;*/
-
+        /* overflow:hidden;*/
         .entree,
         .plat,
         .dessert {
@@ -251,6 +250,11 @@
             font-weight: normal;
             margin-top: 10px;
             color: #939393;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            float:left;
+            width:85%;
         }
     }
 
@@ -279,14 +283,17 @@
             position: relative;
         }
 
-        .price {
-            font-family: "Roboto-Regular";
-            font-weight: bold;
-            position: absolute;
+    .price {
+        font-family: "Roboto-Regular";
+        font-weight: bold;
+        /* position: absolute;
             right: 33px;
-            bottom: 18px;
-            font-size: 15px;
-        }
+            bottom: 18px;*/
+        font-size: 15px;
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
 
         /*/---Animation---/*/
         @keyframes fadein {
