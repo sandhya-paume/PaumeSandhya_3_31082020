@@ -21,13 +21,13 @@
 
     .img_menu2{
         width:100%;
-        margin-top: -707px;
+        margin-top: -960px;
     }
 
     .img_conteneur {
         overflow: hidden;
         width: 100%;
-        height: 530px;
+        height: 685px;
     }
 
     .menu_frame1,
@@ -36,21 +36,37 @@
     .menu_frame4 {
         background-color: #EEE8E3;
         border-radius: 65px 65px 0px 0px;
-        margin-top: -110px;
+        margin-top: -238px;
         z-index: 2;
         position: relative;
     }
 
-    .icone_like_menus {
-        margin-left:808px;
-        font-size: 30px;
-    }
 
     .icone_like_menus:hover {
-        position: relative;
-        left: 235px;
+        position: absolute;
         font-size: 30px;
-        background-color: linear-gradient(#ff79da, #9356dc);
+        margin-left: 795px;
+        background-image: linear-gradient(#ff79da, #9356dc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 0px;
+    }
+
+    .icone_like_menus {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 800px;
+        color: #EEE8E3;
+        padding-top:5px;
+    }
+
+    .icone_like_menus_contour {
+        position: absolute;
+        font-size: 30px;
+        margin-left: 795px;
+        background-image: linear-gradient(black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .contenant_1 {

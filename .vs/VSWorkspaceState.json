@@ -2,15 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\sass",
-    "\\sass\\abstracts",
-    "\\sass\\base",
-    "\\sass\\components",
-    "\\sass\\components\\boutons",
     "\\sass\\layout",
     "\\sass\\layout\\header",
     "\\sass\\pages",
+    "\\sass\\pages\\accueil",
     "\\sass\\pages\\menus"
   ],
-  "SelectedNode": "\\menu1.html",
+  "SelectedNode": "\\sass\\pages\\menus\\_mobile.scss",
   "PreviewInSolutionExplorer": false
 }

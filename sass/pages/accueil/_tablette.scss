@@ -1,20 +1,28 @@
 @media only screen and (min-width:481px) and (max-width:1149px) {
 
+    body {
+        margin: 0px;
+    }
    
-
     .bloc_chargement {
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: 2000px;
         font-family: "Roboto-Regular";
         font-size: 20px;
-        color: black;
+        color: white;
         text-align: center;
         z-index: 0;
         animation: loading 3s;
         opacity: 0;
     }
     
+    .chargement{
+        background-color: black;
+        height:100%;
+        padding-top: 300px;
+
+    }
 
     @keyframes loading {
         0% {
@@ -37,7 +45,6 @@
 
     section {
         background-color: #eee8e3;
-        padding-top: 30px;
     }
 
     .loader {
@@ -113,7 +120,7 @@
     }
              
     .bloc_fonctionnement {
-        background-color: #f6f6f6;
+        background-color: #fff;
     }
 
     .slide {
@@ -143,7 +150,6 @@
         font-size: 25px;
         font-weight: bold;
         text-align: left;
-       padding-top:133px;
         font-family: "Roboto-Regular";
     }
 
@@ -160,8 +166,10 @@
     }
 
     .img_resto_2 {
-        @include image_resto;
+        width: 700px;
+        border-radius: 20px 20px 0px 0px;
         position: relative;
+        bottom:325px;
     }
        
     .btn_new1,
@@ -194,12 +202,23 @@
         box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
     }
 
+    .icone_like_homepage_contour {
+        text-align: right;
+        position: absolute;
+        top: 319px;
+        left: 609px;
+        font-size: 30px;
+        background-image: linear-gradient(black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .icone_like_homepage:hover {
         text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
+        position: absolute;
+        top: 319px;
+        left: 609px;
+        font-size: 30px;
         background-image: linear-gradient(#ff79da, #9356dc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -207,11 +226,11 @@
 
     .icone_like_homepage {
         text-align: right;
-        position: relative;
-        top: 170px;
-        left: 600px;
-        font-size: 25px;
-        color: #717171;
+        position: absolute;
+        top: 324px;
+        left: 614px;
+        font-size: 20px;
+        color: white;
     }
       
     .lieu_1,
@@ -225,12 +244,12 @@
         font-size: 20px;
         font-family: "Roboto-Regular";
     }
-       
+
     .bloc_resto {
-        background-color: #f6f6f6;
         width: 100%;
         position: relative;
-        top: 50px;
+        padding-top: 30px;
+        padding-bottom:15px;
     }
 
     .numero {
@@ -249,19 +268,21 @@
     }
 
     .contenu {
-        padding: 10px;
+        padding: 30px;
     }
 
     .img_conteneur1,
     .img_conteneur2,
     .img_conteneur3,
     .img_conteneur4,
-    .img_conteneur5,
+    .img_conteneur5
     {
         width: 100%;
-        height: 150px;
+        height: 290px;
         position: relative;
         border-radius: 20px 20px 0px 0px;
+        overflow:hidden;
+
     }
         
     }

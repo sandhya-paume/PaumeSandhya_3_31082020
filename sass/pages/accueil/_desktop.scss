@@ -225,19 +225,36 @@
     }
 
     .icone_like_homepage:hover {
-      @include icone_like_homepage;
+        @include icone_like_homepage;
         background-image: linear-gradient(#ff79da, #9356dc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 0px;
     }
 
-    .icone_like_homepage{
-        @include icone_like_homepage;
-        background-color: white;
+    .icone_like_homepage {
+        position: absolute;
+        right: 73px;
+        top: 14px;
+        font-size: 20px;
+        color: white;
     }
+
+    .icone_like_homepage_contour {
+        @include icone_like_homepage;
+        background-image: linear-gradient(black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+
+
 
     .bloc_resto {
         background-color: #F2EBEA;
         width: 100%;
         padding-bottom: 10px;
+        padding-top: 12px;
     }
 
     .numero {
