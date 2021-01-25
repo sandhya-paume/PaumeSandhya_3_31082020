@@ -537,20 +537,29 @@
 
   .icone_like_homepage:hover {
     position: absolute;
-    left: 300px;
+    margin-left: 289px;
     font-size: 20px;
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-top: 0px;
   }
 
   .icone_like_homepage {
+    color: white;
     position: absolute;
-    left: 300px;
+    margin-left: 291px;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+
+  .icone_like_homepage_contour {
+    position: absolute;
+    margin-left: 289px;
     font-size: 20px;
-    background-color: white;
-    /*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
+    background-image: linear-gradient(black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .lieu {
@@ -1364,17 +1373,31 @@
     position: relative;
   }
 
-  .icone_like_menus {
-    position: relative;
-    left: 65px;
-    font-size: 22px;
-    background-color: linear-gradient(#ff79da, #9356dc);
-  }
   .icone_like_menus:hover {
-    position: relative;
-    left: 65px;
-    font-size: 22px;
-    background-color: linear-gradient(#ff79da, #9356dc);
+    position: absolute;
+    margin-left: 75px;
+    font-size: 20px;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0px;
+  }
+
+  .icone_like_menus {
+    color: white;
+    position: absolute;
+    margin-left: 77px;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+
+  .icone_like_menus_contour {
+    position: absolute;
+    margin-left: 75px;
+    font-size: 20px;
+    background-image: linear-gradient(black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .menu_frame1 {
