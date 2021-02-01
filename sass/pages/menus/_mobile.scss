@@ -18,17 +18,13 @@
 
 
     .icone_like_menus:hover {
-        position: absolute;
-        margin-left: 75px;
-        font-size: 20px;
+        @include icone_like;
         background-image: linear-gradient(#ff79da, #9356dc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         padding-top: 0px;
     }
 
     .icone_like_menus {
-        color: white;
+        color: #EEE8E3;
         position: absolute;
         margin-left: 77px;
         font-size: 15px;
@@ -36,13 +32,29 @@
     }
 
     .icone_like_menus_contour {
-        position: absolute;
-        margin-left: 75px;
-        font-size: 20px;
+        @include icone_like;
         background-image: linear-gradient(black, black);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
+
+    .icone_like_menu3:hover {
+        @include icone_like3;
+        background-image: linear-gradient(#ff79da, #9356dc);
+        padding-top: 0px;
+    }
+
+    .icone_like_menu3 {
+        color: #EEE8E3;
+        position: absolute;
+        margin-left: 129px;
+        font-size: 15px;
+        padding-top: 2px;
+    }
+
+    .icone_like_menu3_contour {
+        @include icone_like3;
+        background-image: linear-gradient(black, black);
+    }
+
 
     .menu_frame1 {
         background-color: #eee8e3;

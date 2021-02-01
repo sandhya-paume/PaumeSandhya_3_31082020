@@ -73,6 +73,33 @@
         -webkit-text-fill-color: transparent;
     }
 
+    .icone_like_menu3:hover {
+        position: absolute;
+        padding-left: 645px;
+        font-size: 30px;
+        background-image: linear-gradient(#ff79da, #9356dc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 0px;
+    }
+
+    .icone_like_menu3 {
+        position: absolute;
+        padding-left: 650px;
+        font-size: 20px;
+        color: #EEE8E3;
+        padding-top: 5px;
+    }
+
+    .icone_like_menu3_contour {
+        position: absolute;
+        padding-left: 645px;
+        font-size: 30px;
+        background-image: linear-gradient(black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .img_conteneur{
         overflow:hidden;
     }

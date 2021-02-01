@@ -53,9 +53,19 @@
 
 
 @mixin icone_like {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	position: absolute;
-	margin-left: 260px;
-	font-size: 30px;
+	margin-left: 75px;
+	font-size: 20px;
+}
+
+@mixin icone_like3 {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: absolute;
+	margin-left: 127px;
+	font-size: 20px;
 }
 
 /*/ mixins de la page d'accueil en desktop/*/

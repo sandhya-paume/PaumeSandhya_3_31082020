@@ -166,6 +166,7 @@
         font-weight: bold;
         margin-top: 12px;
         margin-left: 10px;
+        font-family: "Roboto-Regular";
     }
 
 
@@ -174,6 +175,7 @@
         line-height: 35px;
         font-size: 20px;
         margin-left: 11px;
+        font-family: "Roboto-Regular";
     }
 
     .img_resto_1,
@@ -205,6 +207,7 @@
         top: 30px;
         right: 30px;
         line-height: 30px;
+        font-family: "Roboto-Regular";
     }
 
     .bloc_frame{
@@ -234,18 +237,17 @@
 
     .icone_like_homepage {
         position: absolute;
-        right: 73px;
-        top: 14px;
-        font-size: 20px;
+        right: 72px;
+        top: 13px;
+        font-size: 22px;
         color: white;
     }
 
     .icone_like_homepage_contour {
         @include icone_like_homepage;
-        background-image: linear-gradient(black, black);
+        background-image: linear-gradient(#A7AAAD, #A7AAAD);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
     }
 
 

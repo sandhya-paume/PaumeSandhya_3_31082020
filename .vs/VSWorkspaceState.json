@@ -8,8 +8,9 @@
     "\\sass\\layout",
     "\\sass\\pages",
     "\\sass\\pages\\accueil",
-    "\\sass\\pages\\menus"
+    "\\sass\\pages\\menus",
+    "\\style"
   ],
-  "SelectedNode": "\\sass\\abstracts\\_mixins.scss",
+  "SelectedNode": "\\style\\style.css",
   "PreviewInSolutionExplorer": false
 }
