@@ -2,15 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\sass",
-    "\\sass\\abstracts",
     "\\sass\\base",
     "\\sass\\components",
     "\\sass\\layout",
     "\\sass\\pages",
     "\\sass\\pages\\accueil",
-    "\\sass\\pages\\menus",
     "\\style"
   ],
-  "SelectedNode": "\\style\\style.css",
+  "SelectedNode": "\\sass\\pages\\accueil\\_tablette.scss",
   "PreviewInSolutionExplorer": false
 }

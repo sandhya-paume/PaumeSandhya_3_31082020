@@ -944,7 +944,7 @@
 
   .img_menu2 {
     width: 100%;
-    margin-top: -725px;
+    margin-top: -966px;
   }
 
   .img_conteneur {
@@ -967,7 +967,7 @@
   .icone_like_menus:hover {
     position: absolute;
     font-size: 30px;
-    margin-left: 795px;
+    margin-left: 1320px;
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -977,7 +977,7 @@
   .icone_like_menus {
     position: absolute;
     font-size: 20px;
-    margin-left: 800px;
+    margin-left: 1325px;
     color: #EEE8E3;
     padding-top: 5px;
   }
@@ -985,8 +985,8 @@
   .icone_like_menus_contour {
     position: absolute;
     font-size: 30px;
-    margin-left: 795px;
-    background-image: linear-gradient(black, black);
+    margin-left: 1320px;
+    background-image: linear-gradient(#A7AAAD, #A7AAAD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -994,7 +994,7 @@
   .icone_like_menu3:hover {
     position: absolute;
     font-size: 30px;
-    margin-left: 795px;
+    margin-left: 1400px;
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1004,7 +1004,7 @@
   .icone_like_menu3 {
     position: absolute;
     font-size: 20px;
-    margin-left: 800px;
+    margin-left: 1405px;
     color: #EEE8E3;
     padding-top: 5px;
   }
@@ -1012,8 +1012,8 @@
   .icone_like_menu3_contour {
     position: absolute;
     font-size: 30px;
-    margin-left: 795px;
-    background-image: linear-gradient(black, black);
+    margin-left: 1400px;
+    background-image: linear-gradient(#A7AAAD, #A7AAAD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
