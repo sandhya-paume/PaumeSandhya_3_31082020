@@ -937,7 +937,9 @@
     color: black;
   }
 
-  .img_menu1, img_menu3, img_menu4 {
+  .img_menu1,
+img_menu3,
+img_menu4 {
     width: 100%;
     margin-top: -323px;
   }
@@ -957,7 +959,7 @@
 .menu_frame2,
 .menu_frame3,
 .menu_frame4 {
-    background-color: #EEE8E3;
+    background-color: #eee8e3;
     border-radius: 65px 65px 0px 0px;
     margin-top: -238px;
     z-index: 2;
@@ -978,7 +980,7 @@
     position: absolute;
     font-size: 20px;
     margin-left: 1325px;
-    color: #EEE8E3;
+    color: #eee8e3;
     padding-top: 5px;
   }
 
@@ -986,7 +988,7 @@
     position: absolute;
     font-size: 30px;
     margin-left: 1320px;
-    background-image: linear-gradient(#A7AAAD, #A7AAAD);
+    background-image: linear-gradient(#a7aaad, #a7aaad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1005,7 +1007,7 @@
     position: absolute;
     font-size: 20px;
     margin-left: 1405px;
-    color: #EEE8E3;
+    color: #eee8e3;
     padding-top: 5px;
   }
 
@@ -1013,7 +1015,7 @@
     position: absolute;
     font-size: 30px;
     margin-left: 1400px;
-    background-image: linear-gradient(#A7AAAD, #A7AAAD);
+    background-image: linear-gradient(#a7aaad, #a7aaad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1288,33 +1290,33 @@
   }
 
   /* .contenant {
-       font-familly: "Roboto-Regular";
-       font-weight: normal;
-       text-align: left;
+      font-familly: "Roboto-Regular";
+      font-weight: normal;
+      text-align: left;
 
-       .nom_entree,
-       .nom_plat,
-       .nom_dessert {
-           font-size: 20px;
-           font-weight: bold;
-           margin-left: 30px;
-           margin-bottom: 15px;
-           position: relative;
-           top: 10px;
+      .nom_entree,
+      .nom_plat,
+      .nom_dessert {
+          font-size: 20px;
+          font-weight: bold;
+          margin-left: 30px;
+          margin-bottom: 15px;
+          position: relative;
+          top: 10px;
 
-           .ingredients {
-               font-size: 18px;
-               margin-left: 30px;
+          .ingredients {
+              font-size: 18px;
+              margin-left: 30px;
 
 
-               .price {
-                   font-weight: bold;
-                   position: absolute;
-                   right: 30px;
-                   bottom: 28px;
-               }
-           }
-       }*/
+              .price {
+                  font-weight: bold;
+                  position: absolute;
+                  right: 30px;
+                  bottom: 28px;
+              }
+          }
+      }*/
   .entree,
 .plat,
 .dessert {
@@ -1330,7 +1332,7 @@
     width: 40px;
     visibility: visible;
     position: relative;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     margin-top: 10px;
   }
 
