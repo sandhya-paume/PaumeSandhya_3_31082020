@@ -328,7 +328,7 @@
     font-size: 20px;
     color: white;
     text-align: center;
-    z-index: 0;
+    z-index: -1;
     animation: loading 3s;
     opacity: 0;
     background-color: black;
@@ -350,7 +350,7 @@
     }
     100% {
       opacity: 0;
-      z-index: 0;
+      z-index: -1;
     }
   }
   section {
