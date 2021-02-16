@@ -62,7 +62,7 @@
 
   .loading_spinner {
     border-radius: 50px;
-    border: 6px solid rgba white;
+    border: 6px solid rgba(255, 255, 255, 0.4);
   }
 
   .loading_spinner:after {
@@ -371,7 +371,7 @@
 
   .loading_spinner {
     border-radius: 50px;
-    border: 6px solid rgba 255, 255, 255;
+    border: 6px solid rgba(255, 255, 255, 0.4);
   }
 
   .loading_spinner:after {
@@ -684,7 +684,7 @@
 
   .loading_spinner {
     border-radius: 50px;
-    border: 6px solid rgba 255, 255, 255;
+    border: 6px solid rgba(255, 255, 255, 0.4);
   }
 
   .loading_spinner:after {
