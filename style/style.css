@@ -22,7 +22,7 @@
     font-size: 20px;
     color: white;
     text-align: center;
-    z-index: 0;
+    z-index: -1;
     animation: loading 3s;
     opacity: 0;
     background-color: black;
@@ -45,7 +45,7 @@
     }
     100% {
       opacity: 0;
-      z-index: 0;
+      z-index: -1;
     }
   }
   /*.section {
@@ -645,7 +645,7 @@
     font-size: 20px;
     color: white;
     text-align: center;
-    z-index: 0;
+    z-index: -1;
     animation: loading 3s;
     opacity: 0;
   }
@@ -667,7 +667,7 @@
     }
     100% {
       opacity: 0;
-      z-index: 0;
+      z-index: -1;
     }
   }
   section {
@@ -2478,6 +2478,9 @@ img_menu4 {
     font-size: 20px;
     height: 50px;
   }
+  .btn_commander:hover {
+    opacity: 0.8;
+  }
 
   .btn_explorer {
     width: 30%;
@@ -2492,6 +2495,9 @@ img_menu4 {
     height: 30px;
     font-size: 20px;
     font-family: "Roboto-Regular";
+  }
+  .btn_explorer:hover {
+    opacity: 0.8;
   }
 
   form {
@@ -2514,6 +2520,9 @@ img_menu4 {
     border: none;
     margin-top: 33px;
   }
+  .btn_commander:active {
+    opacity: 0.8;
+  }
 
   .btn_explorer {
     width: auto;
@@ -2528,6 +2537,9 @@ img_menu4 {
     bottom: 35px;
     position: relative;
     font-family: "Roboto-Regular";
+  }
+  .btn_explorer:active {
+    opacity: 0.8;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
@@ -2545,6 +2557,9 @@ img_menu4 {
     font-size: 20px;
     height: 50px;
   }
+  .btn_commander:active {
+    opacity: 0.8;
+  }
 
   .btn_explorer {
     width: 30%;
@@ -2557,6 +2572,9 @@ img_menu4 {
     display: inline-block;
     box-shadow: 0px 2px grey;
     font-family: "Roboto-Regular";
+  }
+  .btn_explorer:active {
+    opacity: 0.8;
   }
 
   form {

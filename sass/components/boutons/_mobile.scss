@@ -13,6 +13,10 @@
         height: 55px;
         border: none;
         margin-top: 33px;
+
+        &:active {
+            opacity: 0.8;
+        }
     }
 
     .btn_explorer {
@@ -28,6 +32,10 @@
         bottom: 35px;
         position: relative;
         font-family: "Roboto-Regular";
+
+        &:active{
+            opacity: 0.8;
+        }
     }
 
     }
