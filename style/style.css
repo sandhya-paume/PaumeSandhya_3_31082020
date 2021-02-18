@@ -161,10 +161,10 @@
     color: grey;
   }
 
-  .slide--selected {
+  .slide:hover {
     background-color: #9356dc26;
   }
-  .slide--selected i {
+  .slide:hover i {
     padding-bottom: 10px;
     background-color: #f7f7f7;
     margin-right: 20px;
@@ -462,10 +462,10 @@
     margin-right: 22px;
   }
 
-  .slide--selected {
+  .slide:active {
     background-color: #f5edff;
   }
-  .slide--selected i {
+  .slide:active i {
     color: #9356dc;
   }
 
@@ -772,10 +772,10 @@
     color: grey;
   }
 
-  .slide--selected {
+  .slide:active {
     background-color: #f5edff;
   }
-  .slide--selected i {
+  .slide:active i {
     color: #9356dc;
   }
 

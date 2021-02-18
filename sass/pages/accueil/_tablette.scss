@@ -126,16 +126,14 @@
     .slide {
         @include slide;
         background-color: #f6f6f6;
-
         i {
             color: grey;
         }
     }
 
-    .slide--selected {
+    .slide:active {
         background-color: #f5edff;
-
-        i {
+         i {
             color: #9356dc;
         }
     }
