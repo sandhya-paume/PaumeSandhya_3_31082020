@@ -831,14 +831,14 @@
   }
 
   .frame {
-    width: 700px;
+    width: 668px;
     height: 400px;
     border-radius: 20px 20px 20px 20px;
     background: #ffffff;
     margin: 0 0 15px 0;
     margin-bottom: 50px;
     position: relative;
-    left: 155px;
+    left: 30px;
     bottom: 18px;
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
   }
@@ -1840,7 +1840,7 @@ img_menu4 {
 @media only screen and (min-width: 481px) and (max-width: 1149px) {
   .fleche {
     position: relative;
-    right: 369px;
+    right: 240px;
     font-size: 35px;
     text-decoration: none;
     color: black;
@@ -1855,7 +1855,7 @@ img_menu4 {
 
   .img_menu2 {
     width: 100%;
-    margin-top: -500px;
+    margin-top: -350px;
     margin-bottom: -235px;
   }
 
@@ -1885,7 +1885,7 @@ img_menu4 {
 
   .icone_like_menus:hover {
     position: absolute;
-    padding-left: 645px;
+    padding-left: 386px;
     font-size: 30px;
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
@@ -1895,7 +1895,7 @@ img_menu4 {
 
   .icone_like_menus {
     position: absolute;
-    padding-left: 650px;
+    padding-left: 390px;
     font-size: 20px;
     color: #EEE8E3;
     padding-top: 5px;
@@ -1903,7 +1903,7 @@ img_menu4 {
 
   .icone_like_menus_contour {
     position: absolute;
-    padding-left: 645px;
+    padding-left: 385px;
     font-size: 30px;
     background-image: linear-gradient(black, black);
     -webkit-background-clip: text;
@@ -1912,7 +1912,7 @@ img_menu4 {
 
   .icone_like_menu3:hover {
     position: absolute;
-    padding-left: 645px;
+    padding-left: 450px;
     font-size: 30px;
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
@@ -1922,7 +1922,7 @@ img_menu4 {
 
   .icone_like_menu3 {
     position: absolute;
-    padding-left: 650px;
+    padding-left: 454px;
     font-size: 20px;
     color: #EEE8E3;
     padding-top: 5px;
@@ -1930,7 +1930,7 @@ img_menu4 {
 
   .icone_like_menu3_contour {
     position: absolute;
-    padding-left: 645px;
+    padding-left: 450px;
     font-size: 30px;
     background-image: linear-gradient(black, black);
     -webkit-background-clip: text;
